@@ -1,0 +1,80 @@
+{
+ "tag": "7.20.1",
+ "url": "https://dlmf.nist.gov/7.20#E1",
+ "kind": "equation",
+ "latex": [
+  "\\frac{1}{\\sigma\\sqrt{2\\pi}}\\int_{-\\infty}^{x}e^{-(t-m)^{2}/(2\\sigma^{2})}\\,\\mathrm{d}t=\\frac{1}{2}\\operatorname{erfc}\\left(\\frac{m-x}{\\sigma\\sqrt{2}}\\right)=Q\\left(\\frac{m-x}{\\sigma}\\right)=P\\left(\\frac{x-m}{\\sigma}\\right).",
+  "\\operatorname{erfc}\\NVar{z}",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "\\mathrm{e}",
+  "\\sigma",
+  "\\int",
+  "\\pi",
+  "m",
+  "x"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.20.1",
+   "\\frac{1}{\\sigma\\sqrt{2\\pi}}\\int_{-\\infty}^{x}e^{-(t-m)^{2}/(2\\sigma^{2})}\\,\\mathrm{d}t=\\frac{1}{2}\\operatorname{erfc}\\left(\\frac{m-x}{\\sigma\\sqrt{2}}\\right)=Q\\left(\\frac{m-x}{\\sigma}\\right)=P\\left(\\frac{x-m}{\\sigma}\\right)."
+  ]
+ ],
+ "context": "The normal distribution function with mean m and standard deviation \u03c3 is given by 7.20.1 1 \u03c3 \u2062 2 \u2062 \u03c0 \u2062 \u222b \u2212 \u221e x e \u2212 ( t \u2212 m ) 2 / ( 2 \u2062 \u03c3 2 ) \u2062 d t = 1 2 \u2062 erfc \u2061 ( m \u2212 x \u03c3 \u2062 2 ) = Q \u2061 ( m \u2212 x \u03c3 ) = P \u2061 ( x \u2212 m \u03c3 ) . \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , erfc \u2061 z : complementary error function , d x : differential of x , e : base of natural logarithm , \u222b : integral , x : real variable , m : mean and \u03c3 : standard deviation A&S Ref: 7.1.22 (slightly modified) Permalink: http://dlmf.nist.gov/7.20.E1 Encodings: TeX , pMML , png See also: Annotations for \u00a77.20(iii) , \u00a77.20 and Ch.7",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "\u03c3",
+   "href": "7.20#iii.p1",
+   "gloss": "standard deviation"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "x",
+   "href": "7.1#p1.t1.r1",
+   "gloss": "real variable"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "m",
+   "href": "7.20#iii.p1",
+   "gloss": "mean"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  },
+  {
+   "token": "erfc",
+   "href": "7.2#E2",
+   "gloss": "complementary error function"
+  }
+ ],
+ "info": {
+  "proof_sketch": "",
+  "defines": "",
+  "notes": "",
+  "keywords": "",
+  "as_ref": "7.1.22 (slightly modified)",
+  "referenced_by": "",
+  "sources": "",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\operatorname{erfc}\\NVar{z} : complementary error function , \\,\\mathrm{d}\\NVar{x} : differential of x , \\mathrm{e} : base of natural logarithm , \\int : integral , x : real variable , m : mean and \\sigma : standard deviation",
+  "changes": []
+ },
+ "parser_version": 2
+}

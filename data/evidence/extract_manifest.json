@@ -1,0 +1,3279 @@
+[
+  {
+    "name": "besselK_real_asymp_atTop",
+    "file": "FLMF/Functions/Bessel/KAsymptotic.lean",
+    "line": 193,
+    "tags": [
+      "10.40.2",
+      "7.23",
+      "7.23"
+    ],
+    "doc": "**Leading large-argument asymptotic of `K_ν` (normalized-product form).** For every fixed real order `ν`, as `z → ∞`, `√",
+    "concl": "Tendsto (fun z : ℝ => Real.sqrt (2 * z / Real.pi) * Real.exp z * besselK_real ν z) atTop (𝓝 1)",
+    "binders": {
+      "ν": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Functions.Bessel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "asymptotic",
+    "detail": "rel@end=0.002757 over 4",
+    "closure_hash": "45b42f50e22ad0cc5ffe0958f967d6c8aa472b85"
+  },
+  {
+    "name": "erf_7_20_1",
+    "file": "FLMF/Functions/Error/Ch7Applications.lean",
+    "line": 45,
+    "tags": [
+      "7.20.1",
+      "7.20.1"
+    ],
+    "doc": "**DLMF 7.20.1.** For the normal (Gaussian) probability density with mean `m` and standard deviation `σ > 0`, the cumulat",
+    "concl": "(∫ t in Set.Iio x, Real.exp (-(t - m) ^ 2 / (2 * σ ^ 2))) / (σ * Real.sqrt (2 * Real.pi)) = erfc ((m - x) / (σ * Real.sqrt 2)) / 2",
+    "binders": {
+      "m": "R",
+      "x": "R",
+      "σ": "R",
+      "hσ": "other"
+    },
+    "constraints": {
+      "σ": "pos",
+      "_lower": {
+        "σ": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.972e-31 over 24pts",
+    "closure_hash": "860f54a6be50d33b2d640eab82310cfae2796479"
+  },
+  {
+    "name": "erf_7_12_4_dlmf",
+    "file": "FLMF/Functions/Error/Ch7AsymptoticExpansions.lean",
+    "line": 689,
+    "tags": [
+      "7.12.4"
+    ],
+    "doc": "**DLMF 7.12.4** — for complex `z ≠ 0` in the sector `|ph z| ≤ π/2 − δ` for some `δ ∈ (0, π/2)`, the `n`-term truncation ",
+    "concl": "FLMF.Fresnel.cfresnelAuxF z = ctruncF n z + cremF n z",
+    "binders": {
+      "n": "N",
+      "z": "C",
+      "hz0": "other",
+      "δ": "R",
+      "hδ": "other",
+      "hph": "other"
+    },
+    "constraints": {
+      "z": "nonzero",
+      "δ": "pos",
+      "_lower": {
+        "δ": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.559e-31 over 24pts",
+    "closure_hash": "55e21ed6c9eaace6883d6ceaf1bbe84f0f5c6795"
+  },
+  {
+    "name": "erf_7_12_5_complex",
+    "file": "FLMF/Functions/Error/Ch7AsymptoticExpansions.lean",
+    "line": 746,
+    "tags": [
+      "7.12.5"
+    ],
+    "doc": "**DLMF 7.12.5** — the `n`-term truncation of the Fresnel auxiliary `g` with remainder, for complex `z` with `|ph z| < π/",
+    "concl": "FLMF.Fresnel.cfresnelAuxG z = ctruncG n z + cremG n z",
+    "binders": {
+      "n": "N",
+      "z": "C",
+      "hph": "other"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=6.413e-29 over 20pts",
+    "closure_hash": "07f8c8eef0e505ece4263d0e6c71fdb1fdad3e21"
+  },
+  {
+    "name": "erf_7_12_3",
+    "file": "FLMF/Functions/Error/Ch7AsymptoticExpansions.lean",
+    "line": 769,
+    "tags": [
+      "7.12.3",
+      "7.12.3"
+    ],
+    "doc": "**DLMF 7.12.3.** The complete (Poincaré) asymptotic expansion of the Fresnel auxiliary function `g` on the real axis: `g",
+    "concl": "Tendsto (fun x : ℝ => Real.pi * x * (Real.pi * x ^ 2 / 2) ^ (2 * n + 1) * (fresnelAuxG x - truncG n x)) atTop (𝓝 ((-1 : ℝ) ^ n * pochHalf (2 * n + 1)))",
+    "binders": {
+      "n": "N"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "asymptotic",
+    "detail": "rel@end=2.318e-6 over 3",
+    "closure_hash": "17e8f3fdfce929fa1a4a505dc2fffe0d5fa59b70"
+  },
+  {
+    "name": "erf_7_9_1_complex",
+    "file": "FLMF/Functions/Error/Ch7ContinuedFractions.lean",
+    "line": 695,
+    "tags": [
+      "7.9.1"
+    ],
+    "doc": "**DLMF 7.9.1** — Laplace continued fraction for the complementary error function, for complex `z` with `ℜ z > 0`: `√π e^",
+    "concl": "Tendsto (cfConvC (fun k => if k = 0 then 0 else if k = 1 then z else ((k : ℂ) - 1) / 2) (fun k => if k = 0 then 0 else if k % 2 = 1 then z ^ 2 else 1)) atTop (𝓝 ((Real.sqrt Real.pi : ℂ) * Complex.exp (z ^ 2) * cerfc z))",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "z.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "asymptotic",
+    "detail": "cfConv rel@settle=1.59e-30 over 5",
+    "closure_hash": "793d0d46d56637e4fffe5f2a24aa4965df1bd6a5"
+  },
+  {
+    "name": "erf_7_9_2_complex",
+    "file": "FLMF/Functions/Error/Ch7ContinuedFractions.lean",
+    "line": 840,
+    "tags": [
+      "7.9.2"
+    ],
+    "doc": "**DLMF 7.9.2** — Even part of the Laplace continued fraction for `erfc`, for complex `z` with `ℜ z > 0`: `√π e^{z²} erfc",
+    "concl": "Tendsto (cfConvC (fun k => if k = 0 then 0 else if k = 1 then 2 * z else -(2 * (k : ℂ) - 3) * (2 * (k : ℂ) - 2)) (fun k => if k = 0 then 0 else 2 * z ^ 2 + (4 * (k : ℂ) - 3))) atTop (𝓝 ((Real.sqrt Real.pi : ℂ) * Complex.exp (z ^ 2) * cerfc z))",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "z.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "asymptotic",
+    "detail": "cfConv rel@settle=2.145e-19 over 6",
+    "closure_hash": "1e9ce519849931b9f522c9846cd0954f6f160925"
+  },
+  {
+    "name": "erf_7_2_9",
+    "file": "FLMF/Functions/Error/Ch7Definitions.lean",
+    "line": 71,
+    "tags": [
+      "7.2.9",
+      "7.2.9"
+    ],
+    "doc": "The Fresnel integrals both tend to `1/2` at `+∞`: `lim_{x→∞} C(x) = 1/2` and `lim_{x→∞} S(x) = 1/2` (DLMF 7.2.9). DLMF 7",
+    "concl": "Filter.Tendsto FLMF.Fresnel.fresnelC Filter.atTop (𝓝 (1 / 2)) ∧ Filter.Tendsto FLMF.Fresnel.fresnelS Filter.atTop (𝓝 (1 / 2))",
+    "binders": {},
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "1ad4e58e5c42f981246acedefb80c2aefe3cf8ef"
+  },
+  {
+    "name": "cfresnel_7_2_10",
+    "file": "FLMF/Functions/Error/Ch7Definitions.lean",
+    "line": 102,
+    "tags": [
+      "7.2.10"
+    ],
+    "doc": "**DLMF 7.2.10** — the auxiliary Fresnel function `f` for complex `z` (no constraints): `f(z) = (1/2 - S(z)) cos(π z²/2) ",
+    "concl": "cfresnelAuxF z = (1 / 2 - cfresnelS z) * Complex.cos (Real.pi * z ^ 2 / 2) - (1 / 2 - cfresnelC z) * Complex.sin (Real.pi * z ^ 2 / 2)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 4pts",
+    "closure_hash": "3c6983f13a5491f0984c3489a8a03051218af7b1"
+  },
+  {
+    "name": "cfresnel_7_2_11",
+    "file": "FLMF/Functions/Error/Ch7Definitions.lean",
+    "line": 133,
+    "tags": [
+      "7.2.11"
+    ],
+    "doc": "**DLMF 7.2.11** — the auxiliary Fresnel function `g` for complex `z` (no constraints): `g(z) = (1/2 - C(z)) cos(π z²/2) ",
+    "concl": "cfresnelAuxG z = (1 / 2 - cfresnelC z) * Complex.cos (Real.pi * z ^ 2 / 2) + (1 / 2 - cfresnelS z) * Complex.sin (Real.pi * z ^ 2 / 2)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 4pts",
+    "closure_hash": "1ae44b436226c99d819253aaee06310451a08b05"
+  },
+  {
+    "name": "cfresnel_7_10_4",
+    "file": "FLMF/Functions/Error/Ch7Derivatives.lean",
+    "line": 255,
+    "tags": [
+      "7.10.4",
+      "7.2.10",
+      "7.10.4"
+    ],
+    "doc": "**DLMF 7.10.4** — derivatives of the complex Fresnel auxiliary functions `f(z), g(z)` (DLMF 7.2.10–7.2.11): `f′(z) = -π ",
+    "concl": "deriv cfresnelAuxF z = -(Real.pi : ℂ) * z * cfresnelAuxG z ∧ deriv cfresnelAuxG z = (Real.pi : ℂ) * z * cfresnelAuxF z - 1",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "b4aeaf97f8a698eeebf9adba6d9c8e1e3c699b94"
+  },
+  {
+    "name": "erf_7_8_1",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 31,
+    "tags": [
+      "7.8.1",
+      "7.8.1"
+    ],
+    "doc": "The auxiliary scaled complementary error function `𝖬(x) = e^{x²} ∫_x^∞ e^{-t²} dt = (√π/2) e^{x²} erfc(x)` (DLMF 7.8.1).",
+    "concl": "(Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x = (∫ t in Set.Ioi x, Real.exp (-t ^ 2)) / Real.exp (-x ^ 2) ∧ (Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x = Real.exp (x ^ 2) * ∫ t in Set.Ioi x, Real.exp (-t ^ 2)",
+    "binders": {
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "e924e5204c4b1046abab89639b2c7edd9e911479"
+  },
+  {
+    "name": "erf_7_8_2",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 477,
+    "tags": [
+      "7.8.2",
+      "7.8.2"
+    ],
+    "doc": "Two-sided bound on `𝖬(x)` for `x ≥ 0` (DLMF 7.8.2). DLMF 7.8.2. DAG: E-7.8.2. Fidelity: tier1 PASS Verified: verified (t",
+    "concl": "1 / (x + Real.sqrt (x ^ 2 + 2)) < (Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x ∧ (Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x ≤ 1 / (x + Real.sqrt (x ^ 2 + 4 / Real.pi))",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "nonneg",
+      "_lower": {
+        "x": [
+          "0.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "46baafd4f057bd7837608b662f48f0c1d04d224e"
+  },
+  {
+    "name": "erf_7_8_3",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 513,
+    "tags": [
+      "7.8.3",
+      "7.8.3"
+    ],
+    "doc": "Two-sided bound on `𝖬(x)` for `x ≥ 0` (DLMF 7.8.3): `√π/(2√π·x + 2) ≤ 𝖬(x) ≤ 1/(x+1)`. (Lower bound corrected 2026-06-25",
+    "concl": "Real.sqrt Real.pi / (2 * Real.sqrt Real.pi * x + 2) ≤ (Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x ∧ (Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x < 1 / (x + 1)",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "nonneg",
+      "_lower": {
+        "x": [
+          "0.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "5ab7a0dbb276f35a1606e784168cc1871c12396e"
+  },
+  {
+    "name": "erf_7_8_4",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 619,
+    "tags": [
+      "7.8.4",
+      "7.8.4"
+    ],
+    "doc": "Upper bound on `𝖬(x)` for `x > -½√2` (DLMF 7.8.4). (Domain corrected 2026-06-25 from the DLMF PDF: `x > -½√2 = -√2/2`, n",
+    "concl": "(Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x < 2 / (3 * x + Real.sqrt (x ^ 2 + 4))",
+    "binders": {
+      "x": "R"
+    },
+    "constraints": {
+      "_lower": {
+        "x": [
+          "-0.707106781186547524400844362105",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "inequality",
+    "detail": "margin=-8.203e-5 over 3pts",
+    "closure_hash": "29af5e645cc1da5fe3f75b4c4ba9835c9be4789c"
+  },
+  {
+    "name": "erf_7_8_5",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 825,
+    "tags": [
+      "7.8.5",
+      "7.8.5"
+    ],
+    "doc": "Chain of bounds on `x·𝖬(x)` for `x ≥ 0`, where `𝖬(x) = (√π/2)e^{x²}erfc(x)` is the Mills ratio (DLMF 7.8.5): `x²/(2x²+1)",
+    "concl": "x ^ 2 / (2 * x ^ 2 + 1) ≤ (x ^ 2 * (2 * x ^ 2 + 5)) / (4 * x ^ 4 + 12 * x ^ 2 + 3) ∧ (x ^ 2 * (2 * x ^ 2 + 5)) / (4 * x ^ 4 + 12 * x ^ 2 + 3) ≤ x * ((Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x) ∧ x * ((Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x) < (2 * x ^ 4 + 9 * x ^ 2 + 4) / (4 * x ^ 4 + 20 * x ^ 2 + 15) ∧ (2 * x ^ 4 + 9 * x ^ 2 + 4) / (4 * x ^ 4 + 20 * x ^ 2 + 15) < (x ^ 2 + 1) / (2 * x ^ 2 + 3)",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "nonneg",
+      "_lower": {
+        "x": [
+          "0.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 4,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "4 conjuncts",
+    "closure_hash": "a985fbbc9390bde5414870ecdfd33628ca8488b1"
+  },
+  {
+    "name": "erf_7_8_6",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 872,
+    "tags": [
+      "7.8.6",
+      "7.8.6"
+    ],
+    "doc": "Upper bound on `∫₀^x e^{a t²} dt` for `a, x > 0` (DLMF 7.8.6): `∫₀^x e^{a t²} dt < (1/(3 a x))·(2 e^{a x²} + a x² − 2)`.",
+    "concl": "(∫ t in (0 : ℝ)..x, Real.exp (a * t ^ 2)) < (1 / (3 * a * x)) * (2 * Real.exp (a * x ^ 2) + a * x ^ 2 - 2)",
+    "binders": {
+      "a": "R",
+      "x": "R",
+      "ha": "other",
+      "hx": "other"
+    },
+    "constraints": {
+      "a": "pos",
+      "_lower": {
+        "a": [
+          "0.0",
+          true
+        ],
+        "x": [
+          "0.0",
+          true
+        ]
+      },
+      "x": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "inequality",
+    "detail": "margin=-2.454e-6 over 16pts",
+    "closure_hash": "e35ea7ce0c0971112aeef13cf7d3f111a2c9c4ad"
+  },
+  {
+    "name": "erf_7_8_7_chain",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 1000,
+    "tags": [
+      "7.8.7",
+      "7.8.7"
+    ],
+    "doc": "**DLMF 7.8.7**, the full three-member chain: for `x > 0`, `sinh(x²)/x < e^{x²} F(x) = ∫₀ˣ e^{t²} dt < (e^{x²} − 1)/x`, w",
+    "concl": "Real.sinh (x ^ 2) / x < Real.exp (x ^ 2) * FLMF.dawson x ∧ Real.exp (x ^ 2) * FLMF.dawson x = ∫ t in (0:ℝ)..x, Real.exp (t ^ 2) ∧ Real.exp (x ^ 2) * FLMF.dawson x < (Real.exp (x ^ 2) - 1) / x",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "pos",
+      "_lower": {
+        "x": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 3,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "3 conjuncts",
+    "closure_hash": "3b57203cff7ff073bc6414a1141aa5b53bc122d0"
+  },
+  {
+    "name": "erf_7_8_8",
+    "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+    "line": 1025,
+    "tags": [
+      "7.8.8",
+      "7.8",
+      "7.8.8"
+    ],
+    "doc": "**DLMF 7.8.8** (Pólya 1949). `erf x < √(1 − e^{−4x²/π})` for `x > 0`. Note the square root over the whole right-hand sid",
+    "concl": "erf x < Real.sqrt (1 - Real.exp (-(4 * x ^ 2) / Real.pi))",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "pos",
+      "_lower": {
+        "x": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "inequality",
+    "detail": "margin=-0.0003619 over 4pts",
+    "closure_hash": "c1b7355fbc4dc81f3f419eafc2dbcdb708472196"
+  },
+  {
+    "name": "erf_7_7_1_dlmf",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 290,
+    "tags": [
+      "7.7.1"
+    ],
+    "doc": "**DLMF 7.7.1**: `erfc z = (2/π) e^{-z²} ∫₀^∞ e^{-z² t²}/(t²+1) dt`, for complex `z` with `|ph z| ≤ π/4`. DAG: E-7.7.1. F",
+    "concl": "cerfc z = (2 / (Real.pi : ℂ)) * Complex.exp (-z ^ 2) * ∫ t in Ioi (0 : ℝ), Complex.exp (-z ^ 2 * (t : ℂ) ^ 2) / ((t : ℂ) ^ 2 + 1)",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "_pairs": [
+        [
+          "argwedge",
+          "z",
+          "0.78539816339744830961566084582",
+          false
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.637e-25 over 2pts",
+    "closure_hash": "ee3120cf9efa926bfee5788fc1a3f73712bf9f12"
+  },
+  {
+    "name": "erf_7_7_4_dlmf",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 427,
+    "tags": [
+      "7.7.4"
+    ],
+    "doc": "**DLMF 7.7.4**: `∫₀^∞ e^{-a t}/√(t + z²) dt = √(π/a)·e^{a z²}·erfc(√a·z)`, for complex `a`, `z` with `Re a > 0`, `Re z >",
+    "concl": "(∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t : ℂ)) / ((t : ℂ) + z ^ 2) ^ ((1 : ℂ) / 2)) = ((Real.pi : ℂ) / a) ^ ((1 : ℂ) / 2) * Complex.exp (a * z ^ 2) * cerfc (a ^ ((1 : ℂ) / 2) * z)",
+    "binders": {
+      "a": "C",
+      "z": "C",
+      "ha": "other",
+      "hz": "other"
+    },
+    "constraints": {
+      "a.re": "pos",
+      "z.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.799e-25 over 24pts",
+    "closure_hash": "aea8fff5fe9c6d532b8bd883aafdaaad47f513d8"
+  },
+  {
+    "name": "erf_7_7_5",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 442,
+    "tags": [
+      "7.7.5",
+      "7.7.5"
+    ],
+    "doc": "Error function via a unit-interval integral representation (DLMF 7.7.5), real specialization: for real `a`, `∫₀¹ e^{-a²(",
+    "concl": "(∫ t in (0:ℝ)..1, Real.exp (-(a ^ 2) * (t ^ 2 + 1)) / (t ^ 2 + 1)) = (Real.pi / 4) * (1 - (erf a) ^ 2)",
+    "binders": {
+      "a": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=4.202e-32 over 4pts",
+    "closure_hash": "8a1276aeead6bb3dd7e7f06f7d829f04016787d2"
+  },
+  {
+    "name": "erf_7_7_6_dlmf",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 631,
+    "tags": [
+      "7.7.6"
+    ],
+    "doc": "**DLMF 7.7.6**: `∫ₓ^∞ e^{-(a t² + 2 b t + c)} dt = (1/2)√(π/a)·e^{(b² - a c)/a}·erfc(√a·x + b/√a)`, for complex `a`, `b`",
+    "concl": "(∫ t in Ioi x, Complex.exp (-(a * (t : ℂ) ^ 2 + 2 * b * (t : ℂ) + c))) = (1 / 2) * ((Real.pi : ℂ) / a) ^ ((1 : ℂ) / 2) * Complex.exp ((b ^ 2 - a * c) / a) * cerfc (a ^ ((1 : ℂ) / 2) * (x : ℂ) + b / a ^ ((1 : ℂ) / 2))",
+    "binders": {
+      "a": "C",
+      "b": "C",
+      "c": "C",
+      "x": "R",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.306e-19 over 24pts",
+    "closure_hash": "83cf42f3de5886ddaa8aeb8e65617df8e0f55438"
+  },
+  {
+    "name": "erf_7_7_9",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 654,
+    "tags": [
+      "7.7.9",
+      "7.7.9"
+    ],
+    "doc": "Antiderivative of `erf` (DLMF 7.7.9), real specialization: for real `x`, `∫₀ˣ erf t dt = x · erf x + (e^{-x²} - 1)/√π`. ",
+    "concl": "(∫ t in (0:ℝ)..x, erf t) = x * erf x + (Real.exp (-x ^ 2) - 1) / Real.sqrt Real.pi",
+    "binders": {
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.812e-32 over 4pts",
+    "closure_hash": "dcf7636595ce9b90ca7b57bb8ea368e13affbd73"
+  },
+  {
+    "name": "erf_7_7_10_dlmf",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 814,
+    "tags": [
+      "7.7.10",
+      "7.2.10"
+    ],
+    "doc": "**DLMF 7.7.10**: `f(z) = (1/(π√2)) ∫₀^∞ e^{-π z² t/2}/(√t (t²+1)) dt`, for complex `z` with `|ph z| ≤ π/4`, `f = cfresne",
+    "concl": "cfresnelAuxF z = (1 / ((Real.pi : ℂ) * Real.sqrt 2)) * ∫ t in Ioi (0 : ℝ), Complex.exp (-(Real.pi : ℂ) * z ^ 2 * (t : ℂ) / 2) / ((Real.sqrt t : ℂ) * ((t : ℂ) ^ 2 + 1))",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "_pairs": [
+        [
+          "argwedge",
+          "z",
+          "0.78539816339744830961566084582",
+          false
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.009e-17 over 2pts",
+    "closure_hash": "f59b1ab9b8572b5e484f43885b6895f9346b8a85"
+  },
+  {
+    "name": "erf_7_7_11_dlmf",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 876,
+    "tags": [
+      "7.7.11",
+      "7.2.11"
+    ],
+    "doc": "**DLMF 7.7.11**: `g(z) = (1/(π√2)) ∫₀^∞ (√t e^{-π z² t/2})/(t²+1) dt`, for complex `z` with `|ph z| ≤ π/4`, `g = cfresne",
+    "concl": "cfresnelAuxG z = (1 / ((Real.pi : ℂ) * Real.sqrt 2)) * ∫ t in Ioi (0 : ℝ), ((Real.sqrt t : ℂ) * Complex.exp (-(Real.pi : ℂ) * z ^ 2 * (t : ℂ) / 2)) / ((t : ℂ) ^ 2 + 1)",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "_pairs": [
+        [
+          "argwedge",
+          "z",
+          "0.78539816339744830961566084582",
+          false
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.47e-27 over 2pts",
+    "closure_hash": "07ee48b0d159346761a226fb8a4edc24035d3fe5"
+  },
+  {
+    "name": "erf_7_7_15_dlmf",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 1225,
+    "tags": [
+      "7.7.15",
+      "7.2.10"
+    ],
+    "doc": "**DLMF 7.7.15**: `∫₀^∞ e^{-a t} cos(t²) dt = √(π/2)·f(a/√(2π))`, for complex `a` with `Re a > 0`, `f = cfresnelAuxF` the",
+    "concl": "(∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t : ℂ)) * (Real.cos (t ^ 2) : ℂ)) = ((Real.pi : ℂ) / 2) ^ ((1 : ℂ) / 2) * cfresnelAuxF (a / (2 * (Real.pi : ℂ)) ^ ((1 : ℂ) / 2))",
+    "binders": {
+      "a": "C",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "equality",
+    "detail": "undersampled/domain",
+    "closure_hash": "d218a805c7fbdde47dccc462136bd21bcfeb49c4"
+  },
+  {
+    "name": "erf_7_7_16_dlmf",
+    "file": "FLMF/Functions/Error/Ch7IntegralReps.lean",
+    "line": 1292,
+    "tags": [
+      "7.7.16",
+      "7.2.11"
+    ],
+    "doc": "**DLMF 7.7.16**: `∫₀^∞ e^{-a t} sin(t²) dt = √(π/2)·g(a/√(2π))`, for complex `a` with `Re a > 0`, `g = cfresnelAuxG` the",
+    "concl": "(∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t : ℂ)) * (Real.sin (t ^ 2) : ℂ)) = ((Real.pi : ℂ) / 2) ^ ((1 : ℂ) / 2) * cfresnelAuxG (a / (2 * (Real.pi : ℂ)) ^ ((1 : ℂ) / 2))",
+    "binders": {
+      "a": "C",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "equality",
+    "detail": "undersampled/domain",
+    "closure_hash": "461ecf53e43e223516d082de250132f92cc23965"
+  },
+  {
+    "name": "cerf_7_14_2",
+    "file": "FLMF/Functions/Error/Ch7Integrals.lean",
+    "line": 87,
+    "tags": [
+      "7.14.2"
+    ],
+    "doc": "**DLMF 7.14.2** — Laplace transform of the complex error function `erf(bt)`, for `Re a > 0` and complex `b` with `|ph b|",
+    "concl": "∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t:ℂ)) * cerf (b * (t:ℂ)) = (1 / a) * Complex.exp (a ^ 2 / (4 * b ^ 2)) * cerfc (a / (2 * b))",
+    "binders": {
+      "a": "C",
+      "b": "C",
+      "ha": "other",
+      "hb": "other"
+    },
+    "constraints": {
+      "a.re": "pos",
+      "_pairs": [
+        [
+          "argwedge",
+          "b",
+          "0.78539816339744830961566084582",
+          true
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=5.281e-24 over 12pts",
+    "closure_hash": "20f4d0ee5c136fd7439c4a6cb850eaccfef844d0"
+  },
+  {
+    "name": "cerf_7_14_3",
+    "file": "FLMF/Functions/Error/Ch7Integrals.lean",
+    "line": 120,
+    "tags": [
+      "7.14.3"
+    ],
+    "doc": "**DLMF 7.14.3** — Laplace transform of the complex error function `erf(√(bt))`, for complex `a, b` with `Re a > 0`, `Re ",
+    "concl": "∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t:ℂ)) * cerf (Complex.sqrt (b * (t:ℂ))) = (1 / a) * Complex.sqrt (b / (a + b))",
+    "binders": {
+      "a": "C",
+      "b": "C",
+      "ha": "other",
+      "hb": "other"
+    },
+    "constraints": {
+      "a.re": "pos",
+      "b.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.986e-24 over 24pts",
+    "closure_hash": "dd22e69ae9f2e8fcdc2889d1ba41d311778690a9"
+  },
+  {
+    "name": "erf_7_14_4",
+    "file": "FLMF/Functions/Error/Ch7Integrals.lean",
+    "line": 140,
+    "tags": [
+      "7.14.4"
+    ],
+    "doc": "**DLMF 7.14.4** — Laplace-type transform of `erfc(√(at) + √(c/t))`: for complex `a, b, c` with `|ph a| < π/2`, `Re b > 0",
+    "concl": "∫ t in Ioi (0 : ℝ), Complex.exp ((a - b) * (t:ℂ)) * cerfc (Complex.sqrt (a * (t:ℂ)) + Complex.sqrt (c / (t:ℂ))) = Complex.exp (-2 * (Complex.sqrt (a * c) + Complex.sqrt (b * c))) / (Complex.sqrt b * (Complex.sqrt a + Complex.sqrt b))",
+    "binders": {
+      "a": "C",
+      "b": "C",
+      "c": "C",
+      "ha": "other",
+      "hb": "other",
+      "hc": "other"
+    },
+    "constraints": {
+      "b.re": "pos",
+      "c.re": "nonneg",
+      "_pairs": [
+        [
+          "argwedge",
+          "a",
+          "1.57079632679489661923132169164",
+          true
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=6.004e-26 over 18pts",
+    "closure_hash": "94e7aba84912325399246e7676d1402ccba6847b"
+  },
+  {
+    "name": "cfresnel_7_14_5",
+    "file": "FLMF/Functions/Error/Ch7Integrals.lean",
+    "line": 293,
+    "tags": [
+      "7.14.5"
+    ],
+    "doc": "**DLMF 7.14.5** — Laplace transform of the Fresnel cosine integral `C` (real argument `t`) via the complex auxiliary `f`",
+    "concl": "(∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t:ℂ)) * (FLMF.Fresnel.fresnelC t : ℂ)) = (1 / a) * FLMF.Fresnel.cfresnelAuxF (a / (π:ℂ))",
+    "binders": {
+      "a": "C",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.391e-10 over 2pts",
+    "closure_hash": "634243a0d552eea259e3250f286c4257c15f5ff7"
+  },
+  {
+    "name": "cfresnel_7_14_6",
+    "file": "FLMF/Functions/Error/Ch7Integrals.lean",
+    "line": 331,
+    "tags": [
+      "7.14.6"
+    ],
+    "doc": "**DLMF 7.14.6** — Laplace transform of the Fresnel sine integral `S` (real argument `t`) via the complex auxiliary `g`, ",
+    "concl": "(∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t:ℂ)) * (FLMF.Fresnel.fresnelS t : ℂ)) = (1 / a) * FLMF.Fresnel.cfresnelAuxG (a / (π:ℂ))",
+    "binders": {
+      "a": "C",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.673e-7 over 3pts",
+    "closure_hash": "cb5ddba025fc67f7070271267c62b7cca453c657"
+  },
+  {
+    "name": "cfresnel_7_14_7",
+    "file": "FLMF/Functions/Error/Ch7Integrals.lean",
+    "line": 828,
+    "tags": [
+      "7.14.7"
+    ],
+    "doc": "**DLMF 7.14.7** — Laplace transform of the Fresnel cosine integral `C(√(2t/π))` (real argument), for complex `a` with `R",
+    "concl": "∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t:ℂ)) * (FLMF.Fresnel.fresnelC (Real.sqrt (2 * t / π)) : ℂ) = Complex.sqrt (Complex.sqrt (a ^ 2 + 1) + a) / (2 * a * Complex.sqrt (a ^ 2 + 1))",
+    "binders": {
+      "a": "C",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=4.051e-10 over 6pts",
+    "closure_hash": "c3e8ffc48d14453e3554183edb6c35874b10600d"
+  },
+  {
+    "name": "cfresnel_7_14_8",
+    "file": "FLMF/Functions/Error/Ch7Integrals.lean",
+    "line": 869,
+    "tags": [
+      "7.14.8"
+    ],
+    "doc": "**DLMF 7.14.8** — Laplace transform of the Fresnel sine integral `S(√(2t/π))` (real argument), for complex `a` with `Re ",
+    "concl": "∫ t in Ioi (0 : ℝ), Complex.exp (-a * (t:ℂ)) * (FLMF.Fresnel.fresnelS (Real.sqrt (2 * t / π)) : ℂ) = Complex.sqrt (Complex.sqrt (a ^ 2 + 1) - a) / (2 * a * Complex.sqrt (a ^ 2 + 1))",
+    "binders": {
+      "a": "C",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=5.025e-10 over 6pts",
+    "closure_hash": "e9075955101b17208717f062c8c75d429d9216b7"
+  },
+  {
+    "name": "cfresnel_7_5_4",
+    "file": "FLMF/Functions/Error/Ch7Interrelations.lean",
+    "line": 77,
+    "tags": [
+      "7.5.4"
+    ],
+    "doc": "**DLMF 7.5.4** — reconstruction of the (complex) Fresnel sine integral from the complex auxiliary functions: `S(z) = ½ -",
+    "concl": "FLMF.Fresnel.cfresnelS z = 1 / 2 - FLMF.Fresnel.cfresnelAuxF z * Complex.cos (Real.pi * z ^ 2 / 2) - FLMF.Fresnel.cfresnelAuxG z * Complex.sin (Real.pi * z ^ 2 / 2)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.224e-25 over 4pts",
+    "closure_hash": "b4c1d5e44e0ee9140bbd049d3da6e0afa6d409e2"
+  },
+  {
+    "name": "erf_7_5_11",
+    "file": "FLMF/Functions/Error/Ch7Interrelations.lean",
+    "line": 138,
+    "tags": [
+      "7.5.11",
+      "7.5.11"
+    ],
+    "doc": "Modulus identity for the complex Fresnel function, `x ≥ 0`: `|𝓕(x)|² = f²(x) + g²(x)` (DLMF 7.5.11). With `𝓕(x) = ½(1+i)",
+    "concl": "(1 / 2 - fresnelC x) ^ 2 + (1 / 2 - fresnelS x) ^ 2 = fresnelAuxF x ^ 2 + fresnelAuxG x ^ 2",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "nonneg",
+      "_lower": {
+        "x": [
+          "0.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=4.93e-32 over 4pts",
+    "closure_hash": "8675769967ea661bf96b518bb6b32059ea37c42e"
+  },
+  {
+    "name": "erf_7_5_12",
+    "file": "FLMF/Functions/Error/Ch7Interrelations.lean",
+    "line": 155,
+    "tags": [
+      "7.5.12",
+      "7.5.12"
+    ],
+    "doc": "Modulus identity for the complex Fresnel function, `x ≤ 0`: `|𝓕(x)|² = 2 + f²(-x) + g²(-x) - 2√2·cos(π/4 + πx²/2)·f(-x) ",
+    "concl": "(1 / 2 - fresnelC x) ^ 2 + (1 / 2 - fresnelS x) ^ 2 = 2 + fresnelAuxF (-x) ^ 2 + fresnelAuxG (-x) ^ 2 - 2 * Real.sqrt 2 * Real.cos (Real.pi / 4 + Real.pi * x ^ 2 / 2) * fresnelAuxF (-x) - 2 * Real.sqrt 2 * Real.cos (Real.pi / 4 - Real.pi * x ^ 2 / 2) * fresnelAuxG (-x)",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "_upper": {
+        "x": [
+          "0.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.944e-31 over 4pts",
+    "closure_hash": "1b5299da5690634f744e68c10cc4c2eee04d4f5e"
+  },
+  {
+    "name": "erf_7_5_13",
+    "file": "FLMF/Functions/Error/Ch7Interrelations.lean",
+    "line": 190,
+    "tags": [
+      "7.5.13",
+      "7.5.13"
+    ],
+    "doc": "Goodwin–Staton integral in terms of Dawson's integral and `Ei`: `G(x) = √π·F(x) - ½ e^{-x²} Ei(x²)` for `x > 0`, where t",
+    "concl": "(∫ t in Set.Ioi (0:ℝ), Real.exp (-t ^ 2) / (t + x)) = Real.sqrt π * FLMF.dawson x - (1 / 2) * Real.exp (-x ^ 2) * FLMF.ExpIntegrals.Def.Ei (x ^ 2)",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "pos",
+      "_lower": {
+        "x": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.972e-31 over 4pts",
+    "closure_hash": "1739e82c36a0454710a14a0ed67f08d717b2ce53"
+  },
+  {
+    "name": "erf_7_17_1",
+    "file": "FLMF/Functions/Error/Ch7InverseErf.lean",
+    "line": 127,
+    "tags": [
+      "7.17.1",
+      "7.17.1"
+    ],
+    "doc": "**DLMF 7.17.1**: `inverf`/`inverfc` are the inverses of `erf`/`erfc`, on `erf`'s range `(-1, 1)` and `erfc`'s range `(0,",
+    "concl": "(∀ x : ℝ, |x| < 1 → erf (inverf x) = x) ∧ (∀ x : ℝ, 0 < x → x < 2 → erfc (inverfc x) = x)",
+    "binders": {},
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "regex",
+    "verdict": "unable to proceed",
+    "kind": "unparsed:forall-body unconsumed",
+    "detail": "",
+    "closure_hash": "ac392a66fd3965dc78ef84d47ad0feddff70c2ff"
+  },
+  {
+    "name": "erf_7_17_2_5",
+    "file": "FLMF/Functions/Error/Ch7InverseErf.lean",
+    "line": 162,
+    "tags": [
+      "7.17.2",
+      "7.17.2"
+    ],
+    "doc": "**DLMF 7.17.2_5.** Recursion for the power-series coefficients `a_m` of `inverf`: for every `m`, `a_{m+1} = (1/(2m+3)) ·",
+    "concl": "inverfCoeff (m + 1) = (1 / (2 * m + 3)) * ∑ n ∈ Finset.range (m + 1), ((2 * (n : ℝ) + 1) / (m - n + 1)) * inverfCoeff n * inverfCoeff (m - n)",
+    "binders": {
+      "m": "N"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 5pts",
+    "closure_hash": "86fb298ea543177b8fc64998f7bf9d9c052cabc6"
+  },
+  {
+    "name": "erf_7_17_4_dlmf",
+    "file": "FLMF/Functions/Error/Ch7InverseErf.lean",
+    "line": 254,
+    "tags": [
+      "7.17.4",
+      "7.17.6"
+    ],
+    "doc": "**DLMF 7.17.4.** For `x → 0⁺`, the first asymptotic coefficients of the `inverfc` large-argument expansion, in terms of ",
+    "concl": "asymA x 2 = (1 / 8) * asymV x ∧ asymA x 3 = -(1 / 32) * ((asymV x) ^ 2 + 6 * asymV x - 6) ∧ asymA x 4 = (1 / 384) * (4 * (asymV x) ^ 3 + 27 * (asymV x) ^ 2 + 108 * asymV x - 300)",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "pos",
+      "_lower": {
+        "x": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 3,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "3 conjuncts",
+    "closure_hash": "0fa0b0d4aba0065470ba21c4c20c8717fedf3f95"
+  },
+  {
+    "name": "erf_7_17_3",
+    "file": "FLMF/Functions/Error/Ch7InverseErf.lean",
+    "line": 273,
+    "tags": [
+      "7.17.3",
+      "7.17.3"
+    ],
+    "doc": "**DLMF 7.17.3.** Large-argument asymptotic expansion of `inverfc` as `x → 0⁺`: with `u = asymU x` (7.17.5) and the local",
+    "concl": "(fun x : ℝ => inverfc x - (asymU x) ^ (-(1 : ℝ) / 2)) =o[nhdsWithin 0 (Set.Ioi 0)] (fun x : ℝ => (asymU x) ^ (-(1 : ℝ) / 2))",
+    "binders": {},
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "asymptotic",
+    "detail": "filter nhdsWithin",
+    "closure_hash": "fb3102e7b0f220fcba61bb7652c0462138cd0ca7"
+  },
+  {
+    "name": "erf_7_11_1",
+    "file": "FLMF/Functions/Error/Ch7RelationsOther.lean",
+    "line": 63,
+    "tags": [
+      "7.11.1",
+      "7.11.1"
+    ],
+    "doc": "`erf z = (1/√π)·γ(½, z²)`: the error function as a lower incomplete gamma value (DLMF 7.11.1), real form (`z ≥ 0`, so `z",
+    "concl": "FLMF.Error.erf z = (1 / Real.sqrt Real.pi) * lowerGamma (1 / 2) (z ^ 2)",
+    "binders": {
+      "z": "R",
+      "hz": "other"
+    },
+    "constraints": {
+      "z": "nonneg",
+      "_lower": {
+        "z": [
+          "0.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=9.861e-32 over 4pts",
+    "closure_hash": "5f4d4c97e082759c2212b2293b132941ff12f817"
+  },
+  {
+    "name": "erf_7_11_3",
+    "file": "FLMF/Functions/Error/Ch7RelationsOther.lean",
+    "line": 86,
+    "tags": [
+      "7.11.3",
+      "7.11.3"
+    ],
+    "doc": "`erfc z = (z/√π)·E_{1/2}(z²)`: the complementary error function as a value of the generalized exponential integral `E_p`",
+    "concl": "FLMF.Error.erfc z = (z / Real.sqrt π) * expIntegralE (1 / 2) (z ^ 2)",
+    "binders": {
+      "z": "R",
+      "hz": "other"
+    },
+    "constraints": {
+      "z": "pos",
+      "_lower": {
+        "z": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.972e-31 over 4pts",
+    "closure_hash": "0b29cb5dfea0b74db1045e0648df2e9768de94f8"
+  },
+  {
+    "name": "erf_7_11_5",
+    "file": "FLMF/Functions/Error/Ch7RelationsOther.lean",
+    "line": 118,
+    "tags": [
+      "7.11.5",
+      "7.11.5"
+    ],
+    "doc": "**DLMF 7.11.5**: `erfc` as a Tricomi `U` value at two parameter pairs, `erfc z = (1/√π)·e^{-z²}·U(1/2, 1/2, z²) = (z/√π)",
+    "concl": "FLMF.Error.erfc z = (1 / Real.sqrt Real.pi) * Real.exp (-z ^ 2) * tricomiU (1 / 2) (1 / 2) (z ^ 2) ∧ FLMF.Error.erfc z = (z / Real.sqrt Real.pi) * Real.exp (-z ^ 2) * tricomiU 1 (3 / 2) (z ^ 2)",
+    "binders": {
+      "z": "R",
+      "hz": "other"
+    },
+    "constraints": {
+      "z": "pos",
+      "_lower": {
+        "z": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "515840bbc0f24982c0cbcc803350aadbd1673cf8"
+  },
+  {
+    "name": "erf_7_11_6",
+    "file": "FLMF/Functions/Error/Ch7RelationsOther.lean",
+    "line": 233,
+    "tags": [
+      "7.11.6",
+      "7.11.6"
+    ],
+    "doc": "**DLMF 7.11.6**, at DLMF's full complex-variable strength: the Fresnel integrals as Kummer confluent hypergeometric valu",
+    "concl": "cfresnelC z + Complex.I * cfresnelS z = z * FLMF.Hypergeometric.kummerM (1 / 2 : ℂ) (3 / 2 : ℂ) (Complex.I * Real.pi * z ^ 2 / 2) ∧ cfresnelC z + Complex.I * cfresnelS z = z * Complex.exp (Complex.I * Real.pi * z ^ 2 / 2) * FLMF.Hypergeometric.kummerM (1 : ℂ) (3 / 2 : ℂ) (-(Complex.I * Real.pi * z ^ 2 / 2))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "f54922ec5a38edd64ec3e6cf0ee476d2d39f507a"
+  },
+  {
+    "name": "erf_7_11_7_complex",
+    "file": "FLMF/Functions/Error/Ch7RelationsOther.lean",
+    "line": 475,
+    "tags": [
+      "7.11.7"
+    ],
+    "doc": "**DLMF 7.11.7**, at DLMF's full complex-variable strength: `C(z) = z·₁F₂(¼; 5/4, ½; −π²z⁴/16)`, for every `z ∈ ℂ`. Prove",
+    "concl": "cfresnelC z = z * pFq (𝔸 := ℂ) (![(1/4:ℂ)]) (![(5/4:ℂ), (1/2:ℂ)]) (-(Real.pi:ℂ)^2 * z^4/16)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "regex",
+    "verdict": "unable to proceed",
+    "kind": "unparsed:char '𝔸'",
+    "detail": "",
+    "closure_hash": "fdb1642896759ed33ddaf58184e2e228569eb2ee"
+  },
+  {
+    "name": "erf_7_11_8_complex",
+    "file": "FLMF/Functions/Error/Ch7RelationsOther.lean",
+    "line": 534,
+    "tags": [
+      "7.11.8"
+    ],
+    "doc": "**DLMF 7.11.8**, at DLMF's full complex-variable strength: `S(z) = (π/6)·z³·₁F₂(¾; 7/4, 3/2; −π²z⁴/16)`, for every `z ∈ ",
+    "concl": "cfresnelS z = ((Real.pi:ℂ) / 6) * z ^ 3 * pFq (𝔸 := ℂ) (![(3/4:ℂ)]) (![(7/4:ℂ), (3/2:ℂ)]) (-(Real.pi:ℂ)^2 * z^4/16)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "regex",
+    "verdict": "unable to proceed",
+    "kind": "unparsed:char '𝔸'",
+    "detail": "",
+    "closure_hash": "1cfb5dbf2e80bb46090f260e73c8005a3199d081"
+  },
+  {
+    "name": "erf_7_18_2",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 250,
+    "tags": [
+      "7.18.2",
+      "7.18.2"
+    ],
+    "doc": "**DLMF 7.18.2.** The repeated integral `iⁿerfc(z)`, for every `n = 0, 1, 2, …`, both as the tail integral of the previou",
+    "concl": "iRepErfc n z = ∫ t in Ioi z, iRepErfcPred n t ∧ iRepErfc n z = 2 / Real.sqrt Real.pi * ∫ t in Ioi z, (t - z) ^ n / n.factorial * Real.exp (-t ^ 2)",
+    "binders": {
+      "n": "N",
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "conjunction-partial",
+    "detail": "['unable to proceed', 'PASS']",
+    "closure_hash": "1961d5dfc68436b88a36f39a6d9e5c599b9fe2de"
+  },
+  {
+    "name": "erf_7_18_4",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 265,
+    "tags": [
+      "7.18.4",
+      "7.18.4"
+    ],
+    "doc": "`n`-th derivative relation for the repeated erfc (DLMF 7.18.4): `dⁿ/dzⁿ (e^{z²} erfc z) = (−1)ⁿ 2ⁿ n! e^{z²} iⁿerfc(z)`.",
+    "concl": "iteratedDeriv n (fun z => Real.exp (z ^ 2) * erfc z) z = (-1) ^ n * 2 ^ n * n.factorial * Real.exp (z ^ 2) * iRepErfc n z",
+    "binders": {
+      "n": "N",
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.87e-31 over 20pts",
+    "closure_hash": "bd06eb707559f843ea4891d33fbc4ae043b8f674"
+  },
+  {
+    "name": "erf_7_18_8",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 312,
+    "tags": [
+      "7.18.8",
+      "7.18.8",
+      "7.18.8"
+    ],
+    "doc": "Complex Hermite bridge for `iⁿerfc` (DLMF 7.18.8): the symmetric combination `(−1)ⁿiⁿerfc(z)+iⁿerfc(−z)` equals `i^{−n}/",
+    "concl": "(((-1) ^ n * iRepErfc n z + iRepErfc n (-z) : ℝ) : ℂ) = (2 * (-Complex.I) ^ n / ((2 : ℂ) ^ n * (n.factorial : ℂ))) * Polynomial.aeval (Complex.I * (z : ℂ)) (FLMF.Functions.Hermite.physHermite n)",
+    "binders": {
+      "n": "N",
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.358e-31 over 20pts",
+    "closure_hash": "682675d3b968dc3b431b6b87b8681e5ea6106469"
+  },
+  {
+    "name": "erf_7_18_6",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 758,
+    "tags": [
+      "7.18.6",
+      "7.18.6"
+    ],
+    "doc": "Maclaurin series of `iⁿerfc` (DLMF 7.18.6): `iⁿerfc(z) = ∑_{k≥0} (−1)ᵏ zᵏ / (2^{n−k} k! Γ(1+(n−k)/2))`. The exponent `n−",
+    "concl": "iRepErfc n z = ∑' k : ℕ, (-1) ^ k * z ^ k / ((2 : ℝ) ^ ((n : ℝ) - k) * k.factorial * Real.Gamma (1 + ((n : ℝ) - k) / 2))",
+    "binders": {
+      "n": "N",
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.136e-30 over 20pts",
+    "closure_hash": "f08041970b5a698ecb0eadf138672d52e665d1f1"
+  },
+  {
+    "name": "erf_7_18_9",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 776,
+    "tags": [
+      "7.18.9",
+      "7.18.9"
+    ],
+    "doc": "Kummer `M` (`₁F₁`) representation of `iⁿerfc` (DLMF 7.18.9): `iⁿerfc(z) = e^{−z²}( M(n/2+1/2,1/2,z²)/(2ⁿΓ(n/2+1)) − z·M(",
+    "concl": "iRepErfc n z = Real.exp (-z ^ 2) * (₁F₁ ((n : ℝ) / 2 + 1 / 2) (1 / 2) (z ^ 2) / ((2 : ℝ) ^ n * Real.Gamma ((n : ℝ) / 2 + 1)) - z * ₁F₁ ((n : ℝ) / 2 + 1) (3 / 2) (z ^ 2) / ((2 : ℝ) ^ ((n : ℝ) - 1) * Real.Gamma ((n : ℝ) / 2 + 1 / 2)))",
+    "binders": {
+      "n": "N",
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=4.205e-31 over 20pts",
+    "closure_hash": "c14f7ba7ce3bab50c81ba56dffdfdee9585f6f39"
+  },
+  {
+    "name": "erf_7_18_10",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 801,
+    "tags": [
+      "7.18.10",
+      "7.18.10"
+    ],
+    "doc": "Tricomi `U` representation of `iⁿerfc` (DLMF 7.18.10): for `z > 0`, `iⁿerfc(z) = e^{−z²}/(2ⁿ√π) · U(n/2+1/2, 1/2, z²)`. ",
+    "concl": "iRepErfc n z = Real.exp (-z ^ 2) / ((2 : ℝ) ^ n * Real.sqrt Real.pi) * FLMF.Hypergeometric.tricomiU ((n : ℝ) / 2 + 1 / 2) (1 / 2) (z ^ 2)",
+    "binders": {
+      "n": "N",
+      "z": "R",
+      "hz": "other"
+    },
+    "constraints": {
+      "z": "pos",
+      "_lower": {
+        "z": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=9.861e-32 over 20pts",
+    "closure_hash": "a5cef85831e7721081ee7bad1b13366891db3d8d"
+  },
+  {
+    "name": "erf_7_18_11",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 819,
+    "tags": [
+      "7.18.11",
+      "7.18.11",
+      "7.18.11"
+    ],
+    "doc": "Parabolic cylinder `U` representation of `iⁿerfc` (DLMF 7.18.11): `iⁿerfc(z) = e^{−z²/2}/(2^{(n−1)/2}√π) · U(n+1/2, z√2)",
+    "concl": "iRepErfc n z = Real.exp (-z ^ 2 / 2) / ((2 : ℝ) ^ (((n : ℝ) - 1) / 2) * Real.sqrt Real.pi) * FLMF.ParabolicCylinder.U ((n : ℝ) + 1 / 2) (z * Real.sqrt 2)",
+    "binders": {
+      "n": "N",
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.332e-31 over 20pts",
+    "closure_hash": "c90725ac9371662bb2c593f67f64d6ac5be60e4b"
+  },
+  {
+    "name": "erf_7_18_12",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 897,
+    "tags": [
+      "7.18.12",
+      "7.18.12"
+    ],
+    "doc": "Probability-function representation of `iⁿerfc` (DLMF 7.18.12): `iⁿerfc(z) = √2/((√2)ⁿ·√π)·Hhₙ(√2·z)`, with `Hh` the rep",
+    "concl": "iRepErfc n z = (Real.sqrt 2 / ((Real.sqrt 2) ^ n * Real.sqrt π)) * Hh n (Real.sqrt 2 * z)",
+    "binders": {
+      "n": "N",
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.774e-31 over 20pts",
+    "closure_hash": "64135f3d691991244e56d46e67fbd6b3f0c3b280"
+  },
+  {
+    "name": "erf_7_18_13_general",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 1374,
+    "tags": [
+      "7.18.13",
+      "7.18.1",
+      "7.18.13"
+    ],
+    "doc": "**DLMF 7.18.13** — continued-fraction expansion for the ratio of consecutive repeated integrals of the complementary err",
+    "concl": "Filter.Tendsto (fun N => FLMF.Error.cfConv (fun k => if k = 0 then 0 else if k = 1 then 1 / 2 else ((n : ℝ) + (k : ℝ) - 1) / 2) (fun k => if k = 0 then 0 else z) N) Filter.atTop (nhds (iRepErfc n z / (match n with | 0 => 2 / Real.sqrt Real.pi * Real.exp (-z ^ 2) | m + 1 => iRepErfc m z)))",
+    "binders": {
+      "n": "N",
+      "z": "R",
+      "hz": "other"
+    },
+    "constraints": {
+      "z": "pos",
+      "_lower": {
+        "z": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 3,
+    "links_source": "regex",
+    "verdict": "unable to proceed",
+    "kind": "unparsed:expected | got =>",
+    "detail": "",
+    "closure_hash": "e8f401098d417c2627a9d841cdc0bdf2fd2f9baf"
+  },
+  {
+    "name": "erf_7_18_14",
+    "file": "FLMF/Functions/Error/Ch7RepeatedErfc.lean",
+    "line": 1399,
+    "tags": [
+      "7.18.14",
+      "7.18.14"
+    ],
+    "doc": "Leading large-`z` asymptotic of `iⁿerfc` (DLMF 7.18.14): the `m = 0` term of the asymptotic series gives `iⁿerfc(z) ∼ (2",
+    "concl": "(fun z : ℝ => iRepErfc n z) ~[atTop] fun z : ℝ => 2 / Real.sqrt Real.pi * (Real.exp (-z ^ 2) / (2 * z) ^ (n + 1))",
+    "binders": {
+      "n": "N"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "asymptotic",
+    "detail": "uncertified (dev@end=0.07046)",
+    "closure_hash": "b973fec2f4f3de532c71d04660f37a6f99f97c88"
+  },
+  {
+    "name": "cfresnel_7_6_4",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 166,
+    "tags": [
+      "7.6.4"
+    ],
+    "doc": "**DLMF 7.6.4** — Maclaurin series for the complex Fresnel cosine integral `C`, `C(z) = ∑ₙ (-1)ⁿ(π/2)^{2n}/((2n)!(4n+1)) ",
+    "concl": "FLMF.Fresnel.cfresnelC z = ∑' n : ℕ, (-1 : ℂ) ^ n * ((Real.pi : ℂ) / 2) ^ (2 * n) / ((2 * n).factorial * (4 * n + 1)) * z ^ (4 * n + 1)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=7.183e-31 over 4pts",
+    "closure_hash": "69a85a898f89e1beb89789bdbae1417e61567fe1"
+  },
+  {
+    "name": "cfresnel_7_6_5",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 442,
+    "tags": [
+      "7.6.5"
+    ],
+    "doc": "**DLMF 7.6.5** — Cosine/sine-modulated series for the complex Fresnel cosine integral `C`, `C(z) = cos(πz²/2)·∑ₙ (-1)ⁿπ^",
+    "concl": "FLMF.Fresnel.cfresnelC z = Complex.cos (Real.pi * z ^ 2 / 2) * (∑' n : ℕ, (-1 : ℂ) ^ n * (Real.pi : ℂ) ^ (2 * n) / (∏ k ∈ Finset.range (2 * n + 1), (2 * k + 1 : ℂ)) * z ^ (4 * n + 1)) + Complex.sin (Real.pi * z ^ 2 / 2) * (∑' n : ℕ, (-1 : ℂ) ^ n * (Real.pi : ℂ) ^ (2 * n + 1) / (∏ k ∈ Finset.range (2 * n + 2), (2 * k + 1 : ℂ)) * z ^ (4 * n + 3))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=6.57e-28 over 4pts",
+    "closure_hash": "ede45d9c8f5cd78a168d89176396162f19cc93f3"
+  },
+  {
+    "name": "cfresnel_7_6_6",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 586,
+    "tags": [
+      "7.6.6"
+    ],
+    "doc": "**DLMF 7.6.6** — Maclaurin series for the complex Fresnel sine integral `S`, `S(z) = ∑ₙ (-1)ⁿ(π/2)^{2n+1}/((2n+1)!(4n+3)",
+    "concl": "FLMF.Fresnel.cfresnelS z = ∑' n : ℕ, (-1 : ℂ) ^ n * ((Real.pi : ℂ) / 2) ^ (2 * n + 1) / ((2 * n + 1).factorial * (4 * n + 3)) * z ^ (4 * n + 3)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=7.942e-31 over 4pts",
+    "closure_hash": "6aeb8621f4474c2f1aa32e54820160f9b503f477"
+  },
+  {
+    "name": "cfresnel_7_6_7",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 672,
+    "tags": [
+      "7.6.7"
+    ],
+    "doc": "**DLMF 7.6.7** — Cosine/sine-modulated series for the complex Fresnel sine integral `S`, `S(z) = -cos(πz²/2)·∑ₙ (-1)ⁿπ^{",
+    "concl": "FLMF.Fresnel.cfresnelS z = -Complex.cos (Real.pi * z ^ 2 / 2) * (∑' n : ℕ, (-1 : ℂ) ^ n * (Real.pi : ℂ) ^ (2 * n + 1) / (∏ k ∈ Finset.range (2 * n + 2), (2 * k + 1 : ℂ)) * z ^ (4 * n + 3)) + Complex.sin (Real.pi * z ^ 2 / 2) * (∑' n : ℕ, (-1 : ℂ) ^ n * (Real.pi : ℂ) ^ (2 * n) / (∏ k ∈ Finset.range (2 * n + 1), (2 * k + 1 : ℂ)) * z ^ (4 * n + 1))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.817e-27 over 4pts",
+    "closure_hash": "8b0ab4a4103e972058b78598f8f15ba111a31155"
+  },
+  {
+    "name": "cerf_7_6_8",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 708,
+    "tags": [
+      "7.6.8"
+    ],
+    "doc": "**DLMF 7.6.8** — Modified-spherical-Bessel series for the complex error function `erf`, `erf(z) = (2z/√π)·∑ₙ (-1)ⁿ(i_{2n",
+    "concl": "FLMF.Error.cerf z = (2 * z / (Real.sqrt π : ℂ)) * ∑' n : ℕ, (-1 : ℂ) ^ n * (FLMF.Bessel.modSphericalIC (2 * n) (z ^ 2) - FLMF.Bessel.modSphericalIC (2 * n + 1) (z ^ 2))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "equality",
+    "detail": "unbound:FLMF.Bessel.modSphericalIC",
+    "closure_hash": "5fa56c54d31a0eaee8b431cb0b938220510c8038"
+  },
+  {
+    "name": "cerf_7_6_9",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 739,
+    "tags": [
+      "7.6.9"
+    ],
+    "doc": "**DLMF 7.6.9** — Chebyshev/modified-spherical-Bessel series for the scaled complex error function `erf (a z)`, for real ",
+    "concl": "FLMF.Error.cerf ((a : ℂ) * z) = (2 * z / (Real.sqrt π : ℂ)) * Complex.exp (((1 / 2 - a ^ 2 : ℝ) : ℂ) * z ^ 2) * ∑' n : ℕ, (((Polynomial.Chebyshev.T ℝ (2 * n + 1)).eval a : ℝ) : ℂ) * FLMF.Bessel.modSphericalIC n (z ^ 2 / 2)",
+    "binders": {
+      "a": "R",
+      "z": "C",
+      "ha": "other",
+      "ha'": "other"
+    },
+    "constraints": {
+      "_lower": {
+        "a": [
+          "-1.0",
+          false
+        ]
+      },
+      "_upper": {
+        "a": [
+          "1.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "equality",
+    "detail": "unbound:FLMF.Bessel.modSphericalIC",
+    "closure_hash": "031cf4602c5c7e5b8a2720e1ce50cca7786d4267"
+  },
+  {
+    "name": "erf_7_6_10",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 755,
+    "tags": [
+      "7.6.10",
+      "7.6.10"
+    ],
+    "doc": "Spherical-Bessel series for the Fresnel cosine integral `C` (DLMF 7.6.10). DLMF 7.6.10. DAG: E-7.6.10. Fidelity: tier1 P",
+    "concl": "FLMF.Fresnel.fresnelC z = z * ∑' n : ℕ, FLMF.Bessel.sphericalJ (2 * n) (π * z ^ 2 / 2)",
+    "binders": {
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=9.861e-32 over 4pts",
+    "closure_hash": "97e21b0fc257ff6e6f5da8266b8a71aedd9f80a1"
+  },
+  {
+    "name": "erf_7_6_11",
+    "file": "FLMF/Functions/Error/Ch7Series.lean",
+    "line": 768,
+    "tags": [
+      "7.6.11",
+      "7.6.11"
+    ],
+    "doc": "Spherical-Bessel series for the Fresnel sine integral `S` (DLMF 7.6.11). DLMF 7.6.11. DAG: E-7.6.11. Fidelity: tier1 PAS",
+    "concl": "FLMF.Fresnel.fresnelS z = z * ∑' n : ℕ, FLMF.Bessel.sphericalJ (2 * n + 1) (π * z ^ 2 / 2)",
+    "binders": {
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=9.861e-32 over 4pts",
+    "closure_hash": "622972aafaeec77325de08482408351e9152f722"
+  },
+  {
+    "name": "cerfc_neg",
+    "file": "FLMF/Functions/Error/Ch7Symmetry.lean",
+    "line": 80,
+    "tags": [
+      "7.4.2",
+      "7.4.2"
+    ],
+    "doc": "**DLMF 7.4.2** — the complex complementary error function is symmetric: `erfc(-z) = 2 - erfc(z)`. DLMF 7.4.2. DAG: E-7.4",
+    "concl": "cerfc (-z) = 2 - cerfc z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 4pts",
+    "closure_hash": "e0de1e2ad894e7bb4173fa282ca654034fbfb562"
+  },
+  {
+    "name": "erf_7_4_4",
+    "file": "FLMF/Functions/Error/Ch7Symmetry.lean",
+    "line": 103,
+    "tags": [
+      "7.4.4",
+      "7.4.4"
+    ],
+    "doc": "The Dawson integral is odd: `F(-z) = -F(z)` (DLMF 7.4.4). DLMF 7.4.4. DAG: E-7.4.4. Fidelity: tier1 PASS Verified: unver",
+    "concl": "FLMF.dawson (-z) = -FLMF.dawson z",
+    "binders": {
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 4pts",
+    "closure_hash": "ef3fda596c7d0c6db91be5d85d29d4c3039d7aa9"
+  },
+  {
+    "name": "cfresnel_7_4_8",
+    "file": "FLMF/Functions/Error/Ch7Symmetry.lean",
+    "line": 185,
+    "tags": [
+      "7.4.8",
+      "7.4.8"
+    ],
+    "doc": "**DLMF 7.4.8** — reflection formula for the complex Fresnel auxiliary functions `f`, `g` at `-z`: `f(-z) = √2 cos(π/4 + ",
+    "concl": "FLMF.Fresnel.cfresnelAuxF (-z) = (Real.sqrt 2 : ℂ) * Complex.cos ((Real.pi : ℂ) / 4 + (Real.pi : ℂ) * z ^ 2 / 2) - FLMF.Fresnel.cfresnelAuxF z ∧ FLMF.Fresnel.cfresnelAuxG (-z) = (Real.sqrt 2 : ℂ) * Complex.sin ((Real.pi : ℂ) / 4 + (Real.pi : ℂ) * z ^ 2 / 2) - FLMF.Fresnel.cfresnelAuxG z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "af0daf9815ae980c876521742d234e6437f79c0c"
+  },
+  {
+    "name": "erf_7_19_4",
+    "file": "FLMF/Functions/Error/Ch7VoigtExtra.lean",
+    "line": 361,
+    "tags": [
+      "7.19.4",
+      "7.19.4"
+    ],
+    "doc": "**DLMF 7.19.4.** The line-broadening function `H(a,u)`, both as its defining integral `(a/π) ∫_ℝ e^{-t²} dt/((u-t)²+a²)`",
+    "concl": "lineBroadeningH a u = (a / Real.pi) * ∫ s : ℝ, Real.exp (-s ^ 2) / ((u - s) ^ 2 + a ^ 2) ∧ lineBroadeningH a u = (1 / (a * Real.sqrt Real.pi)) * FLMF.Voigt.voigtU (u / a) (1 / (4 * a ^ 2))",
+    "binders": {
+      "a": "R",
+      "ha": "other",
+      "u": "R"
+    },
+    "constraints": {
+      "a": "pos",
+      "_lower": {
+        "a": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "04d8d77b3c1a9990a96b893774c367efbb25dc61"
+  },
+  {
+    "name": "erf_7_19_5",
+    "file": "FLMF/Functions/Error/Ch7VoigtExtra.lean",
+    "line": 405,
+    "tags": [
+      "7.19.5",
+      "7.19.5"
+    ],
+    "doc": "Limits of `U` and `V` as `t → 0⁺` (DLMF 7.19.5). DLMF 7.19.5. DAG: E-7.19.5. Fidelity: tier1 PASS Verified: verified (ti",
+    "concl": "Tendsto (fun t : ℝ => FLMF.Voigt.voigtU x t) (nhdsWithin 0 (Set.Ioi 0)) (nhds (1 / (1 + x ^ 2))) ∧ Tendsto (fun t : ℝ => FLMF.Voigt.voigtV x t) (nhdsWithin 0 (Set.Ioi 0)) (nhds (x / (1 + x ^ 2)))",
+    "binders": {
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "1429dde76607e3f49958cd0bf46e9db2d27c6c28"
+  },
+  {
+    "name": "erf_7_19_7",
+    "file": "FLMF/Functions/Error/Ch7VoigtExtra.lean",
+    "line": 449,
+    "tags": [
+      "7.19.7",
+      "7.19.7"
+    ],
+    "doc": "Bounds `0 < U(x,t) ≤ 1` and `-1 ≤ V(x,t) ≤ 1` for `t > 0` (DLMF 7.19.7). DLMF 7.19.7. DAG: E-7.19.7. Fidelity: tier1 PAS",
+    "concl": "0 < FLMF.Voigt.voigtU x t ∧ FLMF.Voigt.voigtU x t ≤ 1 ∧ -1 ≤ FLMF.Voigt.voigtV x t ∧ FLMF.Voigt.voigtV x t ≤ 1",
+    "binders": {
+      "t": "R",
+      "ht": "other",
+      "x": "R"
+    },
+    "constraints": {
+      "t": "pos",
+      "_lower": {
+        "t": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 4,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "4 conjuncts",
+    "closure_hash": "60385da7691e60e42131a72426185677f1a07dfb"
+  },
+  {
+    "name": "erf_7_19_8",
+    "file": "FLMF/Functions/Error/Ch7VoigtExtra.lean",
+    "line": 655,
+    "tags": [
+      "7.19.8",
+      "7.19",
+      "7.19.8"
+    ],
+    "doc": "Differential relation `V = x U + 2t ∂U/∂x` (DLMF 7.19.8), for `t > 0` (the DLMF §7.19 domain). DLMF 7.19.8. DAG: E-7.19.",
+    "concl": "FLMF.Voigt.voigtV x t = x * FLMF.Voigt.voigtU x t + 2 * t * deriv (fun x' : ℝ => FLMF.Voigt.voigtU x' t) x",
+    "binders": {
+      "x": "R",
+      "t": "R",
+      "ht": "other"
+    },
+    "constraints": {
+      "t": "pos",
+      "_lower": {
+        "t": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=4.93e-32 over 16pts",
+    "closure_hash": "492d54afdfe724fdbdf04e5a46e2cbc4d4d03a33"
+  },
+  {
+    "name": "erf_7_19_9",
+    "file": "FLMF/Functions/Error/Ch7VoigtExtra.lean",
+    "line": 736,
+    "tags": [
+      "7.19.9",
+      "7.19",
+      "7.19.9"
+    ],
+    "doc": "Differential relation `U = 1 - x V - 2t ∂V/∂x` (DLMF 7.19.9), for `t > 0` (the DLMF §7.19 domain). DLMF 7.19.9. DAG: E-7",
+    "concl": "FLMF.Voigt.voigtU x t = 1 - x * FLMF.Voigt.voigtV x t - 2 * t * deriv (fun x' : ℝ => FLMF.Voigt.voigtV x' t) x",
+    "binders": {
+      "x": "R",
+      "t": "R",
+      "ht": "other"
+    },
+    "constraints": {
+      "t": "pos",
+      "_lower": {
+        "t": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.944e-31 over 16pts",
+    "closure_hash": "7ede6691b4c68ec63d833300902bd71b05b33418"
+  },
+  {
+    "name": "erf_7_19_10",
+    "file": "FLMF/Functions/Error/Ch7VoigtExtra.lean",
+    "line": 818,
+    "tags": [
+      "7.19.10",
+      "7.19.10",
+      "7.19.1"
+    ],
+    "doc": "Cosine integral representation of `U` (DLMF 7.19.10). DLMF 7.19.10 states this for `U(x,t)` on its DLMF 7.19.1 domain `x",
+    "concl": "FLMF.Voigt.voigtU (u / a) (1 / (4 * a ^ 2)) = a * ∫ s in Set.Ioi (0 : ℝ), Real.exp (-a * s - s ^ 2 / 4) * Real.cos (u * s)",
+    "binders": {
+      "a": "R",
+      "ha": "other",
+      "u": "R"
+    },
+    "constraints": {
+      "a": "pos",
+      "_lower": {
+        "a": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.958e-31 over 16pts",
+    "closure_hash": "13a4f0cb565792ecb28945cf36d1b3c305eaacd8"
+  },
+  {
+    "name": "erf_7_19_11",
+    "file": "FLMF/Functions/Error/Ch7VoigtExtra.lean",
+    "line": 845,
+    "tags": [
+      "7.19.11",
+      "7.19.11"
+    ],
+    "doc": "Sine integral representation of `V` (DLMF 7.19.11). DLMF 7.19.11. DAG: E-7.19.11. Fidelity: tier1 PASS Verified: verifie",
+    "concl": "FLMF.Voigt.voigtV (u / a) (1 / (4 * a ^ 2)) = a * ∫ s in Set.Ioi (0 : ℝ), Real.exp (-a * s - s ^ 2 / 4) * Real.sin (u * s)",
+    "binders": {
+      "a": "R",
+      "ha": "other",
+      "u": "R"
+    },
+    "constraints": {
+      "a": "pos",
+      "_lower": {
+        "a": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.451e-31 over 16pts",
+    "closure_hash": "765dea0a89234f35f9ce94c2ee2b1cde0d914a21"
+  },
+  {
+    "name": "cerf_neg",
+    "file": "FLMF/Functions/Error/ComplexErf.lean",
+    "line": 107,
+    "tags": [
+      "7.4.1",
+      "7.4.1"
+    ],
+    "doc": "**DLMF 7.4.1.** `cerf` is odd: `cerf (-z) = - cerf z`. DLMF 7.4.1. Fidelity: tier1 PASS Verified: verified (tier2) DAG: ",
+    "concl": "cerf (-z) = - cerf z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 4pts",
+    "closure_hash": "f22ba9b71be9d6ff855b393168edfb23c088eca6"
+  },
+  {
+    "name": "cerf_7_10_1",
+    "file": "FLMF/Functions/Error/ComplexErf.lean",
+    "line": 266,
+    "tags": [
+      "7.10.1"
+    ],
+    "doc": "**DLMF 7.10.1** — the `(n+1)`-th derivative of the complex error function: `d^{n+1} erf(z) / dz^{n+1} = (-1)ⁿ (2/√π) Hₙ(",
+    "concl": "iteratedDeriv (n + 1) cerf z = (-1) ^ n * (2 / Real.sqrt Real.pi : ℂ) * (Polynomial.aeval z (FLMF.Functions.Hermite.physHermite n)) * Complex.exp (-z ^ 2)",
+    "binders": {
+      "n": "N",
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=5.359e-31 over 20pts",
+    "closure_hash": "d64023bf57bc553a98fbdffdf9d132a559fbe918"
+  },
+  {
+    "name": "erf_7_7_3",
+    "file": "FLMF/Functions/Error/ComplexErfExtra.lean",
+    "line": 55,
+    "tags": [
+      "7.7.3",
+      "7.7.3"
+    ],
+    "doc": "Gaussian integral `∫₀^∞ e^{-at²+2izt} dt = ½√(π/a) e^{-z²/a} erfc(-iz/√a)`, valid for `ℜ a > 0` (DLMF 7.7.3). DLMF 7.7.3",
+    "concl": "(∫ t in Set.Ioi (0:ℝ), Complex.exp (-a*(t:ℂ)^2 + 2*Complex.I*z*(t:ℂ))) = (1/2)*(Real.sqrt Real.pi : ℂ)*a^(-(1:ℂ)/2)*Complex.exp (-z^2/a) *cerfc (-Complex.I*z*a^(-(1:ℂ)/2))",
+    "binders": {
+      "a": "C",
+      "z": "C",
+      "ha": "other"
+    },
+    "constraints": {
+      "a.re": "pos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.5e-31 over 24pts",
+    "closure_hash": "fba85146ee6695ed1c97abdebe892c75c494940d"
+  },
+  {
+    "name": "erf_7_7_7_dlmf",
+    "file": "FLMF/Functions/Error/ComplexErfExtra.lean",
+    "line": 247,
+    "tags": [
+      "7.7.7"
+    ],
+    "doc": "**DLMF 7.7.7** — the two-sided Gaussian integral over `(x,∞)`, `∫ₓ^∞ e^{-a²t² - b²/t²} dt = (√π/(4a))·(e^{2ab} erfc(ax+b",
+    "concl": "(∫ t in Set.Ioi x, Complex.exp (-a^2*(t:ℂ)^2 - b^2/(t:ℂ)^2)) = ((Real.sqrt Real.pi : ℂ)/(4*a)) * (Complex.exp (2*a*b)*cerfc (a*(x:ℂ) + b/(x:ℂ)) + Complex.exp (-2*a*b)*cerfc (a*(x:ℂ) - b/(x:ℂ)))",
+    "binders": {
+      "a": "C",
+      "b": "C",
+      "x": "R",
+      "hx": "other",
+      "hph": "other"
+    },
+    "constraints": {
+      "x": "pos",
+      "_lower": {
+        "x": [
+          "0.0",
+          true
+        ]
+      },
+      "_pairs": [
+        [
+          "argwedge",
+          "a",
+          "0.78539816339744830961566084582",
+          true
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.805e-24 over 8pts",
+    "closure_hash": "3630c82ff23730c61cc382ffad659b04b31ffdd5"
+  },
+  {
+    "name": "erf_7_7_8_dlmf",
+    "file": "FLMF/Functions/Error/ComplexErfExtra.lean",
+    "line": 333,
+    "tags": [
+      "7.7.8"
+    ],
+    "doc": "**DLMF 7.7.8** — the two-sided Gaussian integral over `(0,∞)`, `∫₀^∞ e^{-a²t² - b²/t²} dt = (√π/(2a))·e^{-2ab}`, for com",
+    "concl": "(∫ t in Set.Ioi (0:ℝ), Complex.exp (-a^2*(t:ℂ)^2 - b^2/(t:ℂ)^2)) = ((Real.sqrt Real.pi : ℂ)/(2*a)) * Complex.exp (-2*a*b)",
+    "binders": {
+      "a": "C",
+      "b": "C",
+      "hpha": "other",
+      "hphb": "other"
+    },
+    "constraints": {
+      "_pairs": [
+        [
+          "argwedge",
+          "a",
+          "0.78539816339744830961566084582",
+          true
+        ],
+        [
+          "argwedge",
+          "b",
+          "0.78539816339744830961566084582",
+          true
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=9.928e-15 over 4pts",
+    "closure_hash": "cc290b192bce42f517b00352e796adc5a9f769ad"
+  },
+  {
+    "name": "erf_7_14_1_full",
+    "file": "FLMF/Functions/Error/ComplexErfExtra.lean",
+    "line": 376,
+    "tags": [
+      "7.14.1"
+    ],
+    "doc": "**DLMF 7.14.1** — `∫₀^∞ e^{2iat} erfc(bt) dt = (1/(a√π))·F(a/b) + (i/(2a))·(1 - e^{-(a/b)²})`, with `F` the complex Daws",
+    "concl": "(∫ t in Set.Ioi (0:ℝ), Complex.exp (2*Complex.I*a*(t:ℂ)) * cerfc (b*(t:ℂ))) = if a = 0 then 1/(b*(Real.sqrt Real.pi : ℂ)) else (1/(a*(Real.sqrt Real.pi : ℂ)))*cdawson (a/b) + (Complex.I/(2*a))*(1 - Complex.exp (-(a/b)^2))",
+    "binders": {
+      "a": "C",
+      "b": "C",
+      "hb0": "other",
+      "hph": "other"
+    },
+    "constraints": {
+      "b": "nonzero",
+      "_pairs": [
+        [
+          "argwedge",
+          "b",
+          "0.78539816339744830961566084582",
+          true
+        ]
+      ]
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.504e-30 over 12pts",
+    "closure_hash": "620841b9fb1279b489a7ab1356e5c222d1a2dbfb"
+  },
+  {
+    "name": "erf_7_9_3",
+    "file": "FLMF/Functions/Error/ComplexErfExtra.lean",
+    "line": 394,
+    "tags": [
+      "7.9.3",
+      "7.9.3"
+    ],
+    "doc": "Gautschi continued fraction for the Faddeeva function (DLMF 7.9.3): `w(z) = (i/√π)·1/(z − ½/(z − 1/(z − 3/2/(z − ⋯))))` ",
+    "concl": "Filter.Tendsto (fun N => (Complex.I/(Real.sqrt Real.pi : ℂ)) * cfConvC (fun k => if k = 0 then 0 else if k = 1 then 1 else -((k:ℂ)-1)/2) (fun k => if k = 0 then 0 else z) N) Filter.atTop (nhds (faddeeva z))",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "z.im": "pos",
+      "z": "impos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "asymptotic",
+    "detail": "cfConv rel@settle=7.33e-31 over 4",
+    "closure_hash": "56679b084d10e51c1d5325fd1058817b5100b621"
+  },
+  {
+    "name": "erf_7_13_2",
+    "file": "FLMF/Functions/Error/ComplexZeros.lean",
+    "line": 60,
+    "tags": [
+      "7.13.2"
+    ],
+    "doc": "DLMF 7.13.2 — records the parameter equations for the `erf` zeros. Fidelity: tier1 PASS Verified: unverified DAG: E-7.13",
+    "concl": "erfZeroLambda n = Real.sqrt (((n : ℝ) - 1 / 8) * Real.pi) ∧ erfZeroMu n = Real.log (erfZeroLambda n * Real.sqrt (2 * Real.pi))",
+    "binders": {
+      "n": "N"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "15f5a6a09b9925c89292c20c27a4b193592a8201"
+  },
+  {
+    "name": "erf_7_13_1",
+    "file": "FLMF/Functions/Error/ComplexZeros.lean",
+    "line": 107,
+    "tags": [
+      "7.13.1",
+      "7.13.1"
+    ],
+    "doc": "**DLMF 7.13.1** — asymptotic expansion of the first-quadrant zeros `zₙ = xₙ + i yₙ` of `erf`. For the complete strictly-",
+    "concl": "(fun n => (z n).re - erfZeroReApprox n) =o[atTop] (fun n => (erfZeroLambda n) ^ (-3 : ℤ)) ∧ (fun n => (z n).im - erfZeroImApprox n) =o[atTop] (fun n => (erfZeroLambda n) ^ (-3 : ℤ))",
+    "binders": {
+      "z": "other",
+      "hall": "other"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "conjunction-partial",
+    "detail": "['unable to proceed', 'unable to proceed']",
+    "closure_hash": "188c35aa43a1e50f9476956ae80787bf9d5128e2"
+  },
+  {
+    "name": "erf_7_13_4",
+    "file": "FLMF/Functions/Error/ComplexZeros.lean",
+    "line": 143,
+    "tags": [
+      "7.13.4"
+    ],
+    "doc": "DLMF 7.13.4 — records the parameter equations for the `erfc` zeros. Fidelity: tier1 PASS Verified: unverified DAG: E-7.1",
+    "concl": "erfcZeroLambda n = Real.sqrt (((n : ℝ) - 1 / 8) * Real.pi) ∧ erfcZeroMu n = Real.log (2 * erfcZeroLambda n * Real.sqrt (2 * Real.pi))",
+    "binders": {
+      "n": "N"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "92bb4880d12bebc04862f0bd3646e04ef364654a"
+  },
+  {
+    "name": "erf_7_13_3",
+    "file": "FLMF/Functions/Error/ComplexZeros.lean",
+    "line": 190,
+    "tags": [
+      "7.13.3",
+      "7.13.3"
+    ],
+    "doc": "**DLMF 7.13.3** — asymptotic expansion of the zeros `zₙ = xₙ + i yₙ` of `erfc` in the sector `re < 0 < im`. For the comp",
+    "concl": "(fun n => (z n).re - erfcZeroReApprox n) =o[atTop] (fun n => (erfcZeroLambda n) ^ (-3 : ℤ)) ∧ (fun n => (z n).im - erfcZeroImApprox n) =o[atTop] (fun n => (erfcZeroLambda n) ^ (-3 : ℤ))",
+    "binders": {
+      "z": "other",
+      "hall": "other"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "conjunction-partial",
+    "detail": "['unable to proceed', 'unable to proceed']",
+    "closure_hash": "e2f41bc3e167ac4057049536b4893c34c545a54b"
+  },
+  {
+    "name": "erf_7_13_6",
+    "file": "FLMF/Functions/Error/ComplexZeros.lean",
+    "line": 232,
+    "tags": [
+      "7.13.6"
+    ],
+    "doc": "DLMF 7.13.6 — records the parameter equations for the Fresnel `C` zeros. Fidelity: tier1 PASS Verified: unverified DAG: ",
+    "concl": "fresnelCZeroLambda n = Real.sqrt (4 * (n : ℝ) - 1) ∧ fresnelCZeroAlpha n = (2 / Real.pi) * Real.log (Real.pi * fresnelCZeroLambda n)",
+    "binders": {
+      "n": "N"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "4e462ba3ba34b628ea0f0b84aa9cbe71920c6f07"
+  },
+  {
+    "name": "erf_7_13_7",
+    "file": "FLMF/Functions/Error/ComplexZeros.lean",
+    "line": 265,
+    "tags": [
+      "7.13.7"
+    ],
+    "doc": "DLMF 7.13.7 — records the parameter equations for the Fresnel `S` zeros, for the `n`-th zero (`n ≥ 1`); at `n = 0` the p",
+    "concl": "fresnelSZeroLambda n = 2 * Real.sqrt (n : ℝ) ∧ fresnelSZeroAlpha n = (2 / Real.pi) * Real.log (Real.pi * fresnelSZeroLambda n)",
+    "binders": {
+      "n": "N",
+      "_hn": "other"
+    },
+    "constraints": {
+      "n": "nonzero"
+    },
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "7a3fe7d1ef2de4fa6eeb85807f6e0767be2a788c"
+  },
+  {
+    "name": "erf_7_13_5_full",
+    "file": "FLMF/Functions/Error/ComplexZeros.lean",
+    "line": 384,
+    "tags": [
+      "7.13.5",
+      "7.13.6",
+      "7.13.7",
+      "7.13"
+    ],
+    "doc": "**DLMF 7.13.5** — asymptotic expansion, as `n → ∞`, of the complex zeros of BOTH Fresnel integrals from the single displ",
+    "concl": "((fun n => (zC n).re - fresnelCZeroReApprox n) =o[atTop] (fun n => (fresnelCZeroLambda n) ^ (-3 : ℤ)) ∧ (fun n => (zC n).im - fresnelCZeroImApprox n) =o[atTop] (fun n => (fresnelCZeroLambda n) ^ (-1 : ℤ))) ∧ ((fun n => (zS n).re - fresnelSZeroReApprox n) =o[atTop] (fun n => (fresnelSZeroLambda n) ^ (-3 : ℤ)) ∧ (fun n => (zS n).im - fresnelSZeroImApprox n) =o[atTop] (fun n => (fresnelSZeroLambda n) ^ (-1 : ℤ)))",
+    "binders": {
+      "zC": "other",
+      "hallC": "other",
+      "zS": "other",
+      "hallS": "other"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 4,
+    "links_source": "regex",
+    "verdict": "unable to proceed",
+    "kind": "unparsed:expected ) got ∧",
+    "detail": "",
+    "closure_hash": "a3fb88b5d56942c59c911e7814c0f4d50d61de8a"
+  },
+  {
+    "name": "erf_tendsto_one",
+    "file": "FLMF/Functions/Error/Erf.lean",
+    "line": 103,
+    "tags": [
+      "7.2.1",
+      "7.2.1"
+    ],
+    "doc": "**DLMF 7.2.1 limit.** `erf x → 1` as `x → ∞`. DLMF 7.2.1. Fidelity: tier1 PASS Verified: unverified DAG: E-7.2.1.",
+    "concl": "Tendsto erf atTop (𝓝 1)",
+    "binders": {},
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "asymptotic",
+    "detail": "rel@end=0.0 over 1",
+    "closure_hash": "8fabf2d26a5b02ff4ba1e99fbd0cec104ea9910c"
+  },
+  {
+    "name": "erf_7_2_2",
+    "file": "FLMF/Functions/Error/Erf.lean",
+    "line": 208,
+    "tags": [
+      "7.2.2",
+      "7.2.2"
+    ],
+    "doc": "**DLMF 7.2.2**: the complementary error function's tail-integral representation and its complementary relation to `erf`,",
+    "concl": "erfc z = (2 / Real.sqrt Real.pi) * ∫ t in Set.Ioi z, Real.exp (-t ^ 2) ∧ erfc z = 1 - erf z",
+    "binders": {
+      "z": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "d5fb6728591d46261ab05c497a50734daa784d60"
+  },
+  {
+    "name": "erfc_7_12_1_complex_series",
+    "file": "FLMF/Functions/Error/ErfcSeries.lean",
+    "line": 374,
+    "tags": [
+      "7.12.1"
+    ],
+    "doc": "**DLMF 7.12.1.** The complete (Poincaré) asymptotic expansion of `erfc` for complex `z → ∞` in the closed sector `|ph z|",
+    "concl": "Tendsto (fun z : ℂ => z ^ (2 * N + 1) * ((Real.sqrt Real.pi : ℂ) * Complex.exp (z ^ 2) * cerfc z - ∑ m ∈ Finset.range N, (-1 : ℂ) ^ m * (ascPochhammer ℂ m).eval (1 / 2 : ℂ) / z ^ (2 * m + 1))) (comap norm atTop ⊓ principal {z : ℂ | |Complex.arg z| ≤ 3 * Real.pi / 4 - δ}) (𝓝 ((-1 : ℂ) ^ N * (ascPochhammer ℂ N).eval (1 / 2 : ℂ)))",
+    "binders": {
+      "N": "N",
+      "δ": "R",
+      "hδ": "other",
+      "hδ'": "other"
+    },
+    "constraints": {
+      "δ": "pos",
+      "_lower": {
+        "δ": [
+          "0.0",
+          true
+        ]
+      },
+      "_upper": {
+        "δ": [
+          "2.35619449019234492884698253746",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "regex",
+    "verdict": "unable to proceed",
+    "kind": "unparsed:char '⊓'",
+    "detail": "",
+    "closure_hash": "baa9d0f729345c803c00ab49103b6909e95ccec9"
+  },
+  {
+    "name": "erf_7_4_3",
+    "file": "FLMF/Functions/Error/Faddeeva.lean",
+    "line": 59,
+    "tags": [
+      "7.4.3",
+      "7.4.3"
+    ],
+    "doc": "Reflection formula `w(-z) = 2e^{-z²} - w(z)` (DLMF 7.4.3). Proven from the oddness of the complex error function (`cerf_",
+    "concl": "faddeeva (-z) = 2 * Complex.exp (-z ^ 2) - faddeeva z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.863e-31 over 4pts",
+    "closure_hash": "47dcd169d87d24c1405a1a3ce2c36d743b1cd9fb"
+  },
+  {
+    "name": "erf_7_10_2",
+    "file": "FLMF/Functions/Error/Faddeeva.lean",
+    "line": 74,
+    "tags": [
+      "7.10.2",
+      "7.10.2"
+    ],
+    "doc": "First-order differential equation `w'(z) = -2z·w(z) + 2i/√π` (DLMF 7.10.2). DLMF 7.10.2. DAG: E-7.10.2. Fidelity: tier1 ",
+    "concl": "HasDerivAt faddeeva (-2 * z * faddeeva z + 2 * Complex.I / (Real.sqrt Real.pi : ℂ)) z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "deriv",
+    "detail": "worst=1.016e-31 over 4pts",
+    "closure_hash": "c09d02885c58e217f0d8cfa5f1b846fbf0276dff"
+  },
+  {
+    "name": "erf_7_10_3",
+    "file": "FLMF/Functions/Error/Faddeeva.lean",
+    "line": 129,
+    "tags": [
+      "7.10.3",
+      "7.10.3"
+    ],
+    "doc": "Derivative recurrence `w⁽ⁿ⁺²⁾(z) + 2z·w⁽ⁿ⁺¹⁾(z) + 2(n+1)·w⁽ⁿ⁾(z) = 0` (DLMF 7.10.3). DLMF 7.10.3. DAG: E-7.10.3. Fidelit",
+    "concl": "iteratedDeriv (n + 2) faddeeva z + 2 * z * iteratedDeriv (n + 1) faddeeva z + 2 * ((n : ℂ) + 1) * iteratedDeriv n faddeeva z = 0",
+    "binders": {
+      "n": "N",
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.01e-27 over 20pts",
+    "closure_hash": "1ab5400a9377cfe2cc62ad93293f63f78df947eb"
+  },
+  {
+    "name": "erf_7_7_2",
+    "file": "FLMF/Functions/Error/Faddeeva.lean",
+    "line": 689,
+    "tags": [
+      "7.7.2",
+      "7.7.2"
+    ],
+    "doc": "**DLMF 7.7.2**: the Faddeeva function's Cauchy integral representations, `w(z) = (1/(πi)) ∫_{-∞}^{∞} e^{-t²}/(t-z) dt = ",
+    "concl": "faddeeva z = (1 / ((Real.pi : ℂ) * Complex.I)) * ∫ t : ℝ, Complex.exp (-(t : ℂ) ^ 2) / ((t : ℂ) - z) ∧ faddeeva z = (2 * z / ((Real.pi : ℂ) * Complex.I)) * ∫ t in Set.Ioi (0 : ℝ), Complex.exp (-(t : ℂ) ^ 2) / ((t : ℂ) ^ 2 - z ^ 2)",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "z.im": "pos",
+      "z": "impos"
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "fbcd1e4bfdbd16b85b379bb58ed147398b818a89"
+  },
+  {
+    "name": "erf_7_19_3",
+    "file": "FLMF/Functions/Error/Faddeeva.lean",
+    "line": 1176,
+    "tags": [
+      "7.19.3",
+      "7.19.3"
+    ],
+    "doc": "Voigt combination `U(x,t) + iV(x,t) = √(π/(4t))·e^{z²}·erfc(z)` with `z = (1 - ix)/(2√t)` (DLMF 7.19.3). The hypotheses ",
+    "concl": "(FLMF.Voigt.voigtU x t : ℂ) + Complex.I * (FLMF.Voigt.voigtV x t : ℂ) = (Real.sqrt (Real.pi / (4 * t)) : ℂ) * Complex.exp (((1 - Complex.I * x) / (2 * (Real.sqrt t : ℂ))) ^ 2) * cerfc ((1 - Complex.I * x) / (2 * (Real.sqrt t : ℂ)))",
+    "binders": {
+      "x": "R",
+      "t": "R",
+      "ht": "other"
+    },
+    "constraints": {
+      "t": "pos",
+      "_lower": {
+        "t": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.559e-31 over 16pts",
+    "closure_hash": "bb4721d073e44d3fe0f02732e5e10e3da2a5cd1d"
+  },
+  {
+    "name": "erf_7_2_3",
+    "file": "FLMF/Functions/Error/Faddeeva.lean",
+    "line": 1294,
+    "tags": [
+      "7.2.3",
+      "7.2.3"
+    ],
+    "doc": "**DLMF 7.2.3**: the Faddeeva function's Dawson-type integral representation and its definitional relation to `erfc`, `w(",
+    "concl": "faddeeva z = Complex.exp (-z ^ 2) * (1 + (2 * Complex.I / (Real.sqrt Real.pi : ℂ)) * (z * ∫ t in (0 : ℝ)..1, Complex.exp (((t : ℂ) * z) ^ 2))) ∧ faddeeva z = Complex.exp (-z ^ 2) * cerfc (-(Complex.I * z))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "5f576e28b41ce84eb79e33a0efba957108aa8c56"
+  },
+  {
+    "name": "erf_7_6_3",
+    "file": "FLMF/Functions/Error/Faddeeva.lean",
+    "line": 1583,
+    "tags": [
+      "7.6.3",
+      "7.6.3"
+    ],
+    "doc": "Maclaurin series `w(z) = ∑ₙ (iz)ⁿ / Γ(½n+1)`, convergent for all `z` (DLMF 7.6.3). DLMF 7.6.3. DAG: E-7.6.3. Fidelity: t",
+    "concl": "faddeeva z = ∑' n : ℕ, (Complex.I * z) ^ n / Complex.Gamma ((n : ℂ) / 2 + 1)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=9.214e-30 over 4pts",
+    "closure_hash": "6a194c807a51a4eb202e1f1aa13106a5c1b0c36c"
+  },
+  {
+    "name": "cerf_eq_tsum",
+    "file": "FLMF/Functions/Error/KummerBridge.lean",
+    "line": 150,
+    "tags": [
+      "7.6.1",
+      "7.6.1"
+    ],
+    "doc": "**DLMF 7.6.1** (full strength, complex `z`) — the Maclaurin series of the complex error function: `erf z = (2/√π) ∑ (−1)",
+    "concl": "cerf z = 2 / (Real.sqrt Real.pi : ℂ) * ∑' n : ℕ, (-1) ^ n / n ! * (z ^ (2 * n + 1) / (2 * n + 1))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.307e-30 over 4pts",
+    "closure_hash": "dff2c86571ee3e31330925eeeda831cd02cce839"
+  },
+  {
+    "name": "erf_7_11_4",
+    "file": "FLMF/Functions/Error/KummerBridge.lean",
+    "line": 288,
+    "tags": [
+      "7.11.4",
+      "7.11.4"
+    ],
+    "doc": "**DLMF 7.11.4**, at DLMF's full complex-variable strength — the error function as a Kummer confluent hypergeometric valu",
+    "concl": "cerf z = 2 / (Real.sqrt Real.pi : ℂ) * z * ₁F₁ ((1 : ℂ) / 2) (3 / 2) (-z ^ 2) ∧ cerf z = 2 / (Real.sqrt Real.pi : ℂ) * z * Complex.exp (-z ^ 2) * ₁F₁ (1 : ℂ) (3 / 2) (z ^ 2)",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "a55b7e704bc52ba08e68792eaa8555c08a54dca4"
+  },
+  {
+    "name": "erf_7_18_1",
+    "file": "FLMF/Functions/Error/RepeatedErfc.lean",
+    "line": 95,
+    "tags": [
+      "7.18.1",
+      "7.18.1"
+    ],
+    "doc": "**DLMF 7.18.1.** The `n = -1` and `n = 0` base cases of the repeated-integral family: `i⁻¹erfc(z) = (2/√π)e^{-z²}` and `",
+    "concl": "iRepErfcNegOne x = 2 / Real.sqrt Real.pi * Real.exp (-x ^ 2) ∧ iRepErfc 0 x = erfc x",
+    "binders": {
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "8ca4f9e1c347527bd98216c5fe4ae1c579a8be45"
+  },
+  {
+    "name": "hasDerivAt_iRepErfc_succ",
+    "file": "FLMF/Functions/Error/RepeatedErfc.lean",
+    "line": 334,
+    "tags": [
+      "7.18.3",
+      "7.18.3"
+    ],
+    "doc": "**DLMF 7.18.3.** `d/dx i^{n+1}erfc(x) = − iⁿerfc(x)` — the derivative relation `(d/dz) iⁿerfc(z) = − i^{n−1}erfc(z)` in ",
+    "concl": "HasDerivAt (iRepErfc (n + 1)) (-iRepErfc n x) x",
+    "binders": {
+      "n": "N",
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "deriv",
+    "detail": "worst=4.93e-32 over 16pts",
+    "closure_hash": "5dfc7512a86d3ef58c9c8461d23b7227a8c5328d"
+  },
+  {
+    "name": "deriv_iRepErfc_succ",
+    "file": "FLMF/Functions/Error/RepeatedErfc.lean",
+    "line": 354,
+    "tags": [
+      "7.18.3",
+      "7.18.3"
+    ],
+    "doc": "The derivative-of-`deriv` form of DLMF 7.18.3. DLMF 7.18.3. Fidelity: tier1 PASS Verified: unverified DAG: E-7.18.3.",
+    "concl": "deriv (iRepErfc (n + 1)) x = -iRepErfc n x",
+    "binders": {
+      "n": "N",
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 3pts",
+    "closure_hash": "933f2c3c7417256371ea15493fe49708bff274be"
+  },
+  {
+    "name": "erf_7_18_7",
+    "file": "FLMF/Functions/Error/RepeatedErfc.lean",
+    "line": 469,
+    "tags": [
+      "7.18.7",
+      "7.18.7"
+    ],
+    "doc": "**DLMF 7.18.7.** The three-term recurrence `2n·iⁿerfc(z) = i^{n−2}erfc(z) − 2z·i^{n−1}erfc(z)`. Shifted to `n ↦ n+2` so ",
+    "concl": "2 * ((n : ℝ) + 2) * iRepErfc (n + 2) x = iRepErfc n x - 2 * x * iRepErfc (n + 1) x",
+    "binders": {
+      "n": "N",
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.137e-31 over 20pts",
+    "closure_hash": "a4a9481115edf8635044f6c03062fe8b653c33ab"
+  },
+  {
+    "name": "erf_7_18_5",
+    "file": "FLMF/Functions/Error/RepeatedErfc.lean",
+    "line": 547,
+    "tags": [
+      "7.18.5",
+      "7.18.5"
+    ],
+    "doc": "**DLMF 7.18.5.** Every member `W(z) = A·iⁿerfc(z) + B·iⁿerfc(−z)` of the general solution family (arbitrary constants `A",
+    "concl": "deriv (deriv (fun z => A * iRepErfc n z + B * iRepErfc n (-z))) x + 2 * x * deriv (fun z => A * iRepErfc n z + B * iRepErfc n (-z)) x - 2 * (n : ℝ) * (A * iRepErfc n x + B * iRepErfc n (-x)) = 0",
+    "binders": {
+      "n": "N",
+      "hn": "other",
+      "A": "R",
+      "B": "R",
+      "x": "R"
+    },
+    "constraints": {
+      "n": "ge1",
+      "_lower": {
+        "n": [
+          "1.0",
+          false
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.944e-31 over 3pts",
+    "closure_hash": "bd5239980c78e59d1939c04b40ed1a428917ebc8"
+  },
+  {
+    "name": "erfc_eq_tricomiU",
+    "file": "FLMF/Functions/Error/TricomiBridge.lean",
+    "line": 31,
+    "tags": [
+      "7.11.2",
+      "7.11.2"
+    ],
+    "doc": "**`erfc` as a Tricomi `U`** (DLMF 7.11.2): `erfc(x) = (x/√π) · e^{−x²} · U(1; 3/2; x²)` for `x > 0`. DLMF 7.11.2. Fideli",
+    "concl": "erfc x = x / Real.sqrt Real.pi * Real.exp (-x ^ 2) * tricomiU 1 (3 / 2) (x ^ 2)",
+    "binders": {
+      "x": "R",
+      "hx": "other"
+    },
+    "constraints": {
+      "x": "pos",
+      "_lower": {
+        "x": [
+          "0.0",
+          true
+        ]
+      }
+    },
+    "ns": "FLMF.Error",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.972e-31 over 4pts",
+    "closure_hash": "dde6c4d22ce4dcb899eb556345073d0c638d7f3c"
+  },
+  {
+    "name": "cfresnel_7_4_5",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 151,
+    "tags": [
+      "7.4.5",
+      "7.4.5"
+    ],
+    "doc": "**DLMF 7.4.5** (the one-conjunction theorem, complex form). The complex Fresnel integrals are both odd: `C(-z) = -C(z)` ",
+    "concl": "cfresnelC (-z) = - cfresnelC z ∧ cfresnelS (-z) = - cfresnelS z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "2b4724cc83a782478a54be9104e0f07a00d52d5e"
+  },
+  {
+    "name": "cfresnel_7_4_6",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 181,
+    "tags": [
+      "7.4.6",
+      "7.4.6"
+    ],
+    "doc": "Imaginary-argument relations `C(iz) = i·C(z)` and `S(iz) = -i·S(z)` (DLMF 7.4.6). Proven: the squared argument turns `i`",
+    "concl": "cfresnelC (Complex.I * z) = Complex.I * cfresnelC z ∧ cfresnelS (Complex.I * z) = -Complex.I * cfresnelS z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "0f604a2bcf0ed39b9699a202f4d2468b7facb01f"
+  },
+  {
+    "name": "cfresnel_7_5_8",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 215,
+    "tags": [
+      "7.5.8",
+      "7.5.8"
+    ],
+    "doc": "`C(z) ± iS(z) = ½(1±i)·erf(ζ)` with `ζ = ½√π(1∓i)z` (DLMF 7.5.8, both signs; the first conjunct is the upper-sign case, ",
+    "concl": "(cfresnelC z + Complex.I * cfresnelS z = (1 / 2) * (1 + Complex.I) * cerf ((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 - Complex.I) * z)) ∧ (cfresnelC z - Complex.I * cfresnelS z = (1 / 2) * (1 - Complex.I) * cerf ((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 + Complex.I) * z))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "e7ab1764740ed08c7bb625ccb33b50128bc56609"
+  },
+  {
+    "name": "cfresnel_7_5_9",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 283,
+    "tags": [
+      "7.5.9",
+      "7.5.9"
+    ],
+    "doc": "`C(z) ± iS(z) = ½(1±i)(1 - e^{±½πiz²}·w(iζ))` with `ζ = ½√π(1∓i)z` (DLMF 7.5.9, both signs; the first conjunct is the up",
+    "concl": "(cfresnelC z + Complex.I * cfresnelS z = (1 / 2) * (1 + Complex.I) * (1 - Complex.exp ((1 / 2) * Real.pi * Complex.I * z ^ 2) * faddeeva (Complex.I * ((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 - Complex.I) * z)))) ∧ (cfresnelC z - Complex.I * cfresnelS z = (1 / 2) * (1 - Complex.I) * (1 - Complex.exp (-((1 / 2) * Real.pi * Complex.I * z ^ 2)) * faddeeva (Complex.I * ((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 + Complex.I) * z))))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "e0f269cd26b17dc1e9a1ee2787d0fafb8d295078"
+  },
+  {
+    "name": "cfresnel_7_4_7",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 379,
+    "tags": [
+      "7.4.7",
+      "7.4.7"
+    ],
+    "doc": "Imaginary-argument relations for the auxiliaries (DLMF 7.4.7): `f(iz) = ½(1+i)e^{-iπz²/2} - i f(z)` and `g(iz) = ½(1-i)e",
+    "concl": "cfresnelAuxF (Complex.I * z) = (1 / 2) * (1 + Complex.I) * Complex.exp (-(Complex.I * Real.pi * z ^ 2 / 2)) - Complex.I * cfresnelAuxF z ∧ cfresnelAuxG (Complex.I * z) = (1 / 2) * (1 - Complex.I) * Complex.exp (-(Complex.I * Real.pi * z ^ 2 / 2)) + Complex.I * cfresnelAuxG z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "a0fa4e75e7dbcc190f8d110e7d213231e8cb1540"
+  },
+  {
+    "name": "cfresnel_7_5_6",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 421,
+    "tags": [
+      "7.5.6",
+      "7.5.6"
+    ],
+    "doc": "`e^{±½πiz²}(g(z) ± i f(z)) = ½(1±i) - (C(z) ± iS(z))` (DLMF 7.5.6, both signs; the first conjunct is the upper-sign case",
+    "concl": "(Complex.exp ((1 / 2) * Real.pi * Complex.I * z ^ 2) * (cfresnelAuxG z + Complex.I * cfresnelAuxF z) = (1 / 2) * (1 + Complex.I) - (cfresnelC z + Complex.I * cfresnelS z)) ∧ (Complex.exp (-((1 / 2) * Real.pi * Complex.I * z ^ 2)) * (cfresnelAuxG z - Complex.I * cfresnelAuxF z) = (1 / 2) * (1 - Complex.I) - (cfresnelC z - Complex.I * cfresnelS z))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "21fc8d0662a8f772a338548d92644a06f6582701"
+  },
+  {
+    "name": "cfresnel_7_5_10",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 463,
+    "tags": [
+      "7.5.10",
+      "7.5.10"
+    ],
+    "doc": "`g(z) ± i f(z) = ½(1±i)·e^{ζ²}·erfc(ζ)` with `ζ = ½√π(1∓i)z` (DLMF 7.5.10, both signs; the first conjunct is the upper-s",
+    "concl": "(cfresnelAuxG z + Complex.I * cfresnelAuxF z = (1 / 2) * (1 + Complex.I) * Complex.exp (((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 - Complex.I) * z) ^ 2) * cerfc ((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 - Complex.I) * z)) ∧ (cfresnelAuxG z - Complex.I * cfresnelAuxF z = (1 / 2) * (1 - Complex.I) * Complex.exp (((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 + Complex.I) * z) ^ 2) * cerfc ((1 / 2) * (Real.sqrt Real.pi : ℂ) * (1 + Complex.I) * z))",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "d67c947f449499c41b4eecaa45b9fd020ebd6bb6"
+  },
+  {
+    "name": "cfresnel_7_5_2",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 554,
+    "tags": [
+      "7.5.2",
+      "7.5.2"
+    ],
+    "doc": "The complex Fresnel integral in terms of `C` and `S`: `C(z)+iS(z) = ½(1+i) - ℱ(z)` (DLMF 7.5.2). DLMF 7.5.2. DAG: E-7.5.",
+    "concl": "cfresnelC z + Complex.I * cfresnelS z = (1/2)*(1+Complex.I) - cfresnelScriptF z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=0.0 over 4pts",
+    "closure_hash": "01358f536db87218e221bb1b4ac00adb7fad21c4"
+  },
+  {
+    "name": "cfresnel_7_5_7",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 567,
+    "tags": [
+      "7.5.7",
+      "7.5.7"
+    ],
+    "doc": "The auxiliary complex variable `ζ = ½√π(1∓i)z` (DLMF 7.5.7, both sign choices: `fresnelZeta` realizes the upper sign `(1",
+    "concl": "fresnelZeta z = (1/2)*(Real.sqrt Real.pi : ℂ)*(1 - Complex.I)*z ∧ fresnelZetaLower z = (1/2)*(Real.sqrt Real.pi : ℂ)*(1 + Complex.I)*z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "8ecd82d9ab7a7c326e62eb22e64e07424c750e46"
+  },
+  {
+    "name": "cfresnel_7_5_5",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 579,
+    "tags": [
+      "7.5.5",
+      "7.5.5"
+    ],
+    "doc": "`e^{-½πiz²}ℱ(z) = g(z) + i f(z)` (DLMF 7.5.5, upper sign). DLMF 7.5.5. DAG: E-7.5.5. Fidelity: tier1 PASS Verified: veri",
+    "concl": "Complex.exp (-(((1:ℂ)/2)*Real.pi*Complex.I*z^2)) * cfresnelScriptF z = cfresnelAuxG z + Complex.I * cfresnelAuxF z",
+    "binders": {
+      "z": "C"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=3.143e-26 over 4pts",
+    "closure_hash": "44f5ec278aa7c8fdec245d2a767a42c2826ad40e"
+  },
+  {
+    "name": "cfresnel_7_2_6",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 956,
+    "tags": [
+      "7.2.6",
+      "7.2.6"
+    ],
+    "doc": "Integral representation of the complex Fresnel integral `ℱ(z) = ∫_z^∞ e^{½πit²}dt`, written along the ray `t = z+s`, val",
+    "concl": "cfresnelScriptF z = ∫ s in Set.Ioi (0:ℝ), Complex.exp ((1/2)*Real.pi*Complex.I*((z + (s:ℂ))^2))",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "z.im": "pos",
+      "z": "impos"
+    },
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=5.851e-12 over 4pts",
+    "closure_hash": "aca21b25bf74e0d7fdda37ff7cb448457d0af6e4"
+  },
+  {
+    "name": "cfresnel_7_7_12",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 996,
+    "tags": [
+      "7.7.12",
+      "7.7.12"
+    ],
+    "doc": "`g(z) + i f(z) = e^{-½πiz²}∫_z^∞ e^{½πit²}dt` (DLMF 7.7.12), the integral representation of the auxiliary functions alon",
+    "concl": "cfresnelAuxG z + Complex.I * cfresnelAuxF z = Complex.exp (-(((1:ℂ)/2)*Real.pi*Complex.I*z^2)) * ∫ s in Set.Ioi (0:ℝ), Complex.exp ((1/2)*Real.pi*Complex.I*((z + (s:ℂ))^2))",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "z.im": "pos",
+      "z": "impos"
+    },
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=2.056e-11 over 4pts",
+    "closure_hash": "0c9163cf543c35b74bff0ee38c873d078f62d7ee"
+  },
+  {
+    "name": "cfresnel_7_7_13",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 1015,
+    "tags": [
+      "7.7.13",
+      "7.7.13"
+    ],
+    "doc": "Mellin–Barnes representation of the auxiliary `f` (DLMF 7.7.13), as a vertical-line contour integral parametrized by `s ",
+    "concl": "cfresnelAuxF z = ((Real.rpow (2*Real.pi) (-(3:ℝ)/2) : ℝ) : ℂ) * (1/(2*Real.pi*Complex.I)) * ∫ t : ℝ, (Complex.cpow (Real.pi^2 * z^4 / 16) (-((c:ℂ) + Complex.I*t)) * Complex.Gamma ((c:ℂ)+Complex.I*t) * Complex.Gamma ((c:ℂ)+Complex.I*t+1/2) * Complex.Gamma ((c:ℂ)+Complex.I*t+3/4) * Complex.Gamma (1/4 - ((c:ℂ)+Complex.I*t))) * Complex.I",
+    "binders": {
+      "z": "C",
+      "c": "R",
+      "hc0": "other",
+      "hc1": "other",
+      "hz0": "other",
+      "hph": "other"
+    },
+    "constraints": {
+      "c": "pos",
+      "_lower": {
+        "c": [
+          "0.0",
+          true
+        ]
+      },
+      "_upper": {
+        "c": [
+          "0.25",
+          true
+        ]
+      },
+      "z": "nonzero"
+    },
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "contour-sector-unverified",
+    "detail": "(equality) worst=1.013 over 18pts",
+    "closure_hash": "31d9d145ff2c44b697392047937ecd8ef1b8d299"
+  },
+  {
+    "name": "cfresnel_7_7_14",
+    "file": "FLMF/Functions/Fresnel/Complex.lean",
+    "line": 1035,
+    "tags": [
+      "7.7.14",
+      "7.7.14"
+    ],
+    "doc": "Mellin–Barnes representation of the auxiliary `g` (DLMF 7.7.14), as a vertical-line contour integral parametrized by `s ",
+    "concl": "cfresnelAuxG z = ((Real.rpow (2*Real.pi) (-(3:ℝ)/2) : ℝ) : ℂ) * (1/(2*Real.pi*Complex.I)) * ∫ t : ℝ, (Complex.cpow (Real.pi^2 * z^4 / 16) (-((c:ℂ) + Complex.I*t)) * Complex.Gamma ((c:ℂ)+Complex.I*t) * Complex.Gamma ((c:ℂ)+Complex.I*t+1/2) * Complex.Gamma ((c:ℂ)+Complex.I*t+1/4) * Complex.Gamma (3/4 - ((c:ℂ)+Complex.I*t))) * Complex.I",
+    "binders": {
+      "z": "C",
+      "c": "R",
+      "hc0": "other",
+      "hc1": "other",
+      "hz0": "other",
+      "hph": "other"
+    },
+    "constraints": {
+      "c": "pos",
+      "_lower": {
+        "c": [
+          "0.0",
+          true
+        ]
+      },
+      "_upper": {
+        "c": [
+          "0.75",
+          true
+        ]
+      },
+      "z": "nonzero"
+    },
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "contour-sector-unverified",
+    "detail": "(equality) worst=0.9999 over 24pts",
+    "closure_hash": "4d88f5ceb0d4a27803a3a9389668de42e6b42613"
+  },
+  {
+    "name": "fresnel_eq_kummerM",
+    "file": "FLMF/Functions/Fresnel/KummerBridge.lean",
+    "line": 81,
+    "tags": [
+      "7.11.6",
+      "7.11.6"
+    ],
+    "doc": "**The Fresnel integrals as a terminating-free `₁F₁` instance** (DLMF 7.11.6): `C(x) + i S(x) = x · M(1/2; 3/2; iπx²/2)`,",
+    "concl": "(fresnelC x : ℂ) + Complex.I * fresnelS x = x * ₁F₁ ((1 : ℂ) / 2) (3 / 2) (Complex.I * Real.pi * x ^ 2 / 2)",
+    "binders": {
+      "x": "R"
+    },
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "equality",
+    "detail": "worst=1.102e-31 over 4pts",
+    "closure_hash": "c32f8284238e84468bf46fba3d91802168d8f7ec"
+  },
+  {
+    "name": "fresnel_7_2_9",
+    "file": "FLMF/Functions/Fresnel/Limit.lean",
+    "line": 670,
+    "tags": [
+      "7.2.9",
+      "7.2.9"
+    ],
+    "doc": "**DLMF 7.2.9** — the limiting values of the Fresnel integrals at `+∞`: `lim_{x→∞} C(x) = 1/2` and `lim_{x→∞} S(x) = 1/2`",
+    "concl": "Tendsto fresnelC atTop (𝓝 (1 / 2)) ∧ Tendsto fresnelS atTop (𝓝 (1 / 2))",
+    "binders": {},
+    "constraints": {},
+    "ns": "FLMF.Fresnel",
+    "links_asserted": 2,
+    "links_source": "ast",
+    "verdict": "PASS",
+    "kind": "conjunction",
+    "detail": "2 conjuncts",
+    "closure_hash": "49e16fdf4e3c76dad1d14035dfce9466918d601b"
+  },
+  {
+    "name": "gamma_5_10_1",
+    "file": "FLMF/Functions/Gamma/Ch5BetaCF.lean",
+    "line": 8056,
+    "tags": [
+      "5.10.1",
+      "7.9",
+      "1.12.27",
+      "5.10.1"
+    ],
+    "doc": "**Binet's continued fraction** (DLMF 5.10.1): for `ℜz > 0`, `Ln Γ(z) = (z − ½) Ln z − z + ½ Ln(2π) + a₀/(z + a₁/(z + a₂/",
+    "concl": "Filter.Tendsto (fun n => (z - 1 / 2) * Complex.log z - z + (1 / 2) * Complex.log (2 * (π : ℂ)) + FLMF.Error.cfConvC (fun k => (binetCFCoeff (k - 1) : ℂ)) (fun k => if k = 0 then 0 else z) n) Filter.atTop (nhds (FLMF.Gamma.lnGammaBinet z))",
+    "binders": {
+      "z": "C",
+      "hz": "other"
+    },
+    "constraints": {
+      "z.re": "pos"
+    },
+    "ns": "FLMF.Functions.Gamma",
+    "links_asserted": 1,
+    "links_source": "ast",
+    "verdict": "unable to proceed",
+    "kind": "tier1-pending",
+    "detail": "extract-only run: numeric gate not executed",
+    "closure_hash": "0d85fd7380fa2404f3d2d2f9cb6a1fc5b2e27da4"
+  }
+]

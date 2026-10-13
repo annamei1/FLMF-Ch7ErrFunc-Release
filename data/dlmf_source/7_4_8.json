@@ -1,0 +1,100 @@
+{
+ "tag": "7.4.8",
+ "url": "https://dlmf.nist.gov/7.4#E8",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle=\\sqrt{2}\\cos\\left(\\tfrac{1}{4}\\pi+\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{f}\\left(z\\right),",
+  "\\displaystyle=\\sqrt{2}\\sin\\left(\\tfrac{1}{4}\\pi+\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{g}\\left(z\\right).",
+  "\\displaystyle\\mathrm{f}\\left(-z\\right)",
+  "\\displaystyle\\mathrm{g}\\left(-z\\right)",
+  "\\mathrm{f}\\left(\\NVar{z}\\right)",
+  "\\mathrm{g}\\left(\\NVar{z}\\right)",
+  "\\cos\\NVar{z}",
+  "\\sin\\NVar{z}",
+  "\\mathrm{i}",
+  "\\pi",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.4.1",
+   "\\displaystyle=-\\operatorname{erf}\\left(z\\right),"
+  ],
+  [
+   "7.4.2",
+   "\\displaystyle=2-\\operatorname{erfc}\\left(z\\right),"
+  ],
+  [
+   "7.4.3",
+   "\\displaystyle=2e^{-z^{2}}-w\\left(z\\right)."
+  ],
+  [
+   "7.4.4",
+   "\\displaystyle=-F\\left(z\\right)."
+  ],
+  [
+   "7.4.5",
+   "\\displaystyle=-C\\left(z\\right),"
+  ],
+  [
+   "7.4.6",
+   "\\displaystyle=-iS\\left(z\\right)."
+  ],
+  [
+   "7.4.7",
+   "\\displaystyle=(1/\\sqrt{2})e^{-\\frac{1}{4}\\pi i-\\frac{1}{2}\\pi iz^{2}}+i\\mathrm{g}\\left(z\\right)."
+  ],
+  [
+   "7.4.8",
+   "\\displaystyle=\\sqrt{2}\\cos\\left(\\tfrac{1}{4}\\pi+\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{f}\\left(z\\right),"
+  ]
+ ],
+ "context": "itle=\"(1.9.1) \u2023 \u00a71.9(i) Complex Numbers \u2023 \u00a71.9 Calculus of a Complex Variable \u2023 Topics of Discussion \u2023 Chapter 1 Algebraic and Analytic Methods\" class=\"ltx_ref\"> i : imaginary unit and z : complex variable Referenced by: \u00a77.12(ii) , \u00a77.4 Permalink: http://dlmf.nist.gov/7.4.E7 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.4 and Ch.7 7.4.8 f \u2061 ( \u2212 z ) = 2 \u2062 cos \u2061 ( 1 4 \u2062 \u03c0 + 1 2 \u2062 \u03c0 \u2062 z 2 ) \u2212 f \u2061 ( z ) , g \u2061 ( \u2212 z ) = 2 \u2062 sin \u2061 ( 1 4 \u2062 \u03c0 + 1 2 \u2062 \u03c0 \u2062 z 2 ) \u2212 g \u2061 ( z ) . \u24d8 Symbols: f \u2061 ( z ) : auxiliary function for Fresnel integrals , g \u2061 ( z ) : auxiliary function for Fresnel integrals , \u03c0 : the ratio of the circumference of a circle to its diameter , cos \u2061 z : cosine function , sin \u2061 z : sine function and z : complex variable Referenced by: \u00a77.12(ii) , \u00a77.4 , \u00a77.5 Permalink: http://dlmf.nist.gov/7.4.E8 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.4 and Ch.7",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "f",
+   "href": "7.2#E10",
+   "gloss": "auxiliary function for Fresnel integrals"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "cos",
+   "href": "4.14#E2",
+   "gloss": "cosine function"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "g",
+   "href": "7.2#E11",
+   "gloss": "auxiliary function for Fresnel integrals"
+  },
+  {
+   "token": "sin",
+   "href": "4.14#E1",
+   "gloss": "sine function"
+  }
+ ],
+ "info": {
+  "proof_sketch": "",
+  "defines": "",
+  "notes": "",
+  "keywords": "",
+  "as_ref": "",
+  "referenced_by": "\u00a77.12(ii) , \u00a77.4 , \u00a77.5",
+  "sources": "",
+  "symbols_text": "\\mathrm{f}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals , \\mathrm{g}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals , \\pi : the ratio of the circumference of a circle to its diameter , \\cos\\NVar{z} : cosine function , \\sin\\NVar{z} : sine function and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

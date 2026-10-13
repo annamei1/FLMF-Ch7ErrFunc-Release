@@ -1,0 +1,122 @@
+{
+ "tag": "7.5.1",
+ "url": "https://dlmf.nist.gov/7.5#E1",
+ "kind": "equation",
+ "latex": [
+  "F\\left(z\\right)=\\tfrac{1}{2}i\\sqrt{\\pi}\\left(e^{-z^{2}}-w\\left(z\\right)\\right)=-\\tfrac{1}{2}i\\sqrt{\\pi}e^{-z^{2}}\\operatorname{erf}\\left(iz\\right).",
+  "\\operatorname{erf}\\NVar{z}",
+  "F\\left(\\NVar{z}\\right)",
+  "w\\left(\\NVar{z}\\right)",
+  "\\mathrm{e}",
+  "\\mathrm{i}",
+  "\\pi",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.5.1",
+   "F\\left(z\\right)=\\tfrac{1}{2}i\\sqrt{\\pi}\\left(e^{-z^{2}}-w\\left(z\\right)\\right)=-\\tfrac{1}{2}i\\sqrt{\\pi}e^{-z^{2}}\\operatorname{erf}\\left(iz\\right)."
+  ],
+  [
+   "7.5.2",
+   "C\\left(z\\right)+iS\\left(z\\right)=\\tfrac{1}{2}(1+i)-\\mathcal{F}\\left(z\\right)."
+  ],
+  [
+   "7.5.3",
+   "C\\left(z\\right)=\\tfrac{1}{2}+\\mathrm{f}\\left(z\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{g}\\left(z\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.5.4",
+   "S\\left(z\\right)=\\tfrac{1}{2}-\\mathrm{f}\\left(z\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{g}\\left(z\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ],
+  [
+   "7.5.5",
+   "e^{-\\frac{1}{2}\\pi iz^{2}}\\mathcal{F}\\left(z\\right)=\\mathrm{g}\\left(z\\right)+i\\mathrm{f}\\left(z\\right)."
+  ],
+  [
+   "7.5.6",
+   "e^{\\pm\\frac{1}{2}\\pi iz^{2}}(\\mathrm{g}\\left(z\\right)\\pm i\\mathrm{f}\\left(z\\right))=\\tfrac{1}{2}(1\\pm i)-(C\\left(z\\right)\\pm iS\\left(z\\right))."
+  ],
+  [
+   "7.5.7",
+   "\\zeta=\\tfrac{1}{2}\\sqrt{\\pi}(1\\mp i)z,"
+  ],
+  [
+   "7.5.8",
+   "C\\left(z\\right)\\pm iS\\left(z\\right)=\\tfrac{1}{2}(1\\pm i)\\operatorname{erf}\\zeta."
+  ],
+  [
+   "7.5.9",
+   "C\\left(z\\right)\\pm iS\\left(z\\right)=\\tfrac{1}{2}(1\\pm i)\\left(1-e^{\\pm\\frac{1}{2}\\pi iz^{2}}w\\left(i\\zeta\\right)\\right)."
+  ],
+  [
+   "7.5.10",
+   "\\mathrm{g}\\left(z\\right)\\pm i\\mathrm{f}\\left(z\\right)=\\tfrac{1}{2}(1\\pm i)e^{\\zeta^{2}}\\operatorname{erfc}\\zeta."
+  ],
+  [
+   "7.5.11",
+   "|\\mathcal{F}\\left(x\\right)|^{2}={\\mathrm{f}}^{2}\\left(x\\right)+{\\mathrm{g}}^{2}\\left(x\\right),"
+  ],
+  [
+   "7.5.12",
+   "|\\mathcal{F}\\left(x\\right)|^{2}=2+{\\mathrm{f}}^{2}\\left(-x\\right)+{\\mathrm{g}}^{2}\\left(-x\\right)-2\\sqrt{2}\\cos\\left(\\tfrac{1}{4}\\pi+\\tfrac{1}{2}\\pi x^{2}\\right)\\mathrm{f}\\left(-x\\right)-2\\sqrt{2}\\cos\\left(\\tfrac{1}{4}\\pi-\\tfrac{1}{2}\\pi x^{2}\\right)\\mathrm{g}\\left(-x\\right),"
+  ],
+  [
+   "7.5.13",
+   "G\\left(x\\right)=\\sqrt{\\pi}F\\left(x\\right)-\\tfrac{1}{2}e^{-x^{2}}\\operatorname{Ei}\\left(x^{2}\\right),"
+  ]
+ ],
+ "context": "_ref_tag\">7.5.6 ), and ( 7.5.8 ). ( 7.5.11 ) follows from ( 7.5.5 ). ( 7.5.12 ) follows from ( 7.4.8 ) and ( 7.5.11 ). For ( 7.5.13 ) see Olver ( 1997b , p. 44) . Permalink: http://dlmf.nist.gov/7.5 See also: Annotations for Ch.7 7.5.1 F \u2061 ( z ) = 1 2 \u2062 i \u2062 \u03c0 \u2062 ( e \u2212 z 2 \u2212 w \u2061 ( z ) ) = \u2212 1 2 \u2062 i \u2062 \u03c0 \u2062 e \u2212 z 2 \u2062 erf \u2061 ( i \u2062 z ) . \u24d8 Symbols: F \u2061 ( z ) : Dawson\u2019s integral , \u03c0 : the ratio of the circumference of a circle to its diameter , erf \u2061 z : error function , w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , e : base of natural logarithm , i : imaginary unit and z : complex variable Referenced by: \u00a77.5 Permalink: http://dlmf.nist.gov/7.5.E1 Encodings: TeX , pMML , png See also: Annotations for \u00a77.5 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "F",
+   "href": "7.2#E5",
+   "gloss": "Dawson\u2019s integral"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "i",
+   "href": "1.9#E1",
+   "gloss": "imaginary unit"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "w",
+   "href": "7.2#E3",
+   "gloss": "Faddeeva (or Faddeyeva) function"
+  },
+  {
+   "token": "erf",
+   "href": "7.2#E1",
+   "gloss": "error function"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.5",
+  "as_ref": "",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "F\\left(\\NVar{z}\\right) : Dawson\u2019s integral , \\pi : the ratio of the circumference of a circle to its diameter , \\operatorname{erf}\\NVar{z} : error function , w\\left(\\NVar{z}\\right) : Faddeeva (or Faddeyeva) function , \\mathrm{e} : base of natural logarithm , \\mathrm{i} : imaginary unit and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

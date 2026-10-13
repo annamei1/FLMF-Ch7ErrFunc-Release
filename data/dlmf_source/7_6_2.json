@@ -1,0 +1,105 @@
+{
+ "tag": "7.6.2",
+ "url": "https://dlmf.nist.gov/7.6#E2",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle=\\frac{2}{\\sqrt{\\pi}}e^{-z^{2}}\\sum_{n=0}^{\\infty}\\frac{2^{n}z^{2n+1}}{1\\cdot 3\\cdots(2n+1)},",
+  "\\displaystyle\\operatorname{erf}z",
+  "\\operatorname{erf}\\NVar{z}",
+  "\\mathrm{e}",
+  "\\pi",
+  "z",
+  "n"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.6.1",
+   "\\displaystyle=\\frac{2}{\\sqrt{\\pi}}\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}z^{2n+1}}{n!(2n+1)},"
+  ],
+  [
+   "7.6.2",
+   "\\displaystyle=\\frac{2}{\\sqrt{\\pi}}e^{-z^{2}}\\sum_{n=0}^{\\infty}\\frac{2^{n}z^{2n+1}}{1\\cdot 3\\cdots(2n+1)},"
+  ],
+  [
+   "7.6.3",
+   "\\displaystyle=\\sum_{n=0}^{\\infty}\\frac{(iz)^{n}}{\\Gamma\\left(\\frac{1}{2}n+1\\right)}."
+  ],
+  [
+   "7.6.4",
+   "\\displaystyle=\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}(\\frac{1}{2}\\pi)^{2n}}{(2n)!(4n+1)}z^{4n+1},"
+  ],
+  [
+   "7.6.5",
+   "C\\left(z\\right)=\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}\\pi^{2n}}{1\\cdot 3\\cdots(4n+1)}z^{4n+1}+\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}\\pi^{2n+1}}{1\\cdot 3\\cdots(4n+3)}z^{4n+3}."
+  ],
+  [
+   "7.6.6",
+   "S\\left(z\\right)=\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}(\\frac{1}{2}\\pi)^{2n+1}}{(2n+1)!(4n+3)}z^{4n+3},"
+  ],
+  [
+   "7.6.7",
+   "S\\left(z\\right)=-\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}\\pi^{2n+1}}{1\\cdot 3\\cdots(4n+3)}z^{4n+3}+\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}\\pi^{2n}}{1\\cdot 3\\cdots(4n+1)}z^{4n+1}."
+  ],
+  [
+   "7.6.8",
+   "\\operatorname{erf}z=\\frac{2z}{\\sqrt{\\pi}}\\sum_{n=0}^{\\infty}(-1)^{n}\\left({\\mathsf{i}^{(1)}_{2n}}\\left(z^{2}\\right)-{\\mathsf{i}^{(1)}_{2n+1}}\\left(z^{2}\\right)\\right),"
+  ],
+  [
+   "7.6.9",
+   "\\operatorname{erf}\\left(az\\right)=\\frac{2z}{\\sqrt{\\pi}}e^{(\\frac{1}{2}-a^{2})z^{2}}\\sum_{n=0}^{\\infty}T_{2n+1}\\left(a\\right){\\mathsf{i}^{(1)}_{n}}\\left(\\tfrac{1}{2}z^{2}\\right),"
+  ],
+  [
+   "7.6.10",
+   "C\\left(z\\right)=z\\sum_{n=0}^{\\infty}\\mathsf{j}_{2n}\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.6.11",
+   "S\\left(z\\right)=z\\sum_{n=0}^{\\infty}\\mathsf{j}_{2n+1}\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ]
+ ],
+ "context": ") , z : complex variable and n : nonnegative integer A&S Ref: 7.1.5 Referenced by: \u00a77.6(i) Permalink: http://dlmf.nist.gov/7.6.E1 Encodings: TeX , pMML , png See also: Annotations for \u00a77.6(i) , \u00a77.6 and Ch.7 7.6.2 erf \u2061 z = 2 \u03c0 \u2062 e \u2212 z 2 \u2062 \u2211 n = 0 \u221e 2 n \u2062 z 2 \u2062 n + 1 1 \u22c5 3 \u2062 \u22ef \u2062 ( 2 \u2062 n + 1 ) , \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , erf \u2061 z : error function , e : base of natural logarithm , z : complex variable and n : nonnegative integer A&S Ref: 7.1.6 Referenced by: \u00a77.6(i) , \u00a77.6(ii) Permalink: http://dlmf.nist.gov/7.6.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.6(i) , \u00a77.6 and Ch.7 <tbody",
+ "xref_context": [
+  "7.6.1 erf \u2061 z = 2 \u03c0 \u2062 \u2211 n = 0 \u221e ( \u2212 1 ) n \u2062 z 2 \u2062 n + 1 n ! \u2062 ( 2 \u2062 n + 1 ) , \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , erf \u2061 z : error function , ! : factorial (as in n ! ) , z : complex variable and n : nonnegative integer A&S Ref: 7.1.5 Referenced by: \u00a77.6(i) Permalink: http://dlmf.nist.gov/7.6.E1 Encodings: TeX , pMML , png See also: Annotations for \u00a77.6(i) , \u00a77.6 and Ch.7 7.6.2 erf \u2061 z = 2 \u03c0 \u2062 e \u2212 z 2 \u2062 \u2211 n = 0 \u221e 2 n \u2062 z 2 \u2062 n + 1 1 \u22c5 3 \u2062 \u22ef \u2062 ( 2 \u2062 n + 1 ) , \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , erf \u2061 z : error function , e : base of natural logarithm , z : complex variable and n : nonnegative integer A&S Ref: 7.1.6 Referenced by: \u00a77.6(i) , \u00a77.6(ii) Permalink: http://dlmf.nist.gov/7.6.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.6(i) , \u00a77.6 and Ch.7 7.6.3 w \u2061 ( z ) = \u2211 n = 0 \u221e ( i \u2062 z ) n \u0393 \u2061 ( 1 2 \u2062 n + 1 ) . \u24d8 Symbols: \u0393 \u2061 ( z ) : gamma function , w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , i : imaginary unit , z : complex variable and n : nonnegative integer A&S Ref: 7.1.8 Referenced by: \u00a77.6(i) Permalink: http://dlmf.nist.gov/7.6.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.6(i) , \u00a77.6 and Ch.7 7.6.4 C \u2061 ( z ) = \u2211 n = 0 \u221e ( \u2212 1 ) n \u2062 ( 1 2 \u2062 \u03c0 ) 2 \u2062 n ( 2 \u2062 n ) ! \u2062 ( 4 \u2062 n + 1 ) \u2062 z 4 \u2062 n + 1 , \u24d8 Symbols: C \u2061 ( z ) : Fresnel integral , \u03c0 : the ratio of the circumference of a circle to its diameter , ! : factorial (as in n ! ) , z : complex variable and n : nonnegative integer A&S Ref: 7.3.11 Referenced by: \u00a77.6(i) Permalink: http://dlmf.nist.gov/7.6.E4 Encodings"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "erf",
+   "href": "7.2#E1",
+   "gloss": "error function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "n",
+   "href": "7.1#p1.t1.r3",
+   "gloss": "nonnegative integer"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.6(i) , \u00a77.6(ii)",
+  "as_ref": "7.1.6",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\operatorname{erf}\\NVar{z} : error function , \\mathrm{e} : base of natural logarithm , z : complex variable and n : nonnegative integer",
+  "changes": []
+ },
+ "parser_version": 2
+}

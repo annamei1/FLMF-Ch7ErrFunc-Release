@@ -1,0 +1,121 @@
+{
+ "tag": "7.2.11",
+ "url": "https://dlmf.nist.gov/7.2#E11",
+ "kind": "equation",
+ "latex": [
+  "\\mathrm{g}\\left(z\\right)=\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)+\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right).",
+  "\\mathrm{g}\\left(\\NVar{z}\\right)",
+  "C\\left(\\NVar{z}\\right)",
+  "S\\left(\\NVar{z}\\right)",
+  "\\cos\\NVar{z}",
+  "\\sin\\NVar{z}",
+  "\\pi",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.2.1",
+   "\\operatorname{erf}z=\\frac{2}{\\sqrt{\\pi}}\\int_{0}^{z}e^{-t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.2",
+   "\\operatorname{erfc}z=\\frac{2}{\\sqrt{\\pi}}\\int_{z}^{\\infty}e^{-t^{2}}\\,\\mathrm{d}t=1-\\operatorname{erf}z,"
+  ],
+  [
+   "7.2.3",
+   "w\\left(z\\right)=e^{-z^{2}}\\left(1+\\frac{2i}{\\sqrt{\\pi}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t\\right)=e^{-z^{2}}\\operatorname{erfc}\\left(-iz\\right)."
+  ],
+  [
+   "7.2.4",
+   "|\\operatorname{ph}z|\\leq\\tfrac{1}{4}\\pi-\\delta(<\\tfrac{1}{4}\\pi)"
+  ],
+  [
+   "7.2.5",
+   "F\\left(z\\right)=e^{-z^{2}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t."
+  ],
+  [
+   "7.2.6",
+   "\\displaystyle=\\int_{z}^{\\infty}e^{\\tfrac{1}{2}\\pi\\mathrm{i}t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.7",
+   "\\displaystyle=\\int_{0}^{z}\\cos\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.8",
+   "\\displaystyle=\\int_{0}^{z}\\sin\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.9",
+   "\\displaystyle\\lim_{x\\to\\infty}C\\left(x\\right)"
+  ],
+  [
+   "7.2.10",
+   "\\mathrm{f}\\left(z\\right)=\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.2.11",
+   "\\mathrm{g}\\left(z\\right)=\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)+\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ],
+  [
+   "7.2.12",
+   "G\\left(z\\right)=\\int_{0}^{\\infty}\\frac{e^{-t^{2}}}{t+z}\\,\\mathrm{d}t,"
+  ]
+ ],
+ "context": "Var{z}\" display=\"inline\"> sin \u2061 z : sine function and z : complex variable A&S Ref: 7.3.5 Referenced by: \u00a77.4 , \u00a77.5 Permalink: http://dlmf.nist.gov/7.2.E10 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iv) , \u00a77.2 and Ch.7 7.2.11 g \u2061 ( z ) = ( 1 2 \u2212 C \u2061 ( z ) ) \u2062 cos \u2061 ( 1 2 \u2062 \u03c0 \u2062 z 2 ) + ( 1 2 \u2212 S \u2061 ( z ) ) \u2062 sin \u2061 ( 1 2 \u2062 \u03c0 \u2062 z 2 ) . \u24d8 Defines: g \u2061 ( z ) : auxiliary function for Fresnel integrals Symbols: C \u2061 ( z ) : Fresnel integral , S \u2061 ( z ) : Fresnel integral , \u03c0 : the ratio of the circumference of a circle to its diameter , cos \u2061 z : cosine function , sin \u2061 z : sine function and z : complex variable A&S Ref: 7.3.6 Referenced by: \u00a77.4 , \u00a77.5 Permalink: http://dlmf.nist.gov/7.2.E11 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iv) , \u00a77.2 and Ch.7 \u00a77.2(v) Goodwin\u2013Staton Integral \u24d8 Keywords: Goodwin\u2013Staton integral , definition Permalink: http://dlmf.nist.gov/7.2.v See also: Annotations for \u00a77.2 and Ch.7 <table",
+ "xref_context": [
+  "\u2131 \u2061 ( z ) , C \u2061 ( z ) , and S \u2061 ( z ) are entire functions of z , as are f \u2061 ( z ) and g \u2061 ( z ) in the next subsection. Values at Infinity \u24d8 Keywords: Fresnel integrals , values at infinity See also: Annotations for \u00a77.2(iii) , \u00a77.2 and Ch.7",
+  "7.2.10 f \u2061 ( z ) = ( 1 2 \u2212 S \u2061 ( z ) ) \u2062 cos \u2061 ( 1 2 \u2062 \u03c0 \u2062 z 2 ) \u2212 ( 1 2 \u2212 C \u2061 ( z ) ) \u2062 sin \u2061 ( 1 2 \u2062 \u03c0 \u2062 z 2 ) , \u24d8 Defines: f \u2061 ( z ) : auxiliary function for Fresnel integrals Symbols: C \u2061 ( z ) : Fresnel integral , S \u2061 ( z ) : Fresnel integral , \u03c0 : the ratio of the circumference of a circle to its diameter , cos \u2061 z : cosine function , sin \u2061 z : sine function and z : complex variable A&S Ref: 7.3.5 Referenced by: \u00a77.4 , \u00a77.5 Permalink: http://dlmf.nist.gov/7.2.E10 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iv) , \u00a77.2 and Ch.7 7.2.11 g \u2061 ( z ) = ( 1 2 \u2212 C \u2061 ( z ) ) \u2062 cos \u2061 ( 1 2 \u2062 \u03c0 \u2062 z 2 ) + ( 1 2 \u2212 S \u2061 ( z ) ) \u2062 sin \u2061 ( 1 2 \u2062 \u03c0 \u2062 z 2 ) . \u24d8 Defines: g \u2061 ( z ) : auxiliary function for Fresnel integrals Symbols: C \u2061 ( z ) : Fresnel integral , S \u2061 ( z ) : Fresnel integral , \u03c0 : the ratio of the circumference of a circle to its diameter , cos \u2061 z : cosine function , sin \u2061 z : sine function and z : complex variable A&S Ref: 7.3.6 Referenced by: \u00a77.4 , \u00a77.5 Permalink: http://dlmf.nist.gov/7.2.E11 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iv) , \u00a77.2 and Ch.7 \u00a77.2(v) Goodwin\u2013Staton Integral \u24d8 Keywords: Goodwin\u2013Staton integral , definition Permalink: http://dlmf.nist.gov/7.2.v See also: Annotations for \u00a77.2 and Ch.7"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "g",
+   "href": "7.2#E11",
+   "gloss": "auxiliary function for Fresnel integrals"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "C",
+   "href": "7.2#E7",
+   "gloss": "Fresnel integral"
+  },
+  {
+   "token": "cos",
+   "href": "4.14#E2",
+   "gloss": "cosine function"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "S",
+   "href": "7.2#E8",
+   "gloss": "Fresnel integral"
+  },
+  {
+   "token": "sin",
+   "href": "4.14#E1",
+   "gloss": "sine function"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.4 , \u00a77.5",
+  "as_ref": "7.3.6",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "\\mathrm{g}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals",
+  "symbols_text": "C\\left(\\NVar{z}\\right) : Fresnel integral , S\\left(\\NVar{z}\\right) : Fresnel integral , \\pi : the ratio of the circumference of a circle to its diameter , \\cos\\NVar{z} : cosine function , \\sin\\NVar{z} : sine function and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

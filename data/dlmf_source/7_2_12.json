@@ -1,0 +1,122 @@
+{
+ "tag": "7.2.12",
+ "url": "https://dlmf.nist.gov/7.2#E12",
+ "kind": "equation",
+ "latex": [
+  "G\\left(z\\right)=\\int_{0}^{\\infty}\\frac{e^{-t^{2}}}{t+z}\\,\\mathrm{d}t,",
+  "|\\operatorname{ph}z|<\\pi",
+  "G\\left(\\NVar{z}\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "\\operatorname{ph}",
+  "\\mathrm{e}",
+  "\\int",
+  "\\pi",
+  "x",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.2.1",
+   "\\operatorname{erf}z=\\frac{2}{\\sqrt{\\pi}}\\int_{0}^{z}e^{-t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.2",
+   "\\operatorname{erfc}z=\\frac{2}{\\sqrt{\\pi}}\\int_{z}^{\\infty}e^{-t^{2}}\\,\\mathrm{d}t=1-\\operatorname{erf}z,"
+  ],
+  [
+   "7.2.3",
+   "w\\left(z\\right)=e^{-z^{2}}\\left(1+\\frac{2i}{\\sqrt{\\pi}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t\\right)=e^{-z^{2}}\\operatorname{erfc}\\left(-iz\\right)."
+  ],
+  [
+   "7.2.4",
+   "|\\operatorname{ph}z|\\leq\\tfrac{1}{4}\\pi-\\delta(<\\tfrac{1}{4}\\pi)"
+  ],
+  [
+   "7.2.5",
+   "F\\left(z\\right)=e^{-z^{2}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t."
+  ],
+  [
+   "7.2.6",
+   "\\displaystyle=\\int_{z}^{\\infty}e^{\\tfrac{1}{2}\\pi\\mathrm{i}t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.7",
+   "\\displaystyle=\\int_{0}^{z}\\cos\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.8",
+   "\\displaystyle=\\int_{0}^{z}\\sin\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.9",
+   "\\displaystyle\\lim_{x\\to\\infty}C\\left(x\\right)"
+  ],
+  [
+   "7.2.10",
+   "\\mathrm{f}\\left(z\\right)=\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.2.11",
+   "\\mathrm{g}\\left(z\\right)=\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)+\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ],
+  [
+   "7.2.12",
+   "G\\left(z\\right)=\\int_{0}^{\\infty}\\frac{e^{-t^{2}}}{t+z}\\,\\mathrm{d}t,"
+  ]
+ ],
+ "context": "e=\"\" class=\"ltx_ref\">http://dlmf.nist.gov/7.2.E11 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iv) , \u00a77.2 and Ch.7 \u00a77.2(v) Goodwin\u2013Staton Integral \u24d8 Keywords: Goodwin\u2013Staton integral , definition Permalink: http://dlmf.nist.gov/7.2.v See also: Annotations for \u00a77.2 and Ch.7 7.2.12 G \u2061 ( z ) = \u222b 0 \u221e e \u2212 t 2 t + z \u2062 d t , | ph \u2061 z | < \u03c0 . \u24d8 Defines: G \u2061 ( z ) : Goodwin\u2013Staton integral Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm , \u222b : integral , ph : phase and z : complex variable A&S Ref: 27.6 (in different notation) Permalink: http://dlmf.nist.gov/7.2.E12 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(v) , \u00a77.2 and Ch.7",
+ "xref_context": [],
+ "constraints": [
+  "|\\operatorname{ph}z|<\\pi"
+ ],
+ "symbols": [
+  {
+   "token": "G",
+   "href": "7.2#E12",
+   "gloss": "Goodwin\u2013Staton integral"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  },
+  {
+   "token": "ph",
+   "href": "1.9#E7",
+   "gloss": "phase"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  }
+ ],
+ "info": {
+  "proof_sketch": "",
+  "defines": "G\\left(\\NVar{z}\\right) : Goodwin\u2013Staton integral",
+  "notes": "",
+  "keywords": "",
+  "as_ref": "27.6 (in different notation)",
+  "referenced_by": "",
+  "sources": "",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\,\\mathrm{d}\\NVar{x} : differential of x , \\mathrm{e} : base of natural logarithm , \\int : integral , \\operatorname{ph} : phase and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

@@ -1,0 +1,101 @@
+{
+ "tag": "7.13.5",
+ "url": "https://dlmf.nist.gov/7.13#E5",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle\\sim\\lambda+\\frac{\\alpha(\\alpha\\pi-4)}{8\\pi\\lambda^{3}}+\\cdots,",
+  "\\displaystyle\\sim\\frac{\\alpha}{2\\lambda}+\\cdots",
+  "\\displaystyle x_{n}",
+  "\\displaystyle y_{n}",
+  "C\\left(z\\right)",
+  "n\\to\\infty",
+  "\\lambda",
+  "\\alpha",
+  "x_{n}",
+  "y_{n}",
+  "\\sim",
+  "\\pi",
+  "x",
+  "n"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.13.1",
+   "\\displaystyle\\sim\\lambda-\\tfrac{1}{4}\\mu\\lambda^{-1}+\\tfrac{1}{16}(1-\\mu+\\tfrac{1}{2}\\mu^{2})\\lambda^{-3}-\\cdots,"
+  ],
+  [
+   "7.13.2",
+   "\\tfrac{1}{2}\\pi<\\operatorname{ph}z<\\tfrac{3}{4}\\pi"
+  ],
+  [
+   "7.13.3",
+   "\\displaystyle\\sim-\\lambda+\\tfrac{1}{4}\\mu\\lambda^{-1}-\\tfrac{1}{16}(1-\\mu+\\tfrac{1}{2}\\mu^{2})\\lambda^{-3}+\\cdots,"
+  ],
+  [
+   "7.13.4",
+   "\\displaystyle=\\ln\\left(2\\lambda\\sqrt{2\\pi}\\right)."
+  ],
+  [
+   "7.13.5",
+   "\\displaystyle\\sim\\lambda+\\frac{\\alpha(\\alpha\\pi-4)}{8\\pi\\lambda^{3}}+\\cdots,"
+  ],
+  [
+   "7.13.6",
+   "\\displaystyle=(2/\\pi)\\ln\\left(\\pi\\lambda\\right)."
+  ],
+  [
+   "7.13.7",
+   "\\displaystyle=2\\sqrt{n},"
+  ]
+ ],
+ "context": "As n \u2192 \u221e the x n and y n corresponding to the zeros of C \u2061 ( z ) satisfy 7.13.5 x n \u223c \u03bb + \u03b1 \u2062 ( \u03b1 \u2062 \u03c0 \u2212 4 ) 8 \u2062 \u03c0 \u2062 \u03bb 3 + \u22ef , y n \u223c \u03b1 2 \u2062 \u03bb + \u22ef , \u24d8 Symbols: \u223c : Poincar\u00e9 asymptotic expansion , \u03c0 : the ratio of the circumference of a circle to its diameter , x : real variable , n : nonnegative integer , \u03b1 and \u03bb Referenced by: \u00a77.13(iii) Permalink: http://dlmf.nist.gov/7.13.E5 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.13(iii) , \u00a77.13 and Ch.7 with <table",
+ "xref_context": [
+  "As n \u2192 \u221e the x n and y n corresponding to the zeros of S \u2061 ( z ) satisfy ( 7.13.5 ) with 7.13.7 \u03bb = 2 \u2062 n , \u03b1 = ( 2 / \u03c0 ) \u2062 ln \u2061 ( \u03c0 \u2062 \u03bb ) . \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , ln \u2061 z : principal branch of logarithm function , n : nonnegative integer , \u03b1 and \u03bb Permalink: http://dlmf.nist.gov/7.13.E7 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.13(iii) , \u00a77.13 and Ch.7 \u00a77.13(iv) Zeros of \u2131 \u2061 ( z ) \u24d8 Keywords: Fresnel integrals , asymptotic expansions , zeros Permalink: http://dlmf.nist.gov/7.13.iv See also: Annotations for \u00a77.13 and Ch.7"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "x",
+   "href": "7.1#p1.t1.r1",
+   "gloss": "real variable"
+  },
+  {
+   "token": "n",
+   "href": "7.1#p1.t1.r3",
+   "gloss": "nonnegative integer"
+  },
+  {
+   "token": "\u223c",
+   "href": "2.1#iii.p1",
+   "gloss": "Poincar\u00e9 asymptotic expansion"
+  },
+  {
+   "token": "\u03bb",
+   "href": "7.13#E6",
+   "gloss": "\ud835\udf06"
+  },
+  {
+   "token": "\u03b1",
+   "href": "7.13#E6",
+   "gloss": "\ud835\udefc"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.13(iii)",
+  "as_ref": "",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\sim : Poincar\u00e9 asymptotic expansion , \\pi : the ratio of the circumference of a circle to its diameter , x : real variable , n : nonnegative integer , \\alpha and \\lambda",
+  "changes": []
+ },
+ "parser_version": 2
+}

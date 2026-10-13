@@ -1,0 +1,120 @@
+{
+ "tag": "7.19.4",
+ "url": "https://dlmf.nist.gov/7.19#E4",
+ "kind": "equation",
+ "latex": [
+  "H\\left(a,u\\right)=\\frac{a}{\\pi}\\int_{-\\infty}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{(u-t)^{2}+a^{2}}=\\frac{1}{a\\sqrt{\\pi}}\\mathsf{U}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right).",
+  "\\mathsf{U}\\left(\\NVar{x},\\NVar{t}\\right)",
+  "\\mathsf{V}\\left(\\NVar{x},\\NVar{t}\\right)",
+  "H\\left(\\NVar{a},\\NVar{u}\\right)",
+  "\\mathsf{U}\\left(x,t\\right)",
+  "\\mathsf{V}\\left(x,t\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "H\\left(a,u\\right)",
+  "\\mathrm{e}",
+  "t=0.1",
+  "\\int",
+  "\\pi",
+  "2.5",
+  "10",
+  "x",
+  "z",
+  "5"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.19.1",
+   "\\mathsf{U}\\left(x,t\\right)=\\frac{1}{\\sqrt{4\\pi t}}\\int_{-\\infty}^{\\infty}\\frac{e^{-(x-y)^{2}/(4t)}}{1+y^{2}}\\,\\mathrm{d}y,"
+  ],
+  [
+   "7.19.2",
+   "\\mathsf{V}\\left(x,t\\right)=\\frac{1}{\\sqrt{4\\pi t}}\\int_{-\\infty}^{\\infty}\\frac{ye^{-(x-y)^{2}/(4t)}}{1+y^{2}}\\,\\mathrm{d}y."
+  ],
+  [
+   "7.19.3",
+   "\\mathsf{U}\\left(x,t\\right)+i\\mathsf{V}\\left(x,t\\right)=\\sqrt{\\frac{\\pi}{4t}}e^{z^{2}}\\operatorname{erfc}z,"
+  ],
+  [
+   "7.19.4",
+   "H\\left(a,u\\right)=\\frac{a}{\\pi}\\int_{-\\infty}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{(u-t)^{2}+a^{2}}=\\frac{1}{a\\sqrt{\\pi}}\\mathsf{U}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)."
+  ],
+  [
+   "7.19.5",
+   "\\displaystyle\\lim_{t\\to 0}\\mathsf{U}\\left(x,t\\right)"
+  ],
+  [
+   "7.19.6",
+   "\\displaystyle=-\\mathsf{V}\\left(x,t\\right)."
+  ],
+  [
+   "7.19.7",
+   "\\displaystyle\\leq\\mathsf{V}\\left(x,t\\right)\\leq 1."
+  ],
+  [
+   "7.19.8",
+   "\\displaystyle=x\\mathsf{U}\\left(x,t\\right)+2t\\frac{\\partial\\mathsf{U}\\left(x,t\\right)}{\\partial x},"
+  ],
+  [
+   "7.19.9",
+   "\\displaystyle=1-x\\mathsf{V}\\left(x,t\\right)-2t\\frac{\\partial\\mathsf{V}\\left(x,t\\right)}{\\partial x}."
+  ],
+  [
+   "7.19.10",
+   "\\mathsf{U}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)=a\\int_{0}^{\\infty}e^{-at-\\frac{1}{4}t^{2}}\\cos\\left(ut\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.19.11",
+   "\\mathsf{V}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)=a\\int_{0}^{\\infty}e^{-at-\\frac{1}{4}t^{2}}\\sin\\left(ut\\right)\\,\\mathrm{d}t."
+  ]
+ ],
+ "context": "lass=\"ltx_ref\"> x : real variable and z : complex variable Referenced by: \u00a77.19(i) , \u00a77.22(iv) Permalink: http://dlmf.nist.gov/7.19.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.19(i) , \u00a77.19 and Ch.7 7.19.4 H \u2061 ( a , u ) = a \u03c0 \u2062 \u222b \u2212 \u221e \u221e e \u2212 t 2 \u2062 d t ( u \u2212 t ) 2 + a 2 = 1 a \u2062 \u03c0 \u2062 \ud835\uddb4 \u2061 ( u a , 1 4 \u2062 a 2 ) . \u24d8 Defines: H \u2061 ( a , u ) : line-broadening function Symbols: \ud835\uddb4 \u2061 ( x , t ) : Voigt function , \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm and \u222b : integral Permalink: http://dlmf.nist.gov/7.19.E4 Encodings: TeX , pMML , png See also: Annotations for \u00a77.19(i) , \u00a77.19 and Ch.7 H \u2061 ( a , u ) is sometimes called the line broadening function ; see, for example, Finn and Mugglestone ( 1965 ) . \u00a77.19(ii) Graphics \u24d8 Notes: These graphs were produced at NIST. Permalink: http://dlmf.nist.gov/7.19.ii See also: Annotations for \u00a77.19 and Ch.7 Figure 7.19.1: Voigt function \ud835\uddb4 \u2061 ( x , t ) , t = 0.1 , 2.5 , 5 , 10 . Magnify \u24d8 Symbols: \ud835\uddb4 \u2061 ( x , t ) : Voigt function and x : real variable Keywords: Voigt functions , graphs Permalink: http://dlmf.nist.gov/7.19.F1 Encodings: pdf , png See also: Annotations for \u00a77.19(ii) , \u00a77.19 and Ch.7 Figure 7.19.2: Voigt function \ud835\uddb5 \u2061 ( x , t ) , t = 0.1 , 2.5 , 5 , 10 . Magnify \u24d8 Symbols: \ud835\uddb5 \u2061 ( x , t ) : Voigt function and x : real variable Keywords: Voigt functions , graphs Permalink: http://dlmf.nist.gov/7.19.F2 Encodings: pdf , png See also: Annotations for \u00a77.19(ii) , \u00a77.19 and Ch.7 \u00a77.19(iii) Properties \u24d8 Keywords: Voigt functions , properties Notes: ( 7.19.5 ) follows from the definitions ( 7.19.1 ), ( 7.19.2 ), together with ( 1.17.6 ) or \u00a7 2.3(iii) . For the first of ( 7.19.7 ) use ( 7.19.1 ) for the lower bound, and ( 7.19.10 ) for the upper bound. For the second of ( 7.19.7 ) use ( 7.19.11 ). For ( 7.19.8 ) and ( 7.19.9 ) again use the definitions ( 7.19.1 ) and ( 7.19.2 ). Permalink: http://dlmf.nist.gov/7.19.iii See also: Annotations for \u00a77.19 and Ch.7 <table",
+ "xref_context": [
+  "For x \u2208 \u211d and t > 0 , 7.19.1 \ud835\uddb4 \u2061 ( x , t ) = 1 4 \u2062 \u03c0 \u2062 t \u2062 \u222b \u2212 \u221e \u221e e \u2212 ( x \u2212 y ) 2 / ( 4 \u2062 t ) 1 + y 2 \u2062 d y , \u24d8 Defines: \ud835\uddb4 \u2061 ( x , t ) : Voigt function Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm , \u222b : integral and x : real variable Referenced by: \u00a77.19(iii) Permalink: http://dlmf.nist.gov/7.19.E1 Encodings: TeX , pMML , png See also: Annotations for \u00a77.19(i) , \u00a77.19 and Ch.7 7.19.2 \ud835\uddb5 \u2061 ( x , t ) = 1 4 \u2062 \u03c0 \u2062 t \u2062 \u222b \u2212 \u221e \u221e y \u2062 e \u2212 ( x \u2212 y ) 2 / ( 4 \u2062 t ) 1 + y 2 \u2062 d y . \u24d8 Defines: \ud835\uddb5 \u2061 ( x , t ) : Voigt function Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm , \u222b : integral and x : real variable Referenced by: \u00a77.19(iii) Permalink: http://dlmf.nist.gov/7.19.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.19(i) , \u00a77.19 and Ch.7 7.19.3 \ud835\uddb4 \u2061 ( x , t ) + i \u2062 \ud835\uddb5 \u2061 ( x , t ) = \u03c0 4 \u2062 t \u2062 e z 2 \u2062 erfc \u2061 z , z = ( 1 \u2212 i \u2062 x ) / ( 2 \u2062 t ) . \u24d8 Symbols: \ud835\uddb4 \u2061 ( x , t ) : Voigt function , \ud835\uddb5 \u2061 ( x , t ) : Voigt function , \u03c0 : the ratio of the circumference of a circle to its diameter , erfc \u2061 z : complementary error function , e : base of natural logarithm , i : imaginary unit , x : real variable and z : complex variable Referenced by: \u00a77.19(i) , \u00a77.22(iv) Permalink: http://dlmf.nist.gov/7.19.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.19(i) , \u00a77.19 and Ch.7 7.19.4 H \u2061 ( a , u ) = a \u03c0 \u2062 \u222b \u2212 \u221e \u221e e \u2212 t 2 \u2062 d t ( u \u2212 t ) 2 + a 2 = 1 a \u2062 \u03c0 \u2062 \ud835\uddb4 \u2061 ( u a , 1 4 \u2062 a 2 ) . \u24d8 Defines: H \u2061 ( a , u ) : line-broaden"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "H",
+   "href": "7.19#E4",
+   "gloss": "line-broadening function"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  },
+  {
+   "token": "\ud835\uddb4",
+   "href": "7.19#E1",
+   "gloss": "Voigt function"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "H\\left(\\NVar{a},\\NVar{u}\\right) : line-broadening function",
+  "symbols_text": "\\mathsf{U}\\left(\\NVar{x},\\NVar{t}\\right) : Voigt function , \\pi : the ratio of the circumference of a circle to its diameter , \\,\\mathrm{d}\\NVar{x} : differential of x , \\mathrm{e} : base of natural logarithm and \\int : integral",
+  "changes": []
+ },
+ "parser_version": 2
+}

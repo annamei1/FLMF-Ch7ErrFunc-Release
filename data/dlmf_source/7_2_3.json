@@ -1,0 +1,131 @@
+{
+ "tag": "7.2.3",
+ "url": "https://dlmf.nist.gov/7.2#E3",
+ "kind": "equation",
+ "latex": [
+  "w\\left(z\\right)=e^{-z^{2}}\\left(1+\\frac{2i}{\\sqrt{\\pi}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t\\right)=e^{-z^{2}}\\operatorname{erfc}\\left(-iz\\right).",
+  "\\operatorname{erfc}\\NVar{z}",
+  "w\\left(\\NVar{z}\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "\\operatorname{erfc}z",
+  "\\operatorname{erf}z",
+  "w\\left(z\\right)",
+  "F\\left(z\\right)",
+  "\\mathrm{e}",
+  "\\mathrm{i}",
+  "\\int",
+  "\\pi",
+  "z",
+  "x"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.2.1",
+   "\\operatorname{erf}z=\\frac{2}{\\sqrt{\\pi}}\\int_{0}^{z}e^{-t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.2",
+   "\\operatorname{erfc}z=\\frac{2}{\\sqrt{\\pi}}\\int_{z}^{\\infty}e^{-t^{2}}\\,\\mathrm{d}t=1-\\operatorname{erf}z,"
+  ],
+  [
+   "7.2.3",
+   "w\\left(z\\right)=e^{-z^{2}}\\left(1+\\frac{2i}{\\sqrt{\\pi}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t\\right)=e^{-z^{2}}\\operatorname{erfc}\\left(-iz\\right)."
+  ],
+  [
+   "7.2.4",
+   "|\\operatorname{ph}z|\\leq\\tfrac{1}{4}\\pi-\\delta(<\\tfrac{1}{4}\\pi)"
+  ],
+  [
+   "7.2.5",
+   "F\\left(z\\right)=e^{-z^{2}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t."
+  ],
+  [
+   "7.2.6",
+   "\\displaystyle=\\int_{z}^{\\infty}e^{\\tfrac{1}{2}\\pi\\mathrm{i}t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.7",
+   "\\displaystyle=\\int_{0}^{z}\\cos\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.8",
+   "\\displaystyle=\\int_{0}^{z}\\sin\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.9",
+   "\\displaystyle\\lim_{x\\to\\infty}C\\left(x\\right)"
+  ],
+  [
+   "7.2.10",
+   "\\mathrm{f}\\left(z\\right)=\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.2.11",
+   "\\mathrm{g}\\left(z\\right)=\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)+\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ],
+  [
+   "7.2.12",
+   "G\\left(z\\right)=\\int_{0}^{\\infty}\\frac{e^{-t^{2}}}{t+z}\\,\\mathrm{d}t,"
+  ]
+ ],
+ "context": "altimg-width=\"18px\" alttext=\"\\int\" display=\"inline\"> \u222b : integral and z : complex variable A&S Ref: 7.1.2 Referenced by: \u00a77.5 , \u00a77.7(i) Permalink: http://dlmf.nist.gov/7.2.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(i) , \u00a77.2 and Ch.7 7.2.3 w \u2061 ( z ) = e \u2212 z 2 \u2062 ( 1 + 2 \u2062 i \u03c0 \u2062 \u222b 0 z e t 2 \u2062 d t ) = e \u2212 z 2 \u2062 erfc \u2061 ( \u2212 i \u2062 z ) . \u24d8 Defines: w \u2061 ( z ) : Faddeeva (or Faddeyeva) function Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , erfc \u2061 z : complementary error function , d x : differential of x , e : base of natural logarithm , i : imaginary unit , \u222b : integral and z : complex variable Keywords: Faddeeva (or Faddeyeva) function , definition A&S Ref: 7.1.3 Referenced by: \u00a77.19(i) , \u00a77.5 , Erratum (V1.0.17) for Equation ( 7.2.3 ) Permalink: http://dlmf.nist.gov/7.2.E3 Encodings: TeX , pMML , png Clarification (effective with 1.0.17): Originally named as a complementary error function, this has been renamed as the Faddeeva (or Faddeyeva) function. See also: Annotations for \u00a77.2(i) , \u00a77.2 and Ch.7 erf \u2061 z , erfc \u2061 z , and w \u2061 ( z ) are entire functions of z , as is F \u2061 ( z ) in the next subsection. Values at Infinity \u24d8 Keywords: error functions , values at infinity See also: Annotations for \u00a77.2(i) , \u00a77.2 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "w",
+   "href": "7.2#E3",
+   "gloss": "Faddeeva (or Faddeyeva) function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "i",
+   "href": "1.9#E1",
+   "gloss": "imaginary unit"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  },
+  {
+   "token": "erfc",
+   "href": "7.2#E2",
+   "gloss": "complementary error function"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.19(i) , \u00a77.5 , Erratum (V1.0.17) for Equation ( 7.2.3 )",
+  "as_ref": "7.1.3",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "Faddeeva (or Faddeyeva) function , definition",
+  "notes": "",
+  "defines": "w\\left(\\NVar{z}\\right) : Faddeeva (or Faddeyeva) function",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\operatorname{erfc}\\NVar{z} : complementary error function , \\,\\mathrm{d}\\NVar{x} : differential of x , \\mathrm{e} : base of natural logarithm , \\mathrm{i} : imaginary unit , \\int : integral and z : complex variable",
+  "changes": [
+   "Clarification (effective with 1.0.17): Originally named as a complementary error function, this has been renamed as the Faddeeva (or Faddeyeva) function."
+  ]
+ },
+ "parser_version": 2
+}

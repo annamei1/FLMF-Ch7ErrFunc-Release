@@ -1,0 +1,88 @@
+{
+ "tag": "7.11.8",
+ "url": "https://dlmf.nist.gov/7.11#E8",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle=\\tfrac{1}{6}\\pi z^{3}{{}_{1}F_{2}}\\left(\\tfrac{3}{4};\\tfrac{7}{4},\\tfrac{3}{2};-\\tfrac{1}{16}\\pi^{2}z^{4}\\right).",
+  "{{}_{\\NVar{p}}F_{\\NVar{q}}}\\left({\\NVar{a_{1},\\dots,a_{p}}\\atop\\NVar{b_{1},\\dots,b_{q}}};\\NVar{z}\\right)",
+  "{{}_{\\NVar{p}}F_{\\NVar{q}}}\\left(\\NVar{a_{1},\\dots,a_{p}};\\NVar{b_{1},\\dots,b_{q}};\\NVar{z}\\right)",
+  "{{}_{\\NVar{p}}F_{\\NVar{q}}}\\left({\\NVar{\\mathbf{a}}\\atop\\NVar{\\mathbf{b}}};\\NVar{z}\\right)",
+  "{{}_{\\NVar{p}}F_{\\NVar{q}}}\\left(\\NVar{\\mathbf{a}};\\NVar{\\mathbf{b}};\\NVar{z}\\right)",
+  "\\displaystyle S\\left(z\\right)",
+  "S\\left(\\NVar{z}\\right)",
+  "\\pi",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.11.1",
+   "\\displaystyle=\\frac{1}{\\sqrt{\\pi}}\\gamma\\left(\\tfrac{1}{2},z^{2}\\right),"
+  ],
+  [
+   "7.11.2",
+   "\\displaystyle=\\frac{1}{\\sqrt{\\pi}}\\Gamma\\left(\\tfrac{1}{2},z^{2}\\right),"
+  ],
+  [
+   "7.11.3",
+   "\\displaystyle=\\frac{z}{\\sqrt{\\pi}}E_{\\frac{1}{2}}\\left(z^{2}\\right)."
+  ],
+  [
+   "7.11.4",
+   "\\operatorname{erf}z=\\frac{2z}{\\sqrt{\\pi}}M\\left(\\tfrac{1}{2},\\tfrac{3}{2},-z^{2}\\right)=\\frac{2z}{\\sqrt{\\pi}}e^{-z^{2}}M\\left(1,\\tfrac{3}{2},z^{2}\\right),"
+  ],
+  [
+   "7.11.5",
+   "\\operatorname{erfc}z=\\frac{1}{\\sqrt{\\pi}}e^{-z^{2}}U\\left(\\tfrac{1}{2},\\tfrac{1}{2},z^{2}\\right)=\\frac{z}{\\sqrt{\\pi}}e^{-z^{2}}U\\left(1,\\tfrac{3}{2},z^{2}\\right)."
+  ],
+  [
+   "7.11.6",
+   "C\\left(z\\right)+iS\\left(z\\right)=zM\\left(\\tfrac{1}{2},\\tfrac{3}{2},\\tfrac{1}{2}\\pi iz^{2}\\right)=ze^{\\pi iz^{2}/2}M\\left(1,\\tfrac{3}{2},-\\tfrac{1}{2}\\pi iz^{2}\\right)."
+  ],
+  [
+   "7.11.7",
+   "\\displaystyle=z{{}_{1}F_{2}}\\left(\\tfrac{1}{4};\\tfrac{5}{4},\\tfrac{1}{2};-\\tfrac{1}{16}\\pi^{2}z^{4}\\right),"
+  ],
+  [
+   "7.11.8",
+   "\\displaystyle=\\tfrac{1}{6}\\pi z^{3}{{}_{1}F_{2}}\\left(\\tfrac{3}{4};\\tfrac{7}{4},\\tfrac{3}{2};-\\tfrac{1}{16}\\pi^{2}z^{4}\\right)."
+  ]
+ ],
+ "context": "\ud835\udc1a \ud835\udc1b ; z ) generalized hypergeometric function , \u03c0 : the ratio of the circumference of a circle to its diameter and z : complex variable Permalink: http://dlmf.nist.gov/7.11.E7 Encodings: TeX , pMML , png See also: Annotations for \u00a77.11 , \u00a77.11 and Ch.7 7.11.8 S \u2061 ( z ) = 1 6 \u2062 \u03c0 \u2062 z 3 \u2062 F 2 1 \u2061 ( 3 4 ; 7 4 , 3 2 ; \u2212 1 16 \u2062 \u03c0 2 \u2062 z 4 ) . \u24d8 Symbols: S \u2061 ( z ) : Fresnel integral , F q p \u2061 ( a 1 , \u2026 , a p ; b 1 , \u2026 , b q ; z ) or F q p \u2061 ( a 1 , \u2026 , a p b 1 , \u2026 , b q ; z ) : alternatively F q p \u2061 ( \ud835\udc1a ; \ud835\udc1b ; z ) or F q p \u2061 ( \ud835\udc1a \ud835\udc1b ; z ) generalized hypergeometric function , \u03c0 : the ratio of the circumference of a circle to its diameter and z : complex variable Permalink: http://dlmf.nist.gov/7.11.E8 Encodings: TeX , pMML , png See also: Annotations for \u00a77.11 , \u00a77.11 and Ch.7",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "S",
+   "href": "7.2#E8",
+   "gloss": "Fresnel integral"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "F",
+   "href": "16.2",
+   "gloss": "alternatively {_\ud835\udc5d}\ud835\udc39_\ud835\udc5e(\ud835\udc1a;\ud835\udc1b;\ud835\udc67) or {_\ud835\udc5d}\ud835\udc39_\ud835\udc5e((\ud835\udc1a\u00a6\ud835\udc1b);\ud835\udc67)generalized hypergeometric function"
+  }
+ ],
+ "info": {
+  "proof_sketch": "",
+  "defines": "",
+  "notes": "",
+  "keywords": "",
+  "as_ref": "",
+  "referenced_by": "",
+  "sources": "",
+  "symbols_text": "S\\left(\\NVar{z}\\right) : Fresnel integral , {{}_{\\NVar{p}}F_{\\NVar{q}}}\\left(\\NVar{a_{1},\\dots,a_{p}};\\NVar{b_{1},\\dots,b_{q}};\\NVar{z}\\right) or {{}_{\\NVar{p}}F_{\\NVar{q}}}\\left({\\NVar{a_{1},\\dots,a_{p}}\\atop\\NVar{b_{1},\\dots,b_{q}}};\\NVar{z}\\right) : alternatively {{}_{\\NVar{p}}F_{\\NVar{q}}}\\left(\\NVar{\\mathbf{a}};\\NVar{\\mathbf{b}};\\NVar{z}\\right) or {{}_{\\NVar{p}}F_{\\NVar{q}}}\\left({\\NVar{\\mathbf{a}}\\atop\\NVar{\\mathbf{b}}};\\NVar{z}\\right) generalized hypergeometric function , \\pi : the ratio of the circumference of a circle to its diameter and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

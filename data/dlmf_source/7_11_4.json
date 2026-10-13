@@ -1,0 +1,91 @@
+{
+ "tag": "7.11.4",
+ "url": "https://dlmf.nist.gov/7.11#E4",
+ "kind": "equation",
+ "latex": [
+  "\\operatorname{erf}z=\\frac{2z}{\\sqrt{\\pi}}M\\left(\\tfrac{1}{2},\\tfrac{3}{2},-z^{2}\\right)=\\frac{2z}{\\sqrt{\\pi}}e^{-z^{2}}M\\left(1,\\tfrac{3}{2},z^{2}\\right),",
+  "={{}_{1}F_{1}}\\left(\\NVar{a};\\NVar{b};\\NVar{z}\\right)",
+  "M\\left(\\NVar{a},\\NVar{b},\\NVar{z}\\right)",
+  "\\operatorname{erf}\\NVar{z}",
+  "\\mathrm{e}",
+  "\\pi",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.11.1",
+   "\\displaystyle=\\frac{1}{\\sqrt{\\pi}}\\gamma\\left(\\tfrac{1}{2},z^{2}\\right),"
+  ],
+  [
+   "7.11.2",
+   "\\displaystyle=\\frac{1}{\\sqrt{\\pi}}\\Gamma\\left(\\tfrac{1}{2},z^{2}\\right),"
+  ],
+  [
+   "7.11.3",
+   "\\displaystyle=\\frac{z}{\\sqrt{\\pi}}E_{\\frac{1}{2}}\\left(z^{2}\\right)."
+  ],
+  [
+   "7.11.4",
+   "\\operatorname{erf}z=\\frac{2z}{\\sqrt{\\pi}}M\\left(\\tfrac{1}{2},\\tfrac{3}{2},-z^{2}\\right)=\\frac{2z}{\\sqrt{\\pi}}e^{-z^{2}}M\\left(1,\\tfrac{3}{2},z^{2}\\right),"
+  ],
+  [
+   "7.11.5",
+   "\\operatorname{erfc}z=\\frac{1}{\\sqrt{\\pi}}e^{-z^{2}}U\\left(\\tfrac{1}{2},\\tfrac{1}{2},z^{2}\\right)=\\frac{z}{\\sqrt{\\pi}}e^{-z^{2}}U\\left(1,\\tfrac{3}{2},z^{2}\\right)."
+  ],
+  [
+   "7.11.6",
+   "C\\left(z\\right)+iS\\left(z\\right)=zM\\left(\\tfrac{1}{2},\\tfrac{3}{2},\\tfrac{1}{2}\\pi iz^{2}\\right)=ze^{\\pi iz^{2}/2}M\\left(1,\\tfrac{3}{2},-\\tfrac{1}{2}\\pi iz^{2}\\right)."
+  ],
+  [
+   "7.11.7",
+   "\\displaystyle=z{{}_{1}F_{2}}\\left(\\tfrac{1}{4};\\tfrac{5}{4},\\tfrac{1}{2};-\\tfrac{1}{16}\\pi^{2}z^{4}\\right),"
+  ],
+  [
+   "7.11.8",
+   "\\displaystyle=\\tfrac{1}{6}\\pi z^{3}{{}_{1}F_{2}}\\left(\\tfrac{3}{4};\\tfrac{7}{4},\\tfrac{3}{2};-\\tfrac{1}{16}\\pi^{2}z^{4}\\right)."
+  ]
+ ],
+ "context": "For the notation see \u00a7 13.2(i) . 7.11.4 erf \u2061 z = 2 \u2062 z \u03c0 \u2062 M \u2061 ( 1 2 , 3 2 , \u2212 z 2 ) = 2 \u2062 z \u03c0 \u2062 e \u2212 z 2 \u2062 M \u2061 ( 1 , 3 2 , z 2 ) , \u24d8 Symbols: M \u2061 ( a , b , z ) : = F 1 1 \u2061 ( a ; b ; z ) Kummer confluent hypergeometric function , \u03c0 : the ratio of the circumference of a circle to its diameter , erf \u2061 z : error function , e : base of natural logarithm and z : complex variable A&S Ref: 7.1.21 Permalink: http://dlmf.nist.gov/7.11.E4 Encodings: TeX , pMML , png See also: Annotations for \u00a77.11 , \u00a77.11 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "erf",
+   "href": "7.2#E1",
+   "gloss": "error function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "M",
+   "href": "13.2#E2",
+   "gloss": "=\u2081\ud835\udc39\u2081(\ud835\udc4e;\ud835\udc4f;\ud835\udc67) Kummer confluent hypergeometric function"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "7.1.21",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "M\\left(\\NVar{a},\\NVar{b},\\NVar{z}\\right) : ={{}_{1}F_{1}}\\left(\\NVar{a};\\NVar{b};\\NVar{z}\\right) Kummer confluent hypergeometric function , \\pi : the ratio of the circumference of a circle to its diameter , \\operatorname{erf}\\NVar{z} : error function , \\mathrm{e} : base of natural logarithm and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

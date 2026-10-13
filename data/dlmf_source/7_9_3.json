@@ -1,0 +1,76 @@
+{
+ "tag": "7.9.3",
+ "url": "https://dlmf.nist.gov/7.9#E3",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle=\\frac{i}{\\sqrt{\\pi}}\\cfrac{1}{z-\\cfrac{\\frac{1}{2}}{z-\\cfrac{1}{z-\\cfrac{\\frac{3}{2}}{z-\\cfrac{2}{z-\\cdots}}}}},",
+  "\\displaystyle w\\left(z\\right)",
+  "w\\left(\\NVar{z}\\right)",
+  "\\mathrm{e}",
+  "\\mathrm{i}",
+  "\\Im z>0",
+  "\\Re",
+  "\\pi",
+  "\\Im",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.9.1",
+   "\\displaystyle=\\cfrac{z}{z^{2}+\\cfrac{\\frac{1}{2}}{1+\\cfrac{1}{z^{2}+\\cfrac{\\frac{3}{2}}{1+\\cfrac{2}{z^{2}+\\cdots}}}}},"
+  ],
+  [
+   "7.9.2",
+   "\\displaystyle=\\cfrac{2z}{2z^{2}+1-\\cfrac{1\\cdot 2}{2z^{2}+5-\\cfrac{3\\cdot 4}{2z^{2}+9-\\cdots}}},"
+  ],
+  [
+   "7.9.3",
+   "\\displaystyle=\\frac{i}{\\sqrt{\\pi}}\\cfrac{1}{z-\\cfrac{\\frac{1}{2}}{z-\\cfrac{1}{z-\\cfrac{\\frac{3}{2}}{z-\\cfrac{2}{z-\\cdots}}}}},"
+  ]
+ ],
+ "context": "ass=\"ltx_ref\"> e : base of natural logarithm , \u211c \u2061 : real part and z : complex variable Referenced by: \u00a77.9 Permalink: http://dlmf.nist.gov/7.9.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.9 and Ch.7 7.9.3 w \u2061 ( z ) = i \u03c0 \u2062 1 z \u2212 1 2 z \u2212 1 z \u2212 3 2 z \u2212 2 z \u2212 \u22ef , \u2111 \u2061 z > 0 . \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , \u2111 \u2061 : imaginary part , i : imaginary unit and z : complex variable A&S Ref: 7.1.15 (in different form) Permalink: http://dlmf.nist.gov/7.9.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.9 and Ch.7",
+ "xref_context": [],
+ "constraints": [
+  "\\Im z>0"
+ ],
+ "symbols": [
+  {
+   "token": "w",
+   "href": "7.2#E3",
+   "gloss": "Faddeeva (or Faddeyeva) function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "i",
+   "href": "1.9#E1",
+   "gloss": "imaginary unit"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "\u2111",
+   "href": "1.9#E2",
+   "gloss": "imaginary part"
+  }
+ ],
+ "info": {
+  "proof_sketch": "",
+  "defines": "",
+  "notes": "",
+  "keywords": "",
+  "as_ref": "7.1.15 (in different form)",
+  "referenced_by": "",
+  "sources": "",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , w\\left(\\NVar{z}\\right) : Faddeeva (or Faddeyeva) function , \\Im : imaginary part , \\mathrm{i} : imaginary unit and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

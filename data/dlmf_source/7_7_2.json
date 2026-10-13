@@ -1,0 +1,144 @@
+{
+ "tag": "7.7.2",
+ "url": "https://dlmf.nist.gov/7.7#E2",
+ "kind": "equation",
+ "latex": [
+  "w\\left(z\\right)=\\frac{1}{\\pi i}\\int_{-\\infty}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{t-z}=\\frac{2z}{\\pi i}\\int_{0}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{t^{2}-z^{2}},",
+  "w\\left(\\NVar{z}\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "\\mathrm{e}",
+  "\\mathrm{i}",
+  "\\Im z>0",
+  "\\int",
+  "\\pi",
+  "\\Im",
+  "z",
+  "x"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.7.1",
+   "\\operatorname{erfc}z=\\frac{2}{\\pi}e^{-z^{2}}\\int_{0}^{\\infty}\\frac{e^{-z^{2}t^{2}}}{t^{2}+1}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.7.2",
+   "w\\left(z\\right)=\\frac{1}{\\pi i}\\int_{-\\infty}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{t-z}=\\frac{2z}{\\pi i}\\int_{0}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{t^{2}-z^{2}},"
+  ],
+  [
+   "7.7.3",
+   "\\int_{0}^{\\infty}e^{-at^{2}+2izt}\\,\\mathrm{d}t=\\frac{1}{2}\\sqrt{\\frac{\\pi}{a}}e^{-z^{2}/a}+\\frac{i}{\\sqrt{a}}F\\left(\\frac{z}{\\sqrt{a}}\\right),"
+  ],
+  [
+   "7.7.4",
+   "\\int_{0}^{\\infty}\\frac{e^{-at}}{\\sqrt{t+z^{2}}}\\,\\mathrm{d}t=\\sqrt{\\frac{\\pi}{a}}e^{az^{2}}\\operatorname{erfc}\\left(\\sqrt{a}z\\right),"
+  ],
+  [
+   "7.7.5",
+   "\\int_{0}^{1}\\frac{e^{-at^{2}}}{t^{2}+1}\\,\\mathrm{d}t=\\frac{\\pi}{4}e^{a}\\left(1-(\\operatorname{erf}\\sqrt{a})^{2}\\right),"
+  ],
+  [
+   "7.7.6",
+   "\\int_{x}^{\\infty}e^{-(at^{2}+2bt+c)}\\,\\mathrm{d}t=\\frac{1}{2}\\sqrt{\\frac{\\pi}{a}}e^{(b^{2}-ac)/a}\\operatorname{erfc}\\left(\\sqrt{a}x+\\frac{b}{\\sqrt{a}}\\right),"
+  ],
+  [
+   "7.7.7",
+   "\\int_{x}^{\\infty}e^{-a^{2}t^{2}-(b^{2}/t^{2})}\\,\\mathrm{d}t=\\frac{\\sqrt{\\pi}}{4a}\\left(e^{2ab}\\operatorname{erfc}\\left(ax+(b/x)\\right)+e^{-2ab}\\operatorname{erfc}\\left(ax-(b/x)\\right)\\right),"
+  ],
+  [
+   "7.7.8",
+   "\\int_{0}^{\\infty}e^{-a^{2}t^{2}-(b^{2}/t^{2})}\\,\\mathrm{d}t=\\frac{\\sqrt{\\pi}}{2a}e^{-2ab},"
+  ],
+  [
+   "7.7.9",
+   "\\int_{0}^{x}\\operatorname{erf}t\\,\\mathrm{d}t=x\\operatorname{erf}x+\\frac{1}{\\sqrt{\\pi}}\\left(e^{-x^{2}}-1\\right)."
+  ],
+  [
+   "7.7.10",
+   "\\displaystyle=\\frac{1}{\\pi\\sqrt{2}}\\int_{0}^{\\infty}\\frac{e^{-\\pi z^{2}t/2}}{\\sqrt{t}(t^{2}+1)}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.7.11",
+   "\\displaystyle=\\frac{1}{\\pi\\sqrt{2}}\\int_{0}^{\\infty}\\frac{\\sqrt{t}e^{-\\pi z^{2}t/2}}{t^{2}+1}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.7.12",
+   "\\mathrm{g}\\left(z\\right)+i\\mathrm{f}\\left(z\\right)=e^{-\\pi iz^{2}/2}\\int_{z}^{\\infty}e^{\\pi it^{2}/2}\\,\\mathrm{d}t."
+  ],
+  [
+   "7.7.13",
+   "\\mathrm{f}\\left(z\\right)=\\frac{(2\\pi)^{-3/2}}{2\\pi i}\\int_{c-i\\infty}^{c+i\\infty}\\zeta^{-s}\\Gamma\\left(s\\right)\\Gamma\\left(s+\\tfrac{1}{2}\\right)\\*\\Gamma\\left(s+\\tfrac{3}{4}\\right)\\Gamma\\left(\\tfrac{1}{4}-s\\right)\\,\\mathrm{d}s,"
+  ],
+  [
+   "7.7.14",
+   "\\mathrm{g}\\left(z\\right)=\\frac{(2\\pi)^{-3/2}}{2\\pi i}\\int_{c-i\\infty}^{c+i\\infty}\\zeta^{-s}\\Gamma\\left(s\\right)\\Gamma\\left(s+\\tfrac{1}{2}\\right)\\*\\Gamma\\left(s+\\tfrac{1}{4}\\right)\\Gamma\\left(\\tfrac{3}{4}-s\\right)\\,\\mathrm{d}s."
+  ],
+  [
+   "7.7.15",
+   "\\int_{0}^{\\infty}e^{-at}\\cos\\left(t^{2}\\right)\\,\\mathrm{d}t=\\sqrt{\\frac{\\pi}{2}}\\mathrm{f}\\left(\\frac{a}{\\sqrt{2\\pi}}\\right),"
+  ],
+  [
+   "7.7.16",
+   "\\int_{0}^{\\infty}e^{-at}\\sin\\left(t^{2}\\right)\\,\\mathrm{d}t=\\sqrt{\\frac{\\pi}{2}}\\mathrm{g}\\left(\\frac{a}{\\sqrt{2\\pi}}\\right),"
+  ]
+ ],
+ "context": "y=\"inline\"> ph : phase and z : complex variable A&S Ref: 7.4.11 (in different form) Referenced by: \u00a77.11 , \u00a77.7(i) Permalink: http://dlmf.nist.gov/7.7.E1 Encodings: TeX , pMML , png See also: Annotations for \u00a77.7(i) , \u00a77.7 and Ch.7 7.7.2 w \u2061 ( z ) = 1 \u03c0 \u2062 i \u2062 \u222b \u2212 \u221e \u221e e \u2212 t 2 \u2062 d t t \u2212 z = 2 \u2062 z \u03c0 \u2062 i \u2062 \u222b 0 \u221e e \u2212 t 2 \u2062 d t t 2 \u2212 z 2 , \u2111 \u2061 z > 0 . \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , e : base of natural logarithm , \u2111 \u2061 : imaginary part , i : imaginary unit , \u222b : integral and z : complex variable A&S Ref: 7.1.4 (in different form) Referenced by: \u00a77.19(i) , \u00a77.22(i) , \u00a77.7(i) Permalink: http://dlmf.nist.gov/7.7.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.7(i) , \u00a77.7 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [
+  "\\Im z>0"
+ ],
+ "symbols": [
+  {
+   "token": "w",
+   "href": "7.2#E3",
+   "gloss": "Faddeeva (or Faddeyeva) function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "i",
+   "href": "1.9#E1",
+   "gloss": "imaginary unit"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  },
+  {
+   "token": "\u2111",
+   "href": "1.9#E2",
+   "gloss": "imaginary part"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.19(i) , \u00a77.22(i) , \u00a77.7(i)",
+  "as_ref": "7.1.4 (in different form)",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\,\\mathrm{d}\\NVar{x} : differential of x , w\\left(\\NVar{z}\\right) : Faddeeva (or Faddeyeva) function , \\mathrm{e} : base of natural logarithm , \\Im : imaginary part , \\mathrm{i} : imaginary unit , \\int : integral and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

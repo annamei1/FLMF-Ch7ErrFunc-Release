@@ -1,0 +1,80 @@
+{
+ "tag": "7.4.3",
+ "url": "https://dlmf.nist.gov/7.4#E3",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle=2e^{-z^{2}}-w\\left(z\\right).",
+  "\\displaystyle w\\left(-z\\right)",
+  "\\operatorname{erfc}\\NVar{z}",
+  "w\\left(\\NVar{z}\\right)",
+  "\\mathrm{e}",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.4.1",
+   "\\displaystyle=-\\operatorname{erf}\\left(z\\right),"
+  ],
+  [
+   "7.4.2",
+   "\\displaystyle=2-\\operatorname{erfc}\\left(z\\right),"
+  ],
+  [
+   "7.4.3",
+   "\\displaystyle=2e^{-z^{2}}-w\\left(z\\right)."
+  ],
+  [
+   "7.4.4",
+   "\\displaystyle=-F\\left(z\\right)."
+  ],
+  [
+   "7.4.5",
+   "\\displaystyle=-C\\left(z\\right),"
+  ],
+  [
+   "7.4.6",
+   "\\displaystyle=-iS\\left(z\\right)."
+  ],
+  [
+   "7.4.7",
+   "\\displaystyle=(1/\\sqrt{2})e^{-\\frac{1}{4}\\pi i-\\frac{1}{2}\\pi iz^{2}}+i\\mathrm{g}\\left(z\\right)."
+  ],
+  [
+   "7.4.8",
+   "\\displaystyle=\\sqrt{2}\\cos\\left(\\tfrac{1}{4}\\pi+\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{f}\\left(z\\right),"
+  ]
+ ],
+ "context": "omplex variable\">z ) , \u24d8 Symbols: erfc \u2061 z : complementary error function and z : complex variable Permalink: http://dlmf.nist.gov/7.4.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.4 and Ch.7 7.4.3 w \u2061 ( \u2212 z ) = 2 \u2062 e \u2212 z 2 \u2212 w \u2061 ( z ) . \u24d8 Symbols: w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , e : base of natural logarithm and z : complex variable A&S Ref: 7.1.11 Permalink: http://dlmf.nist.gov/7.4.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.4 and Ch.7 <tbody",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "w",
+   "href": "7.2#E3",
+   "gloss": "Faddeeva (or Faddeyeva) function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "7.1.11",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "w\\left(\\NVar{z}\\right) : Faddeeva (or Faddeyeva) function , \\mathrm{e} : base of natural logarithm and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

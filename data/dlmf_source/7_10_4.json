@@ -1,0 +1,81 @@
+{
+ "tag": "7.10.4",
+ "url": "https://dlmf.nist.gov/7.10#E4",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle\\frac{\\mathrm{d}\\mathrm{f}\\left(z\\right)}{\\mathrm{d}z}",
+  "\\displaystyle\\frac{\\mathrm{d}\\mathrm{g}\\left(z\\right)}{\\mathrm{d}z}",
+  "\\displaystyle=\\pi z\\mathrm{f}\\left(z\\right)-1.",
+  "\\displaystyle=-\\pi z\\mathrm{g}\\left(z\\right),",
+  "\\frac{\\mathrm{d}\\NVar{f}}{\\mathrm{d}\\NVar{x}}",
+  "\\mathrm{f}\\left(\\NVar{z}\\right)",
+  "\\mathrm{g}\\left(\\NVar{z}\\right)",
+  "w\\left(\\NVar{z}\\right)",
+  "\\pi",
+  "z",
+  "n",
+  "f",
+  "x"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.10.1",
+   "\\frac{{\\mathrm{d}}^{n+1}\\operatorname{erf}z}{{\\mathrm{d}z}^{n+1}}=(-1)^{n}\\frac{2}{\\sqrt{\\pi}}H_{n}\\left(z\\right)e^{-z^{2}},"
+  ],
+  [
+   "7.10.2",
+   "w'\\left(z\\right)=-2zw\\left(z\\right)+(2i/\\sqrt{\\pi}),"
+  ],
+  [
+   "7.10.3",
+   "{{w}^{(n+2)}\\left(z\\right)+2z{w}^{(n+1)}\\left(z\\right)+2(n+1){w}^{(n)}\\left(z\\right)=0},"
+  ],
+  [
+   "7.10.4",
+   "\\displaystyle\\frac{\\mathrm{d}\\mathrm{f}\\left(z\\right)}{\\mathrm{d}z}"
+  ]
+ ],
+ "context": "es \u2023 Chapter 7 Error Functions, Dawson\u2019s and Fresnel Integrals\" class=\"ltx_ref\"> w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , z : complex variable and n : nonnegative integer A&S Ref: 7.1.20 Permalink: http://dlmf.nist.gov/7.10.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.10 and Ch.7 7.10.4 d f \u2061 ( z ) d z = \u2212 \u03c0 \u2062 z \u2062 g \u2061 ( z ) , d g \u2061 ( z ) d z = \u03c0 \u2062 z \u2062 f \u2061 ( z ) \u2212 1 . \u24d8 Symbols: f \u2061 ( z ) : auxiliary function for Fresnel integrals , g \u2061 ( z ) : auxiliary function for Fresnel integrals , \u03c0 : the ratio of the circumference of a circle to its diameter , d f d x : derivative of f with respect to x and z : complex variable A&S Ref: 7.3.21 (in slightly different form) Permalink: http://dlmf.nist.gov/7.10.E4 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.10 and Ch.7",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "d",
+   "href": "1.4#E4",
+   "gloss": "derivative of \ud835\udc53 with respect to \ud835\udc65"
+  },
+  {
+   "token": "f",
+   "href": "7.2#E10",
+   "gloss": "auxiliary function for Fresnel integrals"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "g",
+   "href": "7.2#E11",
+   "gloss": "auxiliary function for Fresnel integrals"
+  }
+ ],
+ "info": {
+  "proof_sketch": "",
+  "defines": "",
+  "notes": "",
+  "keywords": "",
+  "as_ref": "7.3.21 (in slightly different form)",
+  "referenced_by": "",
+  "sources": "",
+  "symbols_text": "\\mathrm{f}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals , \\mathrm{g}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals , \\pi : the ratio of the circumference of a circle to its diameter , \\frac{\\mathrm{d}\\NVar{f}}{\\mathrm{d}\\NVar{x}} : derivative of f with respect to x and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

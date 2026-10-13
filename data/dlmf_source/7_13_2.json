@@ -1,0 +1,120 @@
+{
+ "tag": "7.13.2",
+ "url": "https://dlmf.nist.gov/7.13#E2",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle\\sim\\lambda-\\tfrac{1}{4}\\mu\\lambda^{-1}+\\tfrac{1}{16}(1-\\mu+\\tfrac{1}{2}\\mu^{2})\\lambda^{-3}-\\cdots,",
+  "\\displaystyle\\sim\\lambda+\\tfrac{1}{4}\\mu\\lambda^{-1}+\\tfrac{1}{16}(1-\\mu+\\tfrac{1}{2}\\mu^{2})\\lambda^{-3}+\\cdots,",
+  "\\tfrac{1}{2}\\pi<\\operatorname{ph}z<\\tfrac{3}{4}\\pi",
+  "\\displaystyle=\\ln\\left(\\lambda\\sqrt{2\\pi}\\right).",
+  "\\displaystyle=\\sqrt{(n-\\tfrac{1}{8})\\pi},",
+  "\\operatorname{erfc}\\NVar{z}",
+  "\\operatorname{erfc}z.",
+  "\\displaystyle\\lambda",
+  "\\operatorname{erfc}z",
+  "\\displaystyle x_{n}",
+  "\\displaystyle y_{n}",
+  "z_{n}=x_{n}+iy_{n}",
+  "i\\overline{z}_{n}",
+  "\\displaystyle\\mu",
+  "\\overline{z}_{n}",
+  "w\\left(z\\right)",
+  "n=1,2,3,\\dots",
+  "x_{n}+iy_{n}",
+  "\\ln\\NVar{z}",
+  "n\\to\\infty",
+  "\\mathrm{i}",
+  "-1.35481",
+  "-2.17704",
+  "-2.78438",
+  "-3.28741",
+  "-3.72594",
+  "\\lambda",
+  "iz_{n}",
+  "x_{n}",
+  "y_{n}",
+  "\\sim",
+  "\\mu",
+  "\\pi",
+  "n",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.13.1",
+   "\\displaystyle\\sim\\lambda-\\tfrac{1}{4}\\mu\\lambda^{-1}+\\tfrac{1}{16}(1-\\mu+\\tfrac{1}{2}\\mu^{2})\\lambda^{-3}-\\cdots,"
+  ],
+  [
+   "7.13.2",
+   "\\tfrac{1}{2}\\pi<\\operatorname{ph}z<\\tfrac{3}{4}\\pi"
+  ],
+  [
+   "7.13.3",
+   "\\displaystyle\\sim-\\lambda+\\tfrac{1}{4}\\mu\\lambda^{-1}-\\tfrac{1}{16}(1-\\mu+\\tfrac{1}{2}\\mu^{2})\\lambda^{-3}+\\cdots,"
+  ],
+  [
+   "7.13.4",
+   "\\displaystyle=\\ln\\left(2\\lambda\\sqrt{2\\pi}\\right)."
+  ],
+  [
+   "7.13.5",
+   "\\displaystyle\\sim\\lambda+\\frac{\\alpha(\\alpha\\pi-4)}{8\\pi\\lambda^{3}}+\\cdots,"
+  ],
+  [
+   "7.13.6",
+   "\\displaystyle=(2/\\pi)\\ln\\left(\\pi\\lambda\\right)."
+  ],
+  [
+   "7.13.7",
+   "\\displaystyle=2\\sqrt{n},"
+  ]
+ ],
+ "context": "As n \u2192 \u221e 7.13.1 x n \u223c \u03bb \u2212 1 4 \u2062 \u03bc \u2062 \u03bb \u2212 1 + 1 16 \u2062 ( 1 \u2212 \u03bc + 1 2 \u2062 \u03bc 2 ) \u2062 \u03bb \u2212 3 \u2212 \u22ef , y n \u223c \u03bb + 1 4 \u2062 \u03bc \u2062 \u03bb \u2212 1 + 1 16 \u2062 ( 1 \u2212 \u03bc + 1 2 \u2062 \u03bc 2 ) \u2062 \u03bb \u2212 3 + \u22ef , \u24d8 Symbols: \u223c : Poincar\u00e9 asymptotic expansion , n : nonnegative integer , x n : realpart of zero , y n : imagpart of zero , \u03bc and \u03bb A&S Ref: Table 7.10 (has two-term approximation) Permalink: http://dlmf.nist.gov/7.13.E1 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.13(i) , \u00a77.13 and Ch.7 where 7.13.2 \u03bb = ( n \u2212 1 8 ) \u2062 \u03c0 , \u03bc = ln \u2061 ( \u03bb \u2062 2 \u2062 \u03c0 ) . \u24d8 Defines: \u03bc (locally) and \u03bb (locally) Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , ln \u2061 z : principal branch of logarithm function and n : nonnegative integer Permalink: http://dlmf.nist.gov/7.13.E2 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.13(i) , \u00a77.13 and Ch.7 \u00a77.13(ii) Zeros of erfc \u2061 z \u24d8 Keywords: error functions , zeros Notes: See Fettis et al. ( 1973 ) and Elbert and Laforgia ( 2008 ) . Referenced by: \u00a712.11(ii) , \u00a77.13(iv) , Figure 7.3.6 , Figure 7.3.6 , Figure 7.3.6 , Erratum (V1.0.5) for References , Erratum (V1.0.5) for Clarifications Permalink: http://dlmf.nist.gov/7.13.ii Addition (effective with 1.0.5): Elbert and Laforgia ( 2008 ) has been added as a reference for this subsection. Also, the first sentence was stated more precisely by revising the leading clause. See also: Annotations for \u00a77.13 and Ch.7 In the sector 1 2 \u2062 \u03c0 < ph \u2061 z < 3 4 \u2062 \u03c0 , erfc \u2061 z has an infinite set of zeros z n = x n + i \u2062 y n , n = 1 , 2 , 3 , \u2026 , arranged in order of increasing absolute value. The other zeros of erfc \u2061 z are z \u00af n . The zeros of w \u2061 ( z ) are i \u2062 z n and i \u2062 z \u00af n . Table 7.13.2 gives 10D values of the first five x n and y n . For graphical illustration see Figure 7.3.6 . Table 7.13.2: Zeros x n + i \u2062 y n of erfc \u2061 z . n x n y n 1 \u2212 1.35481 01281 1.99146 68428 2 \u2212 2.17704 49061 2.69114 90243 3 \u2212 2.78438 76132 3.23533 08684 4 \u2212 3.28741 07894 3.69730 97025 5 \u2212 3.72594 87194 4.10610 72847 \u24d8 Symbols: erfc \u2061 z : complementary error function , i : imaginary unit , z : complex variable , n : nonnegative integer , x n : realpart of zero and y n : imagpart of zero Keywords: error functions , tables , zeros Referenced by: \u00a77.13(ii) Permalink: http://dlmf.nist.gov/7.13.T2 See also: Annotations for \u00a77.13(ii) , \u00a77.13 and Ch.7 As n \u2192 \u221e <table",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "\u03bb",
+   "href": "7.13#E2",
+   "gloss": "\ud835\udf06"
+  },
+  {
+   "token": "n",
+   "href": "7.1#p1.t1.r3",
+   "gloss": "nonnegative integer"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "\u03bc",
+   "href": "7.13#E2",
+   "gloss": "\ud835\udf07"
+  },
+  {
+   "token": "ln",
+   "href": "4.2#E2",
+   "gloss": "principal branch of logarithm function"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "\\mu (locally) and \\lambda (locally)",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\ln\\NVar{z} : principal branch of logarithm function and n : nonnegative integer",
+  "changes": []
+ },
+ "parser_version": 2
+}

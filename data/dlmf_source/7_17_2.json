@@ -1,0 +1,77 @@
+{
+ "tag": "7.17.2",
+ "url": "https://dlmf.nist.gov/7.17#E2",
+ "kind": "equation",
+ "latex": [
+  "\\operatorname{inverf}x=t+\\tfrac{1}{3}t^{3}+\\tfrac{7}{30}t^{5}+\\tfrac{127}{630}t^{7}+\\cdots=\\sum_{m=0}^{\\infty}a_{m}t^{2m+1},",
+  "a_{m+1}=\\frac{1}{2m+3}\\sum_{n=0}^{m}\\frac{2n+1}{m-n+1}a_{n}a_{m-n},",
+  "=\\sum_{m=0}^{\\infty}a_{m}t^{2m+1}",
+  "\\operatorname{inverf}\\NVar{x}",
+  "t=\\frac{1}{2}\\sqrt{\\pi}x",
+  "\\operatorname{inverfc}x",
+  "m=0,1,2,\\ldots",
+  "a_{0}=1",
+  "x\\to 0",
+  "|x|<1",
+  "x",
+  "n"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.17.1",
+   "\\displaystyle=\\operatorname{inverfc}x,"
+  ],
+  [
+   "7.17.2",
+   "\\operatorname{inverf}x=t+\\tfrac{1}{3}t^{3}+\\tfrac{7}{30}t^{5}+\\tfrac{127}{630}t^{7}+\\cdots=\\sum_{m=0}^{\\infty}a_{m}t^{2m+1},"
+  ],
+  [
+   "7.17.3",
+   "\\operatorname{inverfc}x\\sim u^{-1/2}+a_{2}u^{3/2}+a_{3}u^{5/2}+a_{4}u^{7/2}+\\cdots,"
+  ],
+  [
+   "7.17.4",
+   "\\displaystyle=\\tfrac{1}{384}(4v^{3}+27v^{2}+108v-300),"
+  ],
+  [
+   "7.17.5",
+   "u=-2/\\ln\\left(\\pi x^{2}\\ln\\left(1/x\\right)\\right),"
+  ],
+  [
+   "7.17.6",
+   "v=\\ln\\left(\\ln\\left(1/x\\right)\\right)-2+\\ln\\pi."
+  ]
+ ],
+ "context": "respectively. \u00a77.17(ii) Power Series \u24d8 Keywords: error functions , inverse functions , power-series expansions Notes: See Carlitz ( 1963 ) . Permalink: http://dlmf.nist.gov/7.17.ii Addition (effective with 1.1.7): The recurrence relation ( 7.17.2_5 ) and some descriptive text above it was added. See also: Annotations for \u00a77.17 and Ch.7 With t = 1 2 \u2062 \u03c0 \u2062 x , 7.17.2 inverf \u2061 x = t + 1 3 \u2062 t 3 + 7 30 \u2062 t 5 + 127 630 \u2062 t 7 + \u22ef = \u2211 m = 0 \u221e a m \u2062 t 2 \u2062 m + 1 , | x | < 1 , \u24d8 Symbols: inverf \u2061 x : inverse error function and x : real variable Referenced by: Erratum (V1.1.7) for Additions Permalink: http://dlmf.nist.gov/7.17.E2 Encodings: TeX , pMML , png Addition (effective with 1.1.7): The equality \u201c = \u2211 m = 0 \u221e a m \u2062 t 2 \u2062 m + 1 \u201d was added to this equation. See also: Annotations for \u00a77.17(ii) , \u00a77.17 and Ch.7 where a 0 = 1 and the other coefficients follow from the recursion 7.17.2_5 a m + 1 = 1 2 \u2062 m + 3 \u2062 \u2211 n = 0 m 2 \u2062 n + 1 m \u2212 n + 1 \u2062 a n \u2062 a m \u2212 n , m = 0 , 1 , 2 , \u2026 . \u24d8 Symbols: n : nonnegative integer Referenced by: \u00a77.17(ii) , Erratum (V1.1.7) for Additions Permalink: http://dlmf.nist.gov/7.17.E2_5 Encodings: TeX , pMML , png Addition (effective with 1.1.7): This equation was added. See also: Annotations for \u00a77.17(ii) , \u00a77.17 and Ch.7 For these results and 25S values of the first 200 coefficients see Strecok ( 1968 ) . \u00a77.17(iii) Asymptotic Expansion of inverfc \u2061 x for Small x \u24d8 Keywords: asymptotic expansions , error functions , inverse functions Notes: ( 7.17.3 ) follows from Blair et al. ( 1976 ) , after modifications. Permalink: http://dlmf.nist.gov/7.17.iii Addition (effective with 1.1.7): A sentence was added at the end of this subsection indicating that one can find an alternative representation of ( 7.17.3 ) in Blair et al. ( 1976 ) . See also: Annotations for \u00a77.17 and Ch.7 As x \u2192 0 <table",
+ "xref_context": [],
+ "constraints": [
+  "|x|<1"
+ ],
+ "symbols": [
+  {
+   "token": "inverf",
+   "href": "7.17#E1",
+   "gloss": "inverse error function"
+  },
+  {
+   "token": "x",
+   "href": "7.1#p1.t1.r1",
+   "gloss": "real variable"
+  }
+ ],
+ "info": {
+  "referenced_by": "Erratum (V1.1.7) for Additions",
+  "as_ref": "",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\operatorname{inverf}\\NVar{x} : inverse error function and x : real variable",
+  "changes": [
+   "Addition (effective with 1.1.7): The equality \u201c =\\sum_{m=0}^{\\infty}a_{m}t^{2m+1} \u201d was added to this equation."
+  ]
+ },
+ "parser_version": 2
+}

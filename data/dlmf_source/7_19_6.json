@@ -1,0 +1,93 @@
+{
+ "tag": "7.19.6",
+ "url": "https://dlmf.nist.gov/7.19#E6",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle=-\\mathsf{V}\\left(x,t\\right).",
+  "\\displaystyle=\\mathsf{U}\\left(x,t\\right),",
+  "\\mathsf{V}\\left(\\NVar{x},\\NVar{t}\\right)",
+  "\\displaystyle\\mathsf{U}\\left(-x,t\\right)",
+  "\\displaystyle\\mathsf{V}\\left(-x,t\\right)",
+  "\\mathsf{U}\\left(\\NVar{x},\\NVar{t}\\right)",
+  "x"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.19.1",
+   "\\mathsf{U}\\left(x,t\\right)=\\frac{1}{\\sqrt{4\\pi t}}\\int_{-\\infty}^{\\infty}\\frac{e^{-(x-y)^{2}/(4t)}}{1+y^{2}}\\,\\mathrm{d}y,"
+  ],
+  [
+   "7.19.2",
+   "\\mathsf{V}\\left(x,t\\right)=\\frac{1}{\\sqrt{4\\pi t}}\\int_{-\\infty}^{\\infty}\\frac{ye^{-(x-y)^{2}/(4t)}}{1+y^{2}}\\,\\mathrm{d}y."
+  ],
+  [
+   "7.19.3",
+   "\\mathsf{U}\\left(x,t\\right)+i\\mathsf{V}\\left(x,t\\right)=\\sqrt{\\frac{\\pi}{4t}}e^{z^{2}}\\operatorname{erfc}z,"
+  ],
+  [
+   "7.19.4",
+   "H\\left(a,u\\right)=\\frac{a}{\\pi}\\int_{-\\infty}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{(u-t)^{2}+a^{2}}=\\frac{1}{a\\sqrt{\\pi}}\\mathsf{U}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)."
+  ],
+  [
+   "7.19.5",
+   "\\displaystyle\\lim_{t\\to 0}\\mathsf{U}\\left(x,t\\right)"
+  ],
+  [
+   "7.19.6",
+   "\\displaystyle=-\\mathsf{V}\\left(x,t\\right)."
+  ],
+  [
+   "7.19.7",
+   "\\displaystyle\\leq\\mathsf{V}\\left(x,t\\right)\\leq 1."
+  ],
+  [
+   "7.19.8",
+   "\\displaystyle=x\\mathsf{U}\\left(x,t\\right)+2t\\frac{\\partial\\mathsf{U}\\left(x,t\\right)}{\\partial x},"
+  ],
+  [
+   "7.19.9",
+   "\\displaystyle=1-x\\mathsf{V}\\left(x,t\\right)-2t\\frac{\\partial\\mathsf{V}\\left(x,t\\right)}{\\partial x}."
+  ],
+  [
+   "7.19.10",
+   "\\mathsf{U}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)=a\\int_{0}^{\\infty}e^{-at-\\frac{1}{4}t^{2}}\\cos\\left(ut\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.19.11",
+   "\\mathsf{V}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)=a\\int_{0}^{\\infty}e^{-at-\\frac{1}{4}t^{2}}\\sin\\left(ut\\right)\\,\\mathrm{d}t."
+  ]
+ ],
+ "context": "x\" altimg-valign=\"-7px\" altimg-width=\"67px\" alttext=\"\\mathsf{V}\\left(\\NVar{x},\\NVar{t}\\right)\" display=\"inline\"> \ud835\uddb5 \u2061 ( x , t ) : Voigt function and x : real variable Referenced by: \u00a77.19(iii) Permalink: http://dlmf.nist.gov/7.19.E5 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.19(iii) , \u00a77.19 and Ch.7 7.19.6 \ud835\uddb4 \u2061 ( \u2212 x , t ) = \ud835\uddb4 \u2061 ( x , t ) , \ud835\uddb5 \u2061 ( \u2212 x , t ) = \u2212 \ud835\uddb5 \u2061 ( x , t ) . \u24d8 Symbols: \ud835\uddb4 \u2061 ( x , t ) : Voigt function , \ud835\uddb5 \u2061 ( x , t ) : Voigt function and x : real variable Permalink: http://dlmf.nist.gov/7.19.E6 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.19(iii) , \u00a77.19 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "\ud835\uddb4",
+   "href": "7.19#E1",
+   "gloss": "Voigt function"
+  },
+  {
+   "token": "x",
+   "href": "7.1#p1.t1.r1",
+   "gloss": "real variable"
+  },
+  {
+   "token": "\ud835\uddb5",
+   "href": "7.19#E2",
+   "gloss": "Voigt function"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\mathsf{U}\\left(\\NVar{x},\\NVar{t}\\right) : Voigt function , \\mathsf{V}\\left(\\NVar{x},\\NVar{t}\\right) : Voigt function and x : real variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

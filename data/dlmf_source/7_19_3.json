@@ -1,0 +1,124 @@
+{
+ "tag": "7.19.3",
+ "url": "https://dlmf.nist.gov/7.19#E3",
+ "kind": "equation",
+ "latex": [
+  "\\mathsf{U}\\left(x,t\\right)+i\\mathsf{V}\\left(x,t\\right)=\\sqrt{\\frac{\\pi}{4t}}e^{z^{2}}\\operatorname{erfc}z,",
+  "\\mathsf{U}\\left(\\NVar{x},\\NVar{t}\\right)",
+  "\\mathsf{V}\\left(\\NVar{x},\\NVar{t}\\right)",
+  "\\operatorname{erfc}\\NVar{z}",
+  "z=(1-ix)/(2\\sqrt{t})",
+  "\\mathrm{e}",
+  "\\mathrm{i}",
+  "\\int",
+  "\\pi",
+  "x",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.19.1",
+   "\\mathsf{U}\\left(x,t\\right)=\\frac{1}{\\sqrt{4\\pi t}}\\int_{-\\infty}^{\\infty}\\frac{e^{-(x-y)^{2}/(4t)}}{1+y^{2}}\\,\\mathrm{d}y,"
+  ],
+  [
+   "7.19.2",
+   "\\mathsf{V}\\left(x,t\\right)=\\frac{1}{\\sqrt{4\\pi t}}\\int_{-\\infty}^{\\infty}\\frac{ye^{-(x-y)^{2}/(4t)}}{1+y^{2}}\\,\\mathrm{d}y."
+  ],
+  [
+   "7.19.3",
+   "\\mathsf{U}\\left(x,t\\right)+i\\mathsf{V}\\left(x,t\\right)=\\sqrt{\\frac{\\pi}{4t}}e^{z^{2}}\\operatorname{erfc}z,"
+  ],
+  [
+   "7.19.4",
+   "H\\left(a,u\\right)=\\frac{a}{\\pi}\\int_{-\\infty}^{\\infty}\\frac{e^{-t^{2}}\\,\\mathrm{d}t}{(u-t)^{2}+a^{2}}=\\frac{1}{a\\sqrt{\\pi}}\\mathsf{U}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)."
+  ],
+  [
+   "7.19.5",
+   "\\displaystyle\\lim_{t\\to 0}\\mathsf{U}\\left(x,t\\right)"
+  ],
+  [
+   "7.19.6",
+   "\\displaystyle=-\\mathsf{V}\\left(x,t\\right)."
+  ],
+  [
+   "7.19.7",
+   "\\displaystyle\\leq\\mathsf{V}\\left(x,t\\right)\\leq 1."
+  ],
+  [
+   "7.19.8",
+   "\\displaystyle=x\\mathsf{U}\\left(x,t\\right)+2t\\frac{\\partial\\mathsf{U}\\left(x,t\\right)}{\\partial x},"
+  ],
+  [
+   "7.19.9",
+   "\\displaystyle=1-x\\mathsf{V}\\left(x,t\\right)-2t\\frac{\\partial\\mathsf{V}\\left(x,t\\right)}{\\partial x}."
+  ],
+  [
+   "7.19.10",
+   "\\mathsf{U}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)=a\\int_{0}^{\\infty}e^{-at-\\frac{1}{4}t^{2}}\\cos\\left(ut\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.19.11",
+   "\\mathsf{V}\\left(\\frac{u}{a},\\frac{1}{4a^{2}}\\right)=a\\int_{0}^{\\infty}e^{-at-\\frac{1}{4}t^{2}}\\sin\\left(ut\\right)\\,\\mathrm{d}t."
+  ]
+ ],
+ "context": "ariant=\"normal\" title=\"base of natural logarithm\">e : base of natural logarithm , \u222b : integral and x : real variable Referenced by: \u00a77.19(iii) Permalink: http://dlmf.nist.gov/7.19.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.19(i) , \u00a77.19 and Ch.7 7.19.3 \ud835\uddb4 \u2061 ( x , t ) + i \u2062 \ud835\uddb5 \u2061 ( x , t ) = \u03c0 4 \u2062 t \u2062 e z 2 \u2062 erfc \u2061 z , z = ( 1 \u2212 i \u2062 x ) / ( 2 \u2062 t ) . \u24d8 Symbols: \ud835\uddb4 \u2061 ( x , t ) : Voigt function , \ud835\uddb5 \u2061 ( x , t ) : Voigt function , \u03c0 : the ratio of the circumference of a circle to its diameter , erfc \u2061 z : complementary error function , e : base of natural logarithm , i : imaginary unit , x : real variable and z : complex variable Referenced by: \u00a77.19(i) , \u00a77.22(iv) Permalink: http://dlmf.nist.gov/7.19.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.19(i) , \u00a77.19 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [
+  "z=(1-ix)/(2\\sqrt{t})"
+ ],
+ "symbols": [
+  {
+   "token": "\ud835\uddb4",
+   "href": "7.19#E1",
+   "gloss": "Voigt function"
+  },
+  {
+   "token": "x",
+   "href": "7.1#p1.t1.r1",
+   "gloss": "real variable"
+  },
+  {
+   "token": "i",
+   "href": "1.9#E1",
+   "gloss": "imaginary unit"
+  },
+  {
+   "token": "\ud835\uddb5",
+   "href": "7.19#E2",
+   "gloss": "Voigt function"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "erfc",
+   "href": "7.2#E2",
+   "gloss": "complementary error function"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.19(i) , \u00a77.22(iv)",
+  "as_ref": "",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\mathsf{U}\\left(\\NVar{x},\\NVar{t}\\right) : Voigt function , \\mathsf{V}\\left(\\NVar{x},\\NVar{t}\\right) : Voigt function , \\pi : the ratio of the circumference of a circle to its diameter , \\operatorname{erfc}\\NVar{z} : complementary error function , \\mathrm{e} : base of natural logarithm , \\mathrm{i} : imaginary unit , x : real variable and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

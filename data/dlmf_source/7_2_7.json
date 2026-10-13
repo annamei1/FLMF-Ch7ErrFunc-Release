@@ -1,0 +1,118 @@
+{
+ "tag": "7.2.7",
+ "url": "https://dlmf.nist.gov/7.2#E7",
+ "kind": "equation",
+ "latex": [
+  "\\displaystyle=\\int_{0}^{z}\\cos\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,",
+  "\\displaystyle C\\left(z\\right)",
+  "C\\left(\\NVar{z}\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "\\cos\\NVar{z}",
+  "\\int",
+  "\\pi",
+  "z",
+  "x"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.2.1",
+   "\\operatorname{erf}z=\\frac{2}{\\sqrt{\\pi}}\\int_{0}^{z}e^{-t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.2",
+   "\\operatorname{erfc}z=\\frac{2}{\\sqrt{\\pi}}\\int_{z}^{\\infty}e^{-t^{2}}\\,\\mathrm{d}t=1-\\operatorname{erf}z,"
+  ],
+  [
+   "7.2.3",
+   "w\\left(z\\right)=e^{-z^{2}}\\left(1+\\frac{2i}{\\sqrt{\\pi}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t\\right)=e^{-z^{2}}\\operatorname{erfc}\\left(-iz\\right)."
+  ],
+  [
+   "7.2.4",
+   "|\\operatorname{ph}z|\\leq\\tfrac{1}{4}\\pi-\\delta(<\\tfrac{1}{4}\\pi)"
+  ],
+  [
+   "7.2.5",
+   "F\\left(z\\right)=e^{-z^{2}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t."
+  ],
+  [
+   "7.2.6",
+   "\\displaystyle=\\int_{z}^{\\infty}e^{\\tfrac{1}{2}\\pi\\mathrm{i}t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.7",
+   "\\displaystyle=\\int_{0}^{z}\\cos\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.8",
+   "\\displaystyle=\\int_{0}^{z}\\sin\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.9",
+   "\\displaystyle\\lim_{x\\to\\infty}C\\left(x\\right)"
+  ],
+  [
+   "7.2.10",
+   "\\mathrm{f}\\left(z\\right)=\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.2.11",
+   "\\mathrm{g}\\left(z\\right)=\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)+\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ],
+  [
+   "7.2.12",
+   "G\\left(z\\right)=\\int_{0}^{\\infty}\\frac{e^{-t^{2}}}{t+z}\\,\\mathrm{d}t,"
+  ]
+ ],
+ "context": "of Discussion \u2023 Chapter 1 Algebraic and Analytic Methods\" class=\"ltx_ref\"> \u222b : integral and z : complex variable Referenced by: \u00a77.5 , \u00a77.7(ii) Permalink: http://dlmf.nist.gov/7.2.E6 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iii) , \u00a77.2 and Ch.7 7.2.7 C \u2061 ( z ) = \u222b 0 z cos \u2061 ( 1 2 \u2062 \u03c0 \u2062 t 2 ) \u2062 d t , \u24d8 Defines: C \u2061 ( z ) : Fresnel integral Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , cos \u2061 z : cosine function , d x : differential of x , \u222b : integral and z : complex variable A&S Ref: 7.3.1 Referenced by: \u00a77.5 , \u00a77.6(i) Permalink: http://dlmf.nist.gov/7.2.E7 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iii) , \u00a77.2 and Ch.7 <tbody",
+ "xref_context": [
+  "7.2.6 \u2131 \u2061 ( z ) = \u222b z \u221e e 1 2 \u2062 \u03c0 \u2062 i \u2062 t 2 \u2062 d t , \u24d8 Defines: \u2131 \u2061 ( z ) : Fresnel integral Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm , i : imaginary unit , \u222b : integral and z : complex variable Referenced by: \u00a77.5 , \u00a77.7(ii) Permalink: http://dlmf.nist.gov/7.2.E6 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iii) , \u00a77.2 and Ch.7 7.2.7 C \u2061 ( z ) = \u222b 0 z cos \u2061 ( 1 2 \u2062 \u03c0 \u2062 t 2 ) \u2062 d t , \u24d8 Defines: C \u2061 ( z ) : Fresnel integral Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , cos \u2061 z : cosine function , d x : differential of x , \u222b : integral and z : complex variable A&S Ref: 7.3.1 Referenced by: \u00a77.5 , \u00a77.6(i) Permalink: http://dlmf.nist.gov/7.2.E7 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iii) , \u00a77.2 and Ch.7 7.2.8 S \u2061 ( z ) = \u222b 0 z sin \u2061 ( 1 2 \u2062 \u03c0 \u2062 t 2 ) \u2062 d t , \u24d8 Defines: S \u2061 ( z ) : Fresnel integral Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , \u222b : integral , sin \u2061 z : sine function and z : complex variable A&S Ref: 7.3.2 Referenced by: \u00a77.5 , \u00a77.6(i) Permalink: http://dlmf.nist.gov/7.2.E8 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(iii) , \u00a77.2 and Ch.7",
+  "\u2131 \u2061 ( z ) , C \u2061 ( z ) , and S \u2061 ( z ) are entire functions of z , as are f \u2061 ( z ) and g \u2061 ( z ) in the next subsection. Values at Infinity \u24d8 Keywords: Fresnel integrals , values at infinity See also: Annotations for \u00a77.2(iii) , \u00a77.2 and Ch.7",
+  "7.2.9 lim x \u2192 \u221e C \u2061 ( x ) = 1 2 , lim x \u2192 \u221e S \u2061 ( x ) = 1 2 . \u24d8 Symbols: C \u2061 ( z ) : Fresnel integral , S \u2061 ( z ) : Fresnel integral and x : real variable A&S Ref: 7.3.20 Referenced by: \u00a77.5 Permalink: http://dlmf.nist.gov/7.2.E9 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.2(iii) , \u00a77.2(iii) , \u00a77.2 and Ch.7 \u00a77.2(iv) Auxiliary Functions \u24d8 Keywords: Fresnel integrals , auxiliary functions , auxiliary functions for Fresnel integrals , definitions , relations to other functions Permalink: http://dlmf.nist.gov/7.2.iv See also: Annotations for \u00a77.2 and Ch.7"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "C",
+   "href": "7.2#E7",
+   "gloss": "Fresnel integral"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "cos",
+   "href": "4.14#E2",
+   "gloss": "cosine function"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.5 , \u00a77.6(i)",
+  "as_ref": "7.3.1",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "C\\left(\\NVar{z}\\right) : Fresnel integral",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\cos\\NVar{z} : cosine function , \\,\\mathrm{d}\\NVar{x} : differential of x , \\int : integral and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

@@ -1,0 +1,102 @@
+{
+ "tag": "7.10.1",
+ "url": "https://dlmf.nist.gov/7.10#E1",
+ "kind": "equation",
+ "latex": [
+  "\\frac{{\\mathrm{d}}^{n+1}\\operatorname{erf}z}{{\\mathrm{d}z}^{n+1}}=(-1)^{n}\\frac{2}{\\sqrt{\\pi}}H_{n}\\left(z\\right)e^{-z^{2}},",
+  "\\frac{\\mathrm{d}\\NVar{f}}{\\mathrm{d}\\NVar{x}}",
+  "H_{\\NVar{n}}\\left(\\NVar{x}\\right)",
+  "\\operatorname{erf}\\NVar{z}",
+  "H_{n}\\left(z\\right)",
+  "n=0,1,2,\\dots",
+  "\\mathrm{e}",
+  "\\pi",
+  "f",
+  "x",
+  "z",
+  "n"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.10.1",
+   "\\frac{{\\mathrm{d}}^{n+1}\\operatorname{erf}z}{{\\mathrm{d}z}^{n+1}}=(-1)^{n}\\frac{2}{\\sqrt{\\pi}}H_{n}\\left(z\\right)e^{-z^{2}},"
+  ],
+  [
+   "7.10.2",
+   "w'\\left(z\\right)=-2zw\\left(z\\right)+(2i/\\sqrt{\\pi}),"
+  ],
+  [
+   "7.10.3",
+   "{{w}^{(n+2)}\\left(z\\right)+2z{w}^{(n+1)}\\left(z\\right)+2(n+1){w}^{(n)}\\left(z\\right)=0},"
+  ],
+  [
+   "7.10.4",
+   "\\displaystyle\\frac{\\mathrm{d}\\mathrm{f}\\left(z\\right)}{\\mathrm{d}z}"
+  ]
+ ],
+ "context": "ntinued Fractions 7.11 Relations to Other Functions \u00a77.10 Derivatives \u24d8 Keywords: Hermite polynomials , auxiliary functions for Fresnel integrals , derivatives , derivatives of the error function , error functions , relations to other functions Notes: These results may be verified by differentiation of the definitions given in \u00a7 7.2 . Permalink: http://dlmf.nist.gov/7.10 See also: Annotations for Ch.7 7.10.1 d n + 1 erf \u2061 z d z n + 1 = ( \u2212 1 ) n \u2062 2 \u03c0 \u2062 H n \u2061 ( z ) \u2062 e \u2212 z 2 , n = 0 , 1 , 2 , \u2026 . \u24d8 Symbols: H n \u2061 ( x ) : Hermite polynomial , \u03c0 : the ratio of the circumference of a circle to its diameter , d f d x : derivative of f with respect to x , erf \u2061 z : error function , e : base of natural logarithm , z : complex variable and n : nonnegative integer A&S Ref: 7.1.19 Permalink: http://dlmf.nist.gov/7.10.E1 Encodings: TeX , pMML , png See also: Annotations for \u00a77.10 and Ch.7 For the Hermite polynomial H n \u2061 ( z ) see \u00a7 18.3 . <table",
+ "xref_context": [],
+ "constraints": [
+  "n=0,1,2,\\dots"
+ ],
+ "symbols": [
+  {
+   "token": "d",
+   "href": "1.4#E4",
+   "gloss": "derivative of \ud835\udc53 with respect to \ud835\udc65"
+  },
+  {
+   "token": "n",
+   "href": "7.1#p1.t1.r3",
+   "gloss": "nonnegative integer"
+  },
+  {
+   "token": "erf",
+   "href": "7.2#E1",
+   "gloss": "error function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "n",
+   "href": "1.4#E4",
+   "gloss": "derivative of \ud835\udc53 with respect to \ud835\udc65"
+  },
+  {
+   "token": "+",
+   "href": "1.4#E4",
+   "gloss": "derivative of \ud835\udc53 with respect to \ud835\udc65"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "H",
+   "href": "18.3#T1.t1.r13",
+   "gloss": "Hermite polynomial"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "7.1.19",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "H_{\\NVar{n}}\\left(\\NVar{x}\\right) : Hermite polynomial , \\pi : the ratio of the circumference of a circle to its diameter , \\frac{\\mathrm{d}\\NVar{f}}{\\mathrm{d}\\NVar{x}} : derivative of f with respect to x , \\operatorname{erf}\\NVar{z} : error function , \\mathrm{e} : base of natural logarithm , z : complex variable and n : nonnegative integer",
+  "changes": []
+ },
+ "parser_version": 2
+}

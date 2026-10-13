@@ -1,0 +1,152 @@
+{
+ "tag": "7.18.2",
+ "url": "https://dlmf.nist.gov/7.18#E2",
+ "kind": "equation",
+ "latex": [
+  "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=\\int_{z}^{\\infty}\\mathop{\\mathrm{i}^{n-1}\\mathrm{erfc}}\\left(t\\right)\\,\\mathrm{d}t=\\frac{2}{\\sqrt{\\pi}}\\int_{z}^{\\infty}\\frac{(t-z)^{n}}{n!}e^{-t^{2}}\\,\\mathrm{d}t.",
+  "2^{n}\\Gamma\\left(\\tfrac{1}{2}n+1\\right)\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(x\\right)",
+  "\\mathop{\\mathrm{i}^{\\NVar{n}}\\mathrm{erfc}}\\left(\\NVar{z}\\right)",
+  "\\Gamma\\left(\\NVar{z}\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "n=0,1,2,4,8,16",
+  "n=0,1,2,\\dots",
+  "\\mathrm{e}",
+  "\\int",
+  "\\pi",
+  "n!",
+  "x",
+  "!",
+  "z",
+  "n"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.18.1",
+   "\\displaystyle\\mathop{\\mathrm{i}^{-1}\\mathrm{erfc}}\\left(z\\right)"
+  ],
+  [
+   "7.18.2",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=\\int_{z}^{\\infty}\\mathop{\\mathrm{i}^{n-1}\\mathrm{erfc}}\\left(t\\right)\\,\\mathrm{d}t=\\frac{2}{\\sqrt{\\pi}}\\int_{z}^{\\infty}\\frac{(t-z)^{n}}{n!}e^{-t^{2}}\\,\\mathrm{d}t."
+  ],
+  [
+   "7.18.3",
+   "\\frac{\\mathrm{d}}{\\mathrm{d}z}\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=-\\mathop{\\mathrm{i}^{n-1}\\mathrm{erfc}}\\left(z\\right),"
+  ],
+  [
+   "7.18.4",
+   "\\frac{{\\mathrm{d}}^{n}}{{\\mathrm{d}z}^{n}}\\left(e^{z^{2}}\\operatorname{erfc}z\\right)=(-1)^{n}2^{n}n!e^{z^{2}}\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right),"
+  ],
+  [
+   "7.18.5",
+   "W(z)=A\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)+B\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(-z\\right)"
+  ],
+  [
+   "7.18.6",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=\\sum_{k=0}^{\\infty}\\frac{(-1)^{k}z^{k}}{2^{n-k}k!\\Gamma\\left(1+\\frac{1}{2}(n-k)\\right)}."
+  ],
+  [
+   "7.18.7",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=-\\frac{z}{n}\\mathop{\\mathrm{i}^{n-1}\\mathrm{erfc}}\\left(z\\right)+\\frac{1}{2n}\\mathop{\\mathrm{i}^{n-2}\\mathrm{erfc}}\\left(z\\right),"
+  ],
+  [
+   "7.18.8",
+   "(-1)^{n}\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)+\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(-z\\right)=\\frac{i^{-n}}{2^{n-1}n!}H_{n}\\left(iz\\right)."
+  ],
+  [
+   "7.18.9",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=e^{-z^{2}}\\left(\\frac{1}{2^{n}\\Gamma\\left(\\tfrac{1}{2}n+1\\right)}M\\left(\\tfrac{1}{2}n+\\tfrac{1}{2},\\tfrac{1}{2},z^{2}\\right)-\\frac{z}{2^{n-1}\\Gamma\\left(\\tfrac{1}{2}n+\\tfrac{1}{2}\\right)}M\\left(\\tfrac{1}{2}n+1,\\tfrac{3}{2},z^{2}\\right)\\right),"
+  ],
+  [
+   "7.18.10",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=\\frac{e^{-z^{2}}}{2^{n}\\sqrt{\\pi}}U\\left(\\tfrac{1}{2}n+\\tfrac{1}{2},\\tfrac{1}{2},z^{2}\\right)."
+  ],
+  [
+   "7.18.11",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=\\frac{e^{-z^{2}/2}}{\\sqrt{2^{n-1}\\pi}}U\\left(n+\\tfrac{1}{2},z\\sqrt{2}\\right)."
+  ],
+  [
+   "7.18.12",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)=\\frac{1}{\\sqrt{2^{n-1}\\pi}}\\mathit{Hh}_{n}\\left(\\sqrt{2}z\\right)."
+  ],
+  [
+   "7.18.13",
+   "\\frac{\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)}{\\mathop{\\mathrm{i}^{n-1}\\mathrm{erfc}}\\left(z\\right)}=\\cfrac{1/2}{z+\\cfrac{(n+1)/2}{z+\\cfrac{(n+2)/2}{z+}}}\\cdots,"
+  ],
+  [
+   "7.18.14",
+   "\\mathop{\\mathrm{i}^{n}\\mathrm{erfc}}\\left(z\\right)\\sim\\frac{2}{\\sqrt{\\pi}}\\frac{e^{-z^{2}}}{(2z)^{n+1}}\\sum_{m=0}^{\\infty}\\frac{(-1)^{m}(2m+n)!}{n!m!(2z)^{2m}},"
+  ]
+ ],
+ "context": "and for n = 0 , 1 , 2 , \u2026 , 7.18.2 i n \u2062 erfc \u2061 ( z ) = \u222b z \u221e i n \u2212 1 \u2062 erfc \u2061 ( t ) \u2062 d t = 2 \u03c0 \u2062 \u222b z \u221e ( t \u2212 z ) n n ! \u2062 e \u2212 t 2 \u2062 d t . \u24d8 Defines: i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm , ! : factorial (as in n ! ) , \u222b : integral , z : complex variable and n : nonnegative integer A&S Ref: 7.2.1 (in modified form) 7.2.3 Permalink: http://dlmf.nist.gov/7.18.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.18(i) , \u00a77.18 and Ch.7 \u00a77.18(ii) Graphics \u24d8 Keywords: repeated integrals of the complementary error function , scaled Notes: These graphs were produced at NIST. Permalink: http://dlmf.nist.gov/7.18.ii See also: Annotations for \u00a77.18 and Ch.7 Figure 7.18.1: Repeated integrals of the scaled complementary error function 2 n \u2062 \u0393 \u2061 ( 1 2 \u2062 n + 1 ) \u2062 i n \u2062 erfc \u2061 ( x ) , n = 0 , 1 , 2 , 4 , 8 , 16 . Magnify \u24d8 Symbols: \u0393 \u2061 ( z ) : gamma function , i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function , x : real variable and n : nonnegative integer Keywords: graphics , repeated integrals of the complementary error function Permalink: http://dlmf.nist.gov/7.18.F1 Encodings: pdf , png See also: Annotations for \u00a77.18(ii) , \u00a77.18 and Ch.7 \u00a77.18(iii) Properties \u24d8 Keywords: derivatives , differential equation , power-series expansion , recurrence relations , repeated integrals of the complementary error function Notes: See Hartree ( 1936 ) . Permalink: http://dlmf.nist.gov/7.18.iii See also: Annotations for \u00a77.18 and Ch.7 <table",
+ "xref_context": [
+  "7.18.1 i \u2212 1 \u2062 erfc \u2061 ( z ) = 2 \u03c0 \u2062 e \u2212 z 2 , i 0 \u2062 erfc \u2061 ( z ) = erfc \u2061 z , \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , erfc \u2061 z : complementary error function , e : base of natural logarithm , i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function and z : complex variable A&S Ref: 7.2.1 (in modified form) Referenced by: \u00a77.22(iii) Permalink: http://dlmf.nist.gov/7.18.E1 Encodings: TeX , TeX , pMML , pMML , png , png See also: Annotations for \u00a77.18(i) , \u00a77.18 and Ch.7 and for n = 0 , 1 , 2 , \u2026 , 7.18.2 i n \u2062 erfc \u2061 ( z ) = \u222b z \u221e i n \u2212 1 \u2062 erfc \u2061 ( t ) \u2062 d t = 2 \u03c0 \u2062 \u222b z \u221e ( t \u2212 z ) n n ! \u2062 e \u2212 t 2 \u2062 d t . \u24d8 Defines: i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm , ! : factorial (as in n ! ) , \u222b : integral , z : complex variable and n : nonnegative integer A&S Ref: 7.2.1 (in modified form) 7.2.3 Permalink: http://dlmf.nist.gov/7.18.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.18(i) , \u00a77.18 and Ch.7 \u00a77.18(ii) Graphics \u24d8 Keywords: repeated integrals of the complementary error function , scaled Notes: These graphs were produced at NIST. Permalink: http://dlmf.nist.gov/7.18.ii See also: Annotations for \u00a77.18 and Ch.7 Figure 7.18.1: Repeated integrals of the scaled complementary error function 2 n \u2062 \u0393 \u2061 ( 1 2 \u2062 n + 1 ) \u2062 i n \u2062 erfc \u2061 ( x ) , n = 0 , 1 , 2 , 4 , 8 , 16 . Magnify \u24d8 Symbols: \u0393 \u2061 ( z ) : gamma function , i n \u2062 erfc \u2061 ( z ) : repeated integrals",
+  "7.18.3 d d z \u2061 i n \u2062 erfc \u2061 ( z ) = \u2212 i n \u2212 1 \u2062 erfc \u2061 ( z ) , n = 0 , 1 , 2 , \u2026 , \u24d8 Symbols: d f d x : derivative of f with respect to x , i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function , z : complex variable and n : nonnegative integer A&S Ref: 7.2.8 Permalink: http://dlmf.nist.gov/7.18.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.18(iii) , \u00a77.18 and Ch.7 7.18.4 d n d z n \u2061 ( e z 2 \u2062 erfc \u2061 z ) = ( \u2212 1 ) n \u2062 2 n \u2062 n ! \u2062 e z 2 \u2062 i n \u2062 erfc \u2061 ( z ) , n = 0 , 1 , 2 , \u2026 . \u24d8 Symbols: erfc \u2061 z : complementary error function , d f d x : derivative of f with respect to x , e : base of natural logarithm , ! : factorial (as in n ! ) , i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function , z : complex variable and n : nonnegative integer A&S Ref: 7.2.9 Permalink: http://dlmf.nist.gov/7.18.E4 Encodings: TeX , pMML , png See also: Annotations for \u00a77.18(iii) , \u00a77.18 and Ch.7 7.18.5 d 2 W d z 2 + 2 \u2062 z \u2062 d W d z \u2212 2 \u2062 n \u2062 W = 0 , W \u2061 ( z ) = A \u2062 i n \u2062 erfc \u2061 ( z ) + B \u2062 i n \u2062 erfc \u2061 ( \u2212 z ) , \u24d8 Symbols: d f d x : derivative of f with respect to x , i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function , z : complex variable and n : nonnegative integer A&S Ref: 7.2.2 Permalink: http://dlmf.nist.gov/7.18.E5 Encodings: TeX , pMML , png See also: Annotations for \u00a77.18(iii) , \u00a77.18 and Ch.7 where n = 1 , 2 , 3 , \u2026 , and A , B are arbitrary constants. 7.18.6 i n \u2062 erfc \u2061 ( z ) = \u2211 k = 0 \u221e ( \u2212 1 ) k \u2062 z k 2 n \u2212 k \u2062 k ! \u2062 \u0393 \u2061 ( 1 + 1 2 \u2062 ( n \u2212 k ) ) . \u24d8 Symbols: \u0393 \u2061 ( z ) : gamma function , ! : factorial (a",
+  "7.18.8 ( \u2212 1 ) n \u2062 i n \u2062 erfc \u2061 ( z ) + i n \u2062 erfc \u2061 ( \u2212 z ) = i \u2212 n 2 n \u2212 1 \u2062 n ! \u2062 H n \u2061 ( i \u2062 z ) . \u24d8 Symbols: H n \u2061 ( x ) : Hermite polynomial , ! : factorial (as in n ! ) , i : imaginary unit , i n \u2062 erfc \u2061 ( z ) : repeated integrals of the complementary error function , z : complex variable and n : nonnegative integer A&S Ref: 7.2.11 Permalink: http://dlmf.nist.gov/7.18.E8 Encodings: TeX , pMML , png See also: Annotations for \u00a77.18(iv) , \u00a77.18(iv) , \u00a77.18 and Ch.7 Confluent Hypergeometric Functions \u24d8 Keywords: confluent hypergeometric functions , relations to other functions , repeated integrals of error functions , repeated integrals of the complementary error function Referenced by: Erratum (V1.0.21) for Paragraph Confluent Hypergeometric Functions (in \u00a7 7.18(iv) ) Clarification (effective with 1.0.21): A note about the multivalued nature of ( 7.18.10 ) was inserted just below it. See also: Annotations for \u00a77.18(iv) , \u00a77.18 and Ch.7"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "i",
+   "href": "7.18#E2",
+   "gloss": "repeated integrals of the complementary error function"
+  },
+  {
+   "token": "n",
+   "href": "7.1#p1.t1.r3",
+   "gloss": "nonnegative integer"
+  },
+  {
+   "token": "\u2062",
+   "href": "7.18#E2",
+   "gloss": "repeated integrals of the complementary error function"
+  },
+  {
+   "token": "erfc",
+   "href": "7.18#E2",
+   "gloss": "repeated integrals of the complementary error function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "!",
+   "href": "front/introduction#common.t1.r15",
+   "gloss": "factorial (as in \ud835\udc5b!)"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "7.2.1 (in modified form) 7.2.3",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "\\mathop{\\mathrm{i}^{\\NVar{n}}\\mathrm{erfc}}\\left(\\NVar{z}\\right) : repeated integrals of the complementary error function",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , \\,\\mathrm{d}\\NVar{x} : differential of x , \\mathrm{e} : base of natural logarithm , ! : factorial (as in n! ) , \\int : integral , z : complex variable and n : nonnegative integer",
+  "changes": []
+ },
+ "parser_version": 2
+}

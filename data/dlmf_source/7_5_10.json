@@ -1,0 +1,124 @@
+{
+ "tag": "7.5.10",
+ "url": "https://dlmf.nist.gov/7.5#E10",
+ "kind": "equation",
+ "latex": [
+  "\\mathrm{g}\\left(z\\right)\\pm i\\mathrm{f}\\left(z\\right)=\\tfrac{1}{2}(1\\pm i)e^{\\zeta^{2}}\\operatorname{erfc}\\zeta.",
+  "\\mathrm{f}\\left(\\NVar{z}\\right)",
+  "\\mathrm{g}\\left(\\NVar{z}\\right)",
+  "\\operatorname{erfc}\\NVar{z}",
+  "\\mathrm{i}",
+  "\\mathrm{e}",
+  "\\zeta",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.5.1",
+   "F\\left(z\\right)=\\tfrac{1}{2}i\\sqrt{\\pi}\\left(e^{-z^{2}}-w\\left(z\\right)\\right)=-\\tfrac{1}{2}i\\sqrt{\\pi}e^{-z^{2}}\\operatorname{erf}\\left(iz\\right)."
+  ],
+  [
+   "7.5.2",
+   "C\\left(z\\right)+iS\\left(z\\right)=\\tfrac{1}{2}(1+i)-\\mathcal{F}\\left(z\\right)."
+  ],
+  [
+   "7.5.3",
+   "C\\left(z\\right)=\\tfrac{1}{2}+\\mathrm{f}\\left(z\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{g}\\left(z\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.5.4",
+   "S\\left(z\\right)=\\tfrac{1}{2}-\\mathrm{f}\\left(z\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\mathrm{g}\\left(z\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ],
+  [
+   "7.5.5",
+   "e^{-\\frac{1}{2}\\pi iz^{2}}\\mathcal{F}\\left(z\\right)=\\mathrm{g}\\left(z\\right)+i\\mathrm{f}\\left(z\\right)."
+  ],
+  [
+   "7.5.6",
+   "e^{\\pm\\frac{1}{2}\\pi iz^{2}}(\\mathrm{g}\\left(z\\right)\\pm i\\mathrm{f}\\left(z\\right))=\\tfrac{1}{2}(1\\pm i)-(C\\left(z\\right)\\pm iS\\left(z\\right))."
+  ],
+  [
+   "7.5.7",
+   "\\zeta=\\tfrac{1}{2}\\sqrt{\\pi}(1\\mp i)z,"
+  ],
+  [
+   "7.5.8",
+   "C\\left(z\\right)\\pm iS\\left(z\\right)=\\tfrac{1}{2}(1\\pm i)\\operatorname{erf}\\zeta."
+  ],
+  [
+   "7.5.9",
+   "C\\left(z\\right)\\pm iS\\left(z\\right)=\\tfrac{1}{2}(1\\pm i)\\left(1-e^{\\pm\\frac{1}{2}\\pi iz^{2}}w\\left(i\\zeta\\right)\\right)."
+  ],
+  [
+   "7.5.10",
+   "\\mathrm{g}\\left(z\\right)\\pm i\\mathrm{f}\\left(z\\right)=\\tfrac{1}{2}(1\\pm i)e^{\\zeta^{2}}\\operatorname{erfc}\\zeta."
+  ],
+  [
+   "7.5.11",
+   "|\\mathcal{F}\\left(x\\right)|^{2}={\\mathrm{f}}^{2}\\left(x\\right)+{\\mathrm{g}}^{2}\\left(x\\right),"
+  ],
+  [
+   "7.5.12",
+   "|\\mathcal{F}\\left(x\\right)|^{2}=2+{\\mathrm{f}}^{2}\\left(-x\\right)+{\\mathrm{g}}^{2}\\left(-x\\right)-2\\sqrt{2}\\cos\\left(\\tfrac{1}{4}\\pi+\\tfrac{1}{2}\\pi x^{2}\\right)\\mathrm{f}\\left(-x\\right)-2\\sqrt{2}\\cos\\left(\\tfrac{1}{4}\\pi-\\tfrac{1}{2}\\pi x^{2}\\right)\\mathrm{g}\\left(-x\\right),"
+  ],
+  [
+   "7.5.13",
+   "G\\left(x\\right)=\\sqrt{\\pi}F\\left(x\\right)-\\tfrac{1}{2}e^{-x^{2}}\\operatorname{Ei}\\left(x^{2}\\right),"
+  ]
+ ],
+ "context": "\u2023 \u00a71.9 Calculus of a Complex Variable \u2023 Topics of Discussion \u2023 Chapter 1 Algebraic and Analytic Methods\" class=\"ltx_ref\"> i : imaginary unit , z : complex variable and \u03b6 : change of variable Referenced by: \u00a77.5 Permalink: http://dlmf.nist.gov/7.5.E9 Encodings: TeX , pMML , png See also: Annotations for \u00a77.5 and Ch.7 7.5.10 g \u2061 ( z ) \u00b1 i \u2062 f \u2061 ( z ) = 1 2 \u2062 ( 1 \u00b1 i ) \u2062 e \u03b6 2 \u2062 erfc \u2061 \u03b6 . \u24d8 Symbols: f \u2061 ( z ) : auxiliary function for Fresnel integrals , g \u2061 ( z ) : auxiliary function for Fresnel integrals , erfc \u2061 z : complementary error function , e : base of natural logarithm , i : imaginary unit , z : complex variable and \u03b6 : change of variable A&S Ref: 7.3.22 (in different form) Referenced by: \u00a77.12(ii) , \u00a77.13(iv) , \u00a77.5 , \u00a77.5 Permalink: http://dlmf.nist.gov/7.5.E10 Encodings: TeX , pMML , png See also: Annotations for \u00a77.5 and Ch.7 <table",
+ "xref_context": [
+  "In ( 7.5.8 )\u2013( 7.5.10 ) 7.5.7 \u03b6 = 1 2 \u2062 \u03c0 \u2062 ( 1 \u2213 i ) \u2062 z , \u24d8 Defines: \u03b6 : change of variable (locally) Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , i : imaginary unit and z : complex variable Referenced by: \u00a77.12(ii) , \u00a77.5 Permalink: http://dlmf.nist.gov/7.5.E7 Encodings: TeX , pMML , png See also: Annotations for \u00a77.5 and Ch.7 and either all upper signs or all lower signs are taken throughout. 7.5.8 C \u2061 ( z ) \u00b1 i \u2062 S \u2061 ( z ) = 1 2 \u2062 ( 1 \u00b1 i ) \u2062 erf <mo lspace=\"0.16"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "g",
+   "href": "7.2#E11",
+   "gloss": "auxiliary function for Fresnel integrals"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "i",
+   "href": "1.9#E1",
+   "gloss": "imaginary unit"
+  },
+  {
+   "token": "f",
+   "href": "7.2#E10",
+   "gloss": "auxiliary function for Fresnel integrals"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "\u03b6",
+   "href": "7.5#E7",
+   "gloss": "change of variable"
+  },
+  {
+   "token": "erfc",
+   "href": "7.2#E2",
+   "gloss": "complementary error function"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.12(ii) , \u00a77.13(iv) , \u00a77.5 , \u00a77.5",
+  "as_ref": "7.3.22 (in different form)",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\mathrm{f}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals , \\mathrm{g}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals , \\operatorname{erfc}\\NVar{z} : complementary error function , \\mathrm{e} : base of natural logarithm , \\mathrm{i} : imaginary unit , z : complex variable and \\zeta : change of variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

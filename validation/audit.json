@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-13",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "scripts/Audit.lean"
+  ],
+  "exit_code": 0,
+  "declarations": 138,
+  "standard_axioms_only": 136,
+  "depends_on_sorry": 2,
+  "other_axioms": 0,
+  "source_ranges": "Lean declaration ranges: one-based lines, zero-based Unicode codepoint columns, exclusive end"
+}

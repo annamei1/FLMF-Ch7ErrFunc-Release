@@ -1,0 +1,109 @@
+{
+ "tag": "7.2.5",
+ "url": "https://dlmf.nist.gov/7.2#E5",
+ "kind": "equation",
+ "latex": [
+  "F\\left(z\\right)=e^{-z^{2}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t.",
+  "F\\left(\\NVar{z}\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "\\mathrm{e}",
+  "\\int",
+  "x",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.2.1",
+   "\\operatorname{erf}z=\\frac{2}{\\sqrt{\\pi}}\\int_{0}^{z}e^{-t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.2",
+   "\\operatorname{erfc}z=\\frac{2}{\\sqrt{\\pi}}\\int_{z}^{\\infty}e^{-t^{2}}\\,\\mathrm{d}t=1-\\operatorname{erf}z,"
+  ],
+  [
+   "7.2.3",
+   "w\\left(z\\right)=e^{-z^{2}}\\left(1+\\frac{2i}{\\sqrt{\\pi}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t\\right)=e^{-z^{2}}\\operatorname{erfc}\\left(-iz\\right)."
+  ],
+  [
+   "7.2.4",
+   "|\\operatorname{ph}z|\\leq\\tfrac{1}{4}\\pi-\\delta(<\\tfrac{1}{4}\\pi)"
+  ],
+  [
+   "7.2.5",
+   "F\\left(z\\right)=e^{-z^{2}}\\int_{0}^{z}e^{t^{2}}\\,\\mathrm{d}t."
+  ],
+  [
+   "7.2.6",
+   "\\displaystyle=\\int_{z}^{\\infty}e^{\\tfrac{1}{2}\\pi\\mathrm{i}t^{2}}\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.7",
+   "\\displaystyle=\\int_{0}^{z}\\cos\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.8",
+   "\\displaystyle=\\int_{0}^{z}\\sin\\left(\\tfrac{1}{2}\\pi t^{2}\\right)\\,\\mathrm{d}t,"
+  ],
+  [
+   "7.2.9",
+   "\\displaystyle\\lim_{x\\to\\infty}C\\left(x\\right)"
+  ],
+  [
+   "7.2.10",
+   "\\mathrm{f}\\left(z\\right)=\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)-\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right),"
+  ],
+  [
+   "7.2.11",
+   "\\mathrm{g}\\left(z\\right)=\\left(\\tfrac{1}{2}-C\\left(z\\right)\\right)\\cos\\left(\\tfrac{1}{2}\\pi z^{2}\\right)+\\left(\\tfrac{1}{2}-S\\left(z\\right)\\right)\\sin\\left(\\tfrac{1}{2}\\pi z^{2}\\right)."
+  ],
+  [
+   "7.2.12",
+   "G\\left(z\\right)=\\int_{0}^{\\infty}\\frac{e^{-t^{2}}}{t+z}\\,\\mathrm{d}t,"
+  ]
+ ],
+ "context": "ions\"> \u24d8 Keywords: Dawson\u2019s integral , definition Notes: See Olver ( 1997b , pp. 43\u201344) and Temme ( 1996b , pp. 180, 182\u2013183, 275\u2013276) . Referenced by: \u00a78.11(iv) , \u00a78.12 , \u00a78.4 Permalink: http://dlmf.nist.gov/7.2.ii See also: Annotations for \u00a77.2 and Ch.7 7.2.5 F \u2061 ( z ) = e \u2212 z 2 \u2062 \u222b 0 z e t 2 \u2062 d t . \u24d8 Defines: F \u2061 ( z ) : Dawson\u2019s integral Symbols: d x : differential of x , e : base of natural logarithm , \u222b : integral and z : complex variable A&S Ref: 7.1.1 Permalink: http://dlmf.nist.gov/7.2.E5 Encodings: TeX , pMML , png See also: Annotations for \u00a77.2(ii) , \u00a77.2 and Ch.7 \u00a77.2(iii) Fresnel Integrals \u24d8 Keywords: Fresnel integrals , definition Notes: See Olver ( 1997b , pp. 43\u201344) and Temme ( 1996b , pp. 180, 182\u2013183, 275\u2013276) . Referenced by: \u00a711.10(vi) Permalink: http://dlmf.nist.gov/7.2.iii See also: Annotations for \u00a77.2 and Ch.7 <tbody",
+ "xref_context": [
+  "erf \u2061 z , erfc \u2061 z , and w \u2061 ( z ) are entire functions of z , as is F \u2061 ( z ) in the next subsection. Values at Infinity \u24d8 Keywords: error functions , values at infinity See also: Annotations for \u00a77.2(i) , \u00a77.2 and Ch.7"
+ ],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "F",
+   "href": "7.2#E5",
+   "gloss": "Dawson\u2019s integral"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "7.1.1",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "F\\left(\\NVar{z}\\right) : Dawson\u2019s integral",
+  "symbols_text": "\\,\\mathrm{d}\\NVar{x} : differential of x , \\mathrm{e} : base of natural logarithm , \\int : integral and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

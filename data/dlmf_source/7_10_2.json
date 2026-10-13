@@ -1,0 +1,69 @@
+{
+ "tag": "7.10.2",
+ "url": "https://dlmf.nist.gov/7.10#E2",
+ "kind": "equation",
+ "latex": [
+  "w'\\left(z\\right)=-2zw\\left(z\\right)+(2i/\\sqrt{\\pi}),",
+  "w\\left(\\NVar{z}\\right)",
+  "H_{n}\\left(z\\right)",
+  "\\mathrm{i}",
+  "\\pi",
+  "z"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.10.1",
+   "\\frac{{\\mathrm{d}}^{n+1}\\operatorname{erf}z}{{\\mathrm{d}z}^{n+1}}=(-1)^{n}\\frac{2}{\\sqrt{\\pi}}H_{n}\\left(z\\right)e^{-z^{2}},"
+  ],
+  [
+   "7.10.2",
+   "w'\\left(z\\right)=-2zw\\left(z\\right)+(2i/\\sqrt{\\pi}),"
+  ],
+  [
+   "7.10.3",
+   "{{w}^{(n+2)}\\left(z\\right)+2z{w}^{(n+1)}\\left(z\\right)+2(n+1){w}^{(n)}\\left(z\\right)=0},"
+  ],
+  [
+   "7.10.4",
+   "\\displaystyle\\frac{\\mathrm{d}\\mathrm{f}\\left(z\\right)}{\\mathrm{d}z}"
+  ]
+ ],
+ "context": "For the Hermite polynomial H n \u2061 ( z ) see \u00a7 18.3 . 7.10.2 w \u2032 \u2061 ( z ) = \u2212 2 \u2062 z \u2062 w \u2061 ( z ) + ( 2 \u2062 i / \u03c0 ) , \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , i : imaginary unit and z : complex variable A&S Ref: 7.1.20 Permalink: http://dlmf.nist.gov/7.10.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.10 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [],
+ "symbols": [
+  {
+   "token": "w",
+   "href": "7.2#E3",
+   "gloss": "Faddeeva (or Faddeyeva) function"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  },
+  {
+   "token": "i",
+   "href": "1.9#E1",
+   "gloss": "imaginary unit"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "7.1.20",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\pi : the ratio of the circumference of a circle to its diameter , w\\left(\\NVar{z}\\right) : Faddeeva (or Faddeyeva) function , \\mathrm{i} : imaginary unit and z : complex variable",
+  "changes": []
+ },
+ "parser_version": 2
+}

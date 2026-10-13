@@ -1,0 +1,69 @@
+{
+ "tag": "7.10.3",
+ "url": "https://dlmf.nist.gov/7.10#E3",
+ "kind": "equation",
+ "latex": [
+  "{{w}^{(n+2)}\\left(z\\right)+2z{w}^{(n+1)}\\left(z\\right)+2(n+1){w}^{(n)}\\left(z\\right)=0},",
+  "w'\\left(z\\right)=-2zw\\left(z\\right)+(2i/\\sqrt{\\pi}),",
+  "w\\left(\\NVar{z}\\right)",
+  "H_{n}\\left(z\\right)",
+  "n=0,1,2,\\dots",
+  "\\mathrm{i}",
+  "\\pi",
+  "z",
+  "n"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.10.1",
+   "\\frac{{\\mathrm{d}}^{n+1}\\operatorname{erf}z}{{\\mathrm{d}z}^{n+1}}=(-1)^{n}\\frac{2}{\\sqrt{\\pi}}H_{n}\\left(z\\right)e^{-z^{2}},"
+  ],
+  [
+   "7.10.2",
+   "w'\\left(z\\right)=-2zw\\left(z\\right)+(2i/\\sqrt{\\pi}),"
+  ],
+  [
+   "7.10.3",
+   "{{w}^{(n+2)}\\left(z\\right)+2z{w}^{(n+1)}\\left(z\\right)+2(n+1){w}^{(n)}\\left(z\\right)=0},"
+  ],
+  [
+   "7.10.4",
+   "\\displaystyle\\frac{\\mathrm{d}\\mathrm{f}\\left(z\\right)}{\\mathrm{d}z}"
+  ]
+ ],
+ "context": "For the Hermite polynomial H n \u2061 ( z ) see \u00a7 18.3 . 7.10.2 w \u2032 \u2061 ( z ) = \u2212 2 \u2062 z \u2062 w \u2061 ( z ) + ( 2 \u2062 i / \u03c0 ) , \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , i : imaginary unit and z : complex variable A&S Ref: 7.1.20 Permalink: http://dlmf.nist.gov/7.10.E2 Encodings: TeX , pMML , png See also: Annotations for \u00a77.10 and Ch.7 7.10.3 w ( n + 2 ) \u2061 ( z ) + 2 \u2062 z \u2062 w ( n + 1 ) \u2061 ( z ) + 2 \u2062 ( n + 1 ) \u2062 w ( n ) \u2061 ( z ) = 0 , n = 0 , 1 , 2 , \u2026 . \u24d8 Symbols: w \u2061 ( z ) : Faddeeva (or Faddeyeva) function , z : complex variable and n : nonnegative integer A&S Ref: 7.1.20 Permalink: http://dlmf.nist.gov/7.10.E3 Encodings: TeX , pMML , png See also: Annotations for \u00a77.10 and Ch.7 <table",
+ "xref_context": [],
+ "constraints": [
+  "n=0,1,2,\\dots"
+ ],
+ "symbols": [
+  {
+   "token": "w",
+   "href": "7.2#E3",
+   "gloss": "Faddeeva (or Faddeyeva) function"
+  },
+  {
+   "token": "n",
+   "href": "7.1#p1.t1.r3",
+   "gloss": "nonnegative integer"
+  },
+  {
+   "token": "z",
+   "href": "7.1#p1.t1.r2",
+   "gloss": "complex variable"
+  }
+ ],
+ "info": {
+  "referenced_by": "",
+  "as_ref": "7.1.20",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "w\\left(\\NVar{z}\\right) : Faddeeva (or Faddeyeva) function , z : complex variable and n : nonnegative integer",
+  "changes": []
+ },
+ "parser_version": 2
+}

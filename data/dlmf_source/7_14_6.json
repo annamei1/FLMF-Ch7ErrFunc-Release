@@ -1,0 +1,108 @@
+{
+ "tag": "7.14.6",
+ "url": "https://dlmf.nist.gov/7.14#E6",
+ "kind": "equation",
+ "latex": [
+  "\\int_{0}^{\\infty}e^{-at}S\\left(t\\right)\\,\\mathrm{d}t=\\frac{1}{a}\\mathrm{g}\\left(\\frac{a}{\\pi}\\right),",
+  "\\mathrm{g}\\left(\\NVar{z}\\right)",
+  "S\\left(\\NVar{z}\\right)",
+  "\\,\\mathrm{d}\\NVar{x}",
+  "\\mathrm{e}",
+  "\\Re a>0",
+  "\\int",
+  "\\Re",
+  "\\pi",
+  "x"
+ ],
+ "eqs": [],
+ "section_eqs": [
+  [
+   "7.14.1",
+   "\\int_{0}^{\\infty}e^{2iat}\\operatorname{erfc}\\left(bt\\right)\\,\\mathrm{d}t={\\frac{1}{a\\sqrt{\\pi}}F\\left(\\frac{a}{b}\\right)+\\frac{i}{2a}\\left(1-e^{-(a/b)^{2}}\\right)},"
+  ],
+  [
+   "7.14.2",
+   "\\int_{0}^{\\infty}e^{-at}\\operatorname{erf}\\left(bt\\right)\\,\\mathrm{d}t=\\frac{1}{a}e^{a^{2}/(4b^{2})}\\operatorname{erfc}\\left(\\frac{a}{2b}\\right),"
+  ],
+  [
+   "7.14.3",
+   "\\int_{0}^{\\infty}e^{-at}\\operatorname{erf}\\sqrt{bt}\\,\\mathrm{d}t=\\frac{1}{a}\\sqrt{\\frac{b}{a+b}},"
+  ],
+  [
+   "7.14.4",
+   "\\int_{0}^{\\infty}{\\mathrm{e}}^{(a-b)t}\\operatorname{erfc}\\left(-\\sqrt{at}+\\sqrt{\\frac{c}{t}}\\right)\\,\\mathrm{d}t=\\frac{{\\mathrm{e}}^{2(\\sqrt{ac}-\\sqrt{bc})}}{\\sqrt{b}(\\sqrt{b}-\\sqrt{a})},"
+  ],
+  [
+   "7.14.5",
+   "\\int_{0}^{\\infty}e^{-at}C\\left(t\\right)\\,\\mathrm{d}t=\\frac{1}{a}\\mathrm{f}\\left(\\frac{a}{\\pi}\\right),"
+  ],
+  [
+   "7.14.6",
+   "\\int_{0}^{\\infty}e^{-at}S\\left(t\\right)\\,\\mathrm{d}t=\\frac{1}{a}\\mathrm{g}\\left(\\frac{a}{\\pi}\\right),"
+  ],
+  [
+   "7.14.7",
+   "\\int_{0}^{\\infty}e^{-at}C\\left(\\sqrt{\\frac{2t}{\\pi}}\\right)\\,\\mathrm{d}t=\\frac{(\\sqrt{a^{2}+1}+a)^{\\frac{1}{2}}}{2a\\sqrt{a^{2}+1}},"
+  ],
+  [
+   "7.14.8",
+   "\\int_{0}^{\\infty}e^{-at}S\\left(\\sqrt{\\frac{2t}{\\pi}}\\right)\\,\\mathrm{d}t=\\frac{(\\sqrt{a^{2}+1}-a)^{\\frac{1}{2}}}{2a\\sqrt{a^{2}+1}},"
+  ]
+ ],
+ "context": "lex Variable \u2023 Topics of Discussion \u2023 Chapter 1 Algebraic and Analytic Methods\" class=\"ltx_ref\"> \u211c \u2061 : real part Keywords: Laplace transform A&S Ref: 7.4.27 (in different notation) Referenced by: \u00a77.14(ii) Permalink: http://dlmf.nist.gov/7.14.E5 Encodings: TeX , pMML , png See also: Annotations for \u00a77.14(ii) , \u00a77.14(ii) , \u00a77.14 and Ch.7 7.14.6 \u222b 0 \u221e e \u2212 a \u2062 t \u2062 S \u2061 ( t ) \u2062 d t = 1 a \u2062 g \u2061 ( a \u03c0 ) , \u211c \u2061 a > 0 , \u24d8 Symbols: g \u2061 ( z ) : auxiliary function for Fresnel integrals , S \u2061 ( z ) : Fresnel integral , \u03c0 : the ratio of the circumference of a circle to its diameter , d x : differential of x , e : base of natural logarithm , \u222b : integral and \u211c \u2061 : real part Keywords: Laplace transform A&S Ref: 7.4.28 (in different notation) Referenced by: \u00a77.14(ii) Permalink: http://dlmf.nist.gov/7.14.E6 Encodings: TeX , pMML , png See also: Annotations for \u00a77.14(ii) , \u00a77.14(ii) , \u00a77.14 and Ch.7 <table",
+ "xref_context": [
+  "7.14.4_5 \u222b 0 \u221e e ( a \u2212 b ) \u2062 t \u2062 erfc \u2061 ( \u2212 a \u2062 t + c t ) \u2062 d t = e 2 \u2062 ( a \u2062 c \u2212 b \u2062 c ) b \u2062 ( b \u2212 a ) , | ph \u2061 a | < 1 2 \u2062 \u03c0 , \u211c \u2061 ( b \u2212 a ) > 0 , \u211c \u2061 c \u2265 0 . \u24d8 Symbols: \u03c0 : the ratio of the circumference of a circle to its diameter , erfc \u2061 z : complementary error function , d x : differential of x , e : base of natural logarithm , \u222b : integral , ph : phase and \u211c \u2061 : real part Keywords: Laplace transform Referenced by: \u00a77.14(i) , Erratum (V1.2.5) for Chapter 7 Additions Permalink: http://dlmf.nist.gov/7.14.E4_5 Encodings: TeX , pMML , png Addition (effective with 1.2.5): This equation was added. See also: Annotations for \u00a77.14(i) , \u00a77.14(i) , \u00a77.14 and Ch.7 \u00a77.14(ii) Fresnel Integrals \u24d8 Notes: For ( 7.14.5 ) and ( 7.14.6 ) integrate by parts, and use ( 7.7.15 ) and ( 7.7.16 ). For ( 7.14.7 ) and ( 7.14.8 ) consider the integrals \u222b 0 \u221e e \u2212 a \u2062 t \u2062 ( C \u2061 ( 2 \u2062 t / \u03c0 ) \u00b1 i \u2062 S \u2061 ( 2 \u2062 t / \u03c0 ) ) \u2062 d t and integrate by parts. The results are 1 / ( a \u2062 2 \u2062 ( a \u2213 i ) ) , from which ( 7.14.7 ) and ( 7.14.8 ) follow. Permalink: http://dlmf.nist.gov/7.14.ii See also: Annotations for \u00a77.14 and Ch.7 Laplace Transforms \u24d8 Keywords: Fresnel integrals , Laplace transforms , integrals See also: Annotations for \u00a77.14(ii) , \u00a77.14 and Ch.7"
+ ],
+ "constraints": [
+  "\\Re a>0"
+ ],
+ "symbols": [
+  {
+   "token": "\u222b",
+   "href": "1.4#iv",
+   "gloss": "integral"
+  },
+  {
+   "token": "e",
+   "href": "4.2#E11",
+   "gloss": "base of natural logarithm"
+  },
+  {
+   "token": "S",
+   "href": "7.2#E8",
+   "gloss": "Fresnel integral"
+  },
+  {
+   "token": "d",
+   "href": "1.4#iv",
+   "gloss": "differential of \ud835\udc65"
+  },
+  {
+   "token": "g",
+   "href": "7.2#E11",
+   "gloss": "auxiliary function for Fresnel integrals"
+  },
+  {
+   "token": "\u03c0",
+   "href": "3.12#E1",
+   "gloss": "the ratio of the circumference of a circle to its diameter"
+  },
+  {
+   "token": "\u211c",
+   "href": "1.9#E2",
+   "gloss": "real part"
+  }
+ ],
+ "info": {
+  "referenced_by": "\u00a77.14(ii)",
+  "as_ref": "7.4.28 (in different notation)",
+  "proof_sketch": "",
+  "sources": "",
+  "keywords": "Laplace transform",
+  "notes": "",
+  "defines": "",
+  "symbols_text": "\\mathrm{g}\\left(\\NVar{z}\\right) : auxiliary function for Fresnel integrals , S\\left(\\NVar{z}\\right) : Fresnel integral , \\pi : the ratio of the circumference of a circle to its diameter , \\,\\mathrm{d}\\NVar{x} : differential of x , \\mathrm{e} : base of natural logarithm , \\int : integral and \\Re : real part",
+  "changes": []
+ },
+ "parser_version": 2
+}
