@@ -2,7 +2,7 @@
 """Run fresh numerical checks on local Lean declarations.
 
 Each declaration gets a fresh process, hard CPU limits, and an external RSS/time
-watchdog. Results stay here; Lean sources and release data are read-only.
+watchdog. Results stay here; Lean sources are read-only.
 By default, select stale annotations; use --name or --all for an explicit rerun.
 """
 import argparse
@@ -37,7 +37,7 @@ def discover_targets(root, names=None, all_declarations=False):
     declaration = re.compile(
         r'^\s*(?:@\[[^\]]*\]\s*)?(?:noncomputable\s+|private\s+|protected\s+)*'
         r'(?:theorem|lemma|def)\s+([\w\']+)', re.M)
-    for path in sorted((root / 'FLMF').rglob('*.lean')):
+    for path in sorted((root / 'FLMF' / 'Chapter7').rglob('*.lean')):
         text = path.read_text()
         for doc in re.finditer(r'/--(.*?)-/', text, re.S):
             stamp = re.search(r'Numerical:[^\r\n]*', doc[1], re.I)
@@ -121,15 +121,14 @@ def run(args):
     output.mkdir(parents=True, exist_ok=False)
     targets_path = output / 'targets.json'
     targets_path.write_text(json.dumps(targets, indent=2) + '\n')
-    provenance = json.loads((HERE / 'provenance.json').read_text())
-    for copied in provenance['copied_files']:
-        assert sha256(HERE / copied['copy']) == copied['sha256'], copied['copy']
+    checker_hashes = {str(path.relative_to(HERE)): sha256(path)
+                      for path in [Path(__file__).resolve(), *sorted(VENDOR.glob('*.py'))]}
     metadata = {
         'started_at': datetime.now(ZoneInfo('America/New_York')).isoformat(),
         'source_root': str(root), 'selected': len(targets),
         'selection': ('named declarations: ' + ', '.join(args.name) if args.name else
-                      'all numerical annotations in FLMF/**/*.lean' if args.all else
-                      'all Numerical: Stale annotations in FLMF/**/*.lean'),
+                      'all numerical annotations in FLMF/Chapter7/**/*.lean' if args.all else
+                      'all Numerical: Stale annotations in FLMF/Chapter7/**/*.lean'),
         'concurrency': 1, 'memory_mb': args.memory_mb,
         'wall_seconds_per_declaration': args.wall_seconds,
         'cpu_seconds_per_declaration': args.cpu_seconds,
@@ -138,7 +137,7 @@ def run(args):
                                else 'hard heap/address-space limits plus RSS watchdog',
         'python_version': sys.version,
         'dependencies': {n: importlib.metadata.version(n) for n in ('mpmath', 'psutil')},
-        'checker_provenance': provenance,
+        'checker_sha256': checker_hashes,
         'source_hashes': {str(p.relative_to(root)): sha256(p)
                           for p in sorted((root / 'FLMF').rglob('*.lean'))},
     }

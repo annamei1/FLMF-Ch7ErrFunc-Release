@@ -1,7 +1,0 @@
-Numerical check of Numerical: Stale declarations
-{"PASS": 1, "selected": 1, "completed": 1, "peak_worker_rss_mb": 69.266, "source_files_unchanged": true, "finished_at": "2026-10-14T10:42:12.350337-04:00"}
-
-Every result below is reported verbatim; unable to proceed means NOT numerically checked.
-
-FLMF/Functions/Error/Ch7VoigtExtra.lean:358 erf_7_19_4
-  PASS | kind=conjunction | detail=2 conjuncts
