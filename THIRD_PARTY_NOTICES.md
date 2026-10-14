@@ -3,11 +3,18 @@
 The FLMF source snapshot is distributed under the Apache License 2.0 in LICENSE.
 The original source notices are retained without alteration.
 
-The bundled `vendor/picard-lefschetz/PicardLefschetz/Watson.lean` is by
-Michael R. Douglas, copyright 2026, distributed under Apache License 2.0.
-Its license is preserved at `vendor/picard-lefschetz/LICENSE`; the source
-revision and file checksum are recorded in `data/source_manifest.json`.
-Only the Watson module required by Chapter 7 is included.
+The Watson implementation in `FLMF/Support/Watson.lean` originates from
+Picard–Lefschetz and is by Michael R. Douglas, copyright 2026, distributed
+under Apache License 2.0. Its original copyright and author notices remain
+in the source. The Apache License 2.0 is included in
+[LICENSE](LICENSE). The original license copy also remains locally in the
+Git-ignored `docs/PICARD_LEFSCHETZ_LICENSE`.
+The original source revision, path, and checksum are retained in
+`numerical check/source_manifest.json`.
+
+On 2026-10-14 the module was integrated into FLMF's support sources, replacing
+the separate vendored Lake package. Declaration names and proofs are unchanged;
+only the module location and documentation changed.
 
 Mathlib and its dependencies are fetched separately through Lake. Their own
 licenses and notices apply; their source and compiled caches are not included

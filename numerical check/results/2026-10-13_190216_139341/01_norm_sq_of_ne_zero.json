@@ -1,0 +1,31 @@
+{
+  "name": "norm_sq_of_ne_zero",
+  "file": "FLMF/Functions/Chebyshev/Normalization.lean",
+  "annotation_line": 53,
+  "source_sha256": "7f68c07cb9ae90621ba09b3b0b31d9028c5fe30cd1206bc7728b18431bc484b6",
+  "line": 55,
+  "tags": [
+    "18.3"
+  ],
+  "doc": "**(DLMF 18.3, normalization for `n ≥ 1`)** — the squared norm of `Tₙ` is `π / 2`. DAG: E-18.3. Numerical: Stale Verified",
+  "concl": "∫ x, (T ℝ n).eval x * (T ℝ n).eval x ∂chebyshevWeight = π / 2",
+  "binders": {
+    "n": "N",
+    "hn": "other"
+  },
+  "constraints": {
+    "n": "nonzero"
+  },
+  "ns": "FLMF.Functions.Chebyshev",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "equality",
+  "detail": "worst=4.02e-32 over 5pts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.288,
+  "peak_rss_mb": 69.172,
+  "worker_exit_code": 0
+}

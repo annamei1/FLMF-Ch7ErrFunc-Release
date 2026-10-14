@@ -1,0 +1,38 @@
+{
+  "name": "erf_7_5_11",
+  "file": "FLMF/Functions/Error/Ch7Interrelations.lean",
+  "annotation_line": 192,
+  "source_sha256": "78a4a121385811cfbcb150191fb0c92f9f7d629426e597c1f871f223f00c46bf",
+  "line": 194,
+  "tags": [
+    "7.5.11",
+    "7.5.11"
+  ],
+  "doc": "Modulus identity for the complex Fresnel function, `x ≥ 0`: `|𝓕(x)|² = f²(x) + g²(x)` (DLMF 7.5.11). With `𝓕(x) = ½(1+i)",
+  "concl": "(1 / 2 - fresnelC x) ^ 2 + (1 / 2 - fresnelS x) ^ 2 = fresnelAuxF x ^ 2 + fresnelAuxG x ^ 2",
+  "binders": {
+    "x": "R",
+    "hx": "other"
+  },
+  "constraints": {
+    "x": "nonneg",
+    "_lower": {
+      "x": [
+        "0.0",
+        false
+      ]
+    }
+  },
+  "ns": "FLMF.Error",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "equality",
+  "detail": "worst=4.93e-32 over 4pts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.071,
+  "peak_rss_mb": 69.312,
+  "worker_exit_code": 0
+}

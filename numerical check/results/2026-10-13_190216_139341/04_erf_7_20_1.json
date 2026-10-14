@@ -1,0 +1,40 @@
+{
+  "name": "erf_7_20_1",
+  "file": "FLMF/Functions/Error/Ch7Applications.lean",
+  "annotation_line": 114,
+  "source_sha256": "bf63d3502df30188b64ff3f296aa1d359035ace2ec862540c595251fb51d5cde",
+  "line": 116,
+  "tags": [
+    "7.20.1",
+    "7.20.1"
+  ],
+  "doc": "**DLMF 7.20.1.** For the normal (Gaussian) distribution with mean `m` and standard deviation `σ > 0`, the distribution f",
+  "concl": "(∫ t in Set.Iio x, Real.exp (-(t - m) ^ 2 / (2 * σ ^ 2))) / (σ * Real.sqrt (2 * Real.pi)) = erfc ((m - x) / (σ * Real.sqrt 2)) / 2 ∧ erfc ((m - x) / (σ * Real.sqrt 2)) / 2 = gaussQ ((m - x) / σ) ∧ gaussQ ((m - x) / σ) = gaussP ((x - m) / σ)",
+  "binders": {
+    "m": "R",
+    "x": "R",
+    "σ": "R",
+    "hσ": "other"
+  },
+  "constraints": {
+    "σ": "pos",
+    "_lower": {
+      "σ": [
+        "0.0",
+        true
+      ]
+    }
+  },
+  "ns": "FLMF.Error",
+  "links_asserted": 3,
+  "links_source": "ast",
+  "verdict": "unable to proceed",
+  "kind": "conjunction-partial",
+  "detail": "['PASS', 'unable to proceed', 'unable to proceed']",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.291,
+  "peak_rss_mb": 68.891,
+  "worker_exit_code": 0
+}

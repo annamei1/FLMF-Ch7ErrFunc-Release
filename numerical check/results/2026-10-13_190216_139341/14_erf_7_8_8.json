@@ -1,0 +1,39 @@
+{
+  "name": "erf_7_8_8",
+  "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+  "annotation_line": 1118,
+  "source_sha256": "e068afaecd502f672004558ae433f8329bdd5e3918f32ef757d37af9805e3aeb",
+  "line": 1120,
+  "tags": [
+    "7.8.8",
+    "7.8",
+    "7.8.8"
+  ],
+  "doc": "**DLMF 7.8.8** (Pólya 1949). `erf x < √(1 − e^{−4x²/π})` for `x > 0`. Note the square root over the whole right-hand sid",
+  "concl": "erf x < Real.sqrt (1 - Real.exp (-(4 * x ^ 2) / Real.pi))",
+  "binders": {
+    "x": "R",
+    "hx": "other"
+  },
+  "constraints": {
+    "x": "pos",
+    "_lower": {
+      "x": [
+        "0.0",
+        true
+      ]
+    }
+  },
+  "ns": "FLMF.Error",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "inequality",
+  "detail": "margin=-0.0003619 over 4pts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.072,
+  "peak_rss_mb": 69.562,
+  "worker_exit_code": 0
+}

@@ -1,0 +1,28 @@
+{
+  "name": "erf_7_17_1",
+  "file": "FLMF/Chapter7/InverseErf.lean",
+  "annotation_line": 124,
+  "annotation": "Numerical: N/A (unparsed:forall-body unconsumed)",
+  "source_sha256": "d24c8899d3de421da4b2316b0b9348d1aeefb7295e78134080368a3c0ea91cc5",
+  "line": 126,
+  "tags": [
+    "7.17.1",
+    "7.17.1"
+  ],
+  "doc": "**DLMF 7.17.1**: `inverf`/`inverfc` are the inverses of `erf`/`erfc`, on `erf`'s range `(-1, 1)` and `erfc`'s range `(0,",
+  "concl": "(∀ x : ℝ, |x| < 1 → erf (inverf x) = x) ∧ (∀ x : ℝ, 0 < x → x < 2 → erfc (inverfc x) = x)",
+  "binders": {},
+  "constraints": {},
+  "ns": "FLMF.Error",
+  "links_asserted": 2,
+  "links_source": "regex",
+  "verdict": "unable to proceed",
+  "kind": "unparsed:forall-body unconsumed",
+  "detail": "",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.037,
+  "peak_rss_mb": 0.672,
+  "worker_exit_code": 0
+}

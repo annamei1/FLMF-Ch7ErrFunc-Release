@@ -1,0 +1,38 @@
+{
+  "name": "erf_7_8_3",
+  "file": "FLMF/Functions/Error/Ch7Inequalities.lean",
+  "annotation_line": 528,
+  "source_sha256": "e068afaecd502f672004558ae433f8329bdd5e3918f32ef757d37af9805e3aeb",
+  "line": 530,
+  "tags": [
+    "7.8.3",
+    "7.8.3"
+  ],
+  "doc": "Two-sided bound on `𝖬(x)` for `x ≥ 0` (DLMF 7.8.3): `√π/(2√π·x + 2) ≤ 𝖬(x) ≤ 1/(x+1)`. (Lower bound corrected 2026-06-25",
+  "concl": "Real.sqrt Real.pi / (2 * Real.sqrt Real.pi * x + 2) ≤ (Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x ∧ (Real.sqrt Real.pi / 2) * Real.exp (x ^ 2) * FLMF.Error.erfc x < 1 / (x + 1)",
+  "binders": {
+    "x": "R",
+    "hx": "other"
+  },
+  "constraints": {
+    "x": "nonneg",
+    "_lower": {
+      "x": [
+        "0.0",
+        false
+      ]
+    }
+  },
+  "ns": "FLMF.Error",
+  "links_asserted": 2,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "conjunction",
+  "detail": "2 conjuncts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.072,
+  "peak_rss_mb": 69.578,
+  "worker_exit_code": 0
+}

@@ -1,0 +1,38 @@
+{
+  "name": "erf_7_13_2",
+  "file": "FLMF/Functions/Error/ComplexZeros.lean",
+  "annotation_line": 69,
+  "source_sha256": "efb03f8b34ebb836238fe69e485e8216bc15c8590e223db042116c890bb6aecd",
+  "line": 72,
+  "tags": [
+    "7.13.2",
+    "7.13"
+  ],
+  "doc": "DLMF 7.13.2 — records the parameter equations for the `erf` zeros. DLMF §7.13 indexes these zeros `n = 1, 2, 3, …` (Tabl",
+  "concl": "erfZeroLambda n = Real.sqrt (((n : ℝ) - 1 / 8) * Real.pi) ∧ erfZeroMu n = Real.log (erfZeroLambda n * Real.sqrt (2 * Real.pi))",
+  "binders": {
+    "n": "N",
+    "_hn": "other"
+  },
+  "constraints": {
+    "n": "ge1",
+    "_lower": {
+      "n": [
+        "1.0",
+        false
+      ]
+    }
+  },
+  "ns": "FLMF.Error",
+  "links_asserted": 2,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "conjunction",
+  "detail": "2 conjuncts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.211,
+  "peak_rss_mb": 77.312,
+  "worker_exit_code": 0
+}

@@ -1,0 +1,33 @@
+{
+  "name": "erf_7_9_3",
+  "file": "FLMF/Functions/Error/ComplexErfExtra.lean",
+  "annotation_line": 1736,
+  "source_sha256": "4a765caf84d62280b8460792195a9f69e8b1444a8ec3bd86b3f3ec1b30cad3e1",
+  "line": 1738,
+  "tags": [
+    "7.9.3",
+    "7.9.3"
+  ],
+  "doc": "Gautschi continued fraction for the Faddeeva function (DLMF 7.9.3): `w(z) = (i/√π)·1/(z − ½/(z − 1/(z − 3/2/(z − ⋯))))` ",
+  "concl": "Filter.Tendsto (fun N => (Complex.I/(Real.sqrt Real.pi : ℂ)) * cfConvC (fun k => if k = 0 then 0 else if k = 1 then 1 else -((k:ℂ)-1)/2) (fun k => if k = 0 then 0 else z) N) Filter.atTop (nhds (faddeeva z))",
+  "binders": {
+    "z": "C",
+    "hz": "other"
+  },
+  "constraints": {
+    "z.im": "pos",
+    "z": "impos"
+  },
+  "ns": "FLMF.Error",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "asymptotic",
+  "detail": "cfConv rel@settle=7.33e-31 over 4",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.809,
+  "peak_rss_mb": 69.547,
+  "worker_exit_code": 0
+}

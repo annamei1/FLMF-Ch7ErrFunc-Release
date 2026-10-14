@@ -1,0 +1,29 @@
+{
+  "name": "erf_7_2_3",
+  "file": "FLMF/Functions/Error/Faddeeva.lean",
+  "annotation_line": 1290,
+  "source_sha256": "d6abff798772e0661f7e02b80216b84a483dda012bcde605ed8e87511ce6433c",
+  "line": 1292,
+  "tags": [
+    "7.2.3",
+    "7.2.3"
+  ],
+  "doc": "**DLMF 7.2.3**: the Faddeeva function's Dawson-type integral representation and its definitional relation to `erfc`, `w(",
+  "concl": "faddeeva z = Complex.exp (-z ^ 2) * (1 + (2 * Complex.I / (Real.sqrt Real.pi : ℂ)) * (z * ∫ t in (0 : ℝ)..1, Complex.exp (((t : ℂ) * z) ^ 2))) ∧ faddeeva z = Complex.exp (-z ^ 2) * cerfc (-(Complex.I * z))",
+  "binders": {
+    "z": "C"
+  },
+  "constraints": {},
+  "ns": "FLMF.Error",
+  "links_asserted": 2,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "conjunction",
+  "detail": "2 conjuncts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.114,
+  "peak_rss_mb": 69.375,
+  "worker_exit_code": 0
+}

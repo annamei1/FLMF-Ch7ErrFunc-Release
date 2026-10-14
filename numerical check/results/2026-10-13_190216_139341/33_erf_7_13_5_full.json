@@ -1,0 +1,33 @@
+{
+  "name": "erf_7_13_5_full",
+  "file": "FLMF/Functions/Error/ComplexZeros.lean",
+  "annotation_line": 16468,
+  "source_sha256": "efb03f8b34ebb836238fe69e485e8216bc15c8590e223db042116c890bb6aecd",
+  "line": 16470,
+  "tags": [
+    "7.13.5",
+    "7.13",
+    "7.13"
+  ],
+  "doc": "**DLMF 7.13.5** — asymptotic expansion, as `n → ∞`, of the complex zeros of BOTH Fresnel integrals from the single displ",
+  "concl": "((fun n => (zC n).re - fresnelCZeroReApprox n) =O[atTop] (fun n => (fresnelCZeroLambda n) ^ (-3 : ℤ)) ∧ (fun n => (zC n).im - fresnelCZeroImApprox n) =o[atTop] (fun n => (fresnelCZeroLambda n) ^ (-1 : ℤ))) ∧ ((fun n => (zS n).re - fresnelSZeroReApprox n) =O[atTop] (fun n => (fresnelSZeroLambda n) ^ (-3 : ℤ)) ∧ (fun n => (zS n).im - fresnelSZeroImApprox n) =o[atTop] (fun n => (fresnelSZeroLambda n) ^ (-1 : ℤ)))",
+  "binders": {
+    "zC": "other",
+    "hallC": "other",
+    "zS": "other",
+    "hallS": "other"
+  },
+  "constraints": {},
+  "ns": "FLMF.Fresnel",
+  "links_asserted": 4,
+  "links_source": "regex",
+  "verdict": "unable to proceed",
+  "kind": "unparsed:expected ) got ∧",
+  "detail": "",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.196,
+  "peak_rss_mb": 77.672,
+  "worker_exit_code": 0
+}

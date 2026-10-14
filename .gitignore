@@ -2,3 +2,5 @@
 **/.lake/
 __pycache__/
 .DS_Store
+/SHA256SUMS
+/docs/

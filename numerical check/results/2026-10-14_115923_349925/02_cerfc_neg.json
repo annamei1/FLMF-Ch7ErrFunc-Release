@@ -1,0 +1,30 @@
+{
+  "name": "cerfc_neg",
+  "file": "FLMF/Chapter7/Symmetry.lean",
+  "annotation_line": 79,
+  "annotation": "Numerical: PASS",
+  "source_sha256": "24aa2af331cfbcbde2c8940ba9c0d83bf76145f11db199706544d2067647d044",
+  "line": 81,
+  "tags": [
+    "7.4.2",
+    "7.4.2"
+  ],
+  "doc": "**DLMF 7.4.2** — the complex complementary error function is symmetric: `erfc(-z) = 2 - erfc(z)`. DLMF 7.4.2. DAG: E-7.4",
+  "concl": "cerfc (-z) = 2 - cerfc z",
+  "binders": {
+    "z": "C"
+  },
+  "constraints": {},
+  "ns": "FLMF.Error",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "equality",
+  "detail": "worst=0.0 over 4pts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.024,
+  "peak_rss_mb": 0.672,
+  "worker_exit_code": 0
+}

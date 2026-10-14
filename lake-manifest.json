@@ -3,15 +3,6 @@
   "packagesDir": ".lake/packages",
   "packages": [
     {
-      "type": "path",
-      "scope": "",
-      "name": "\u00abpicard-lefschetz\u00bb",
-      "manifestFile": "lake-manifest.json",
-      "inherited": false,
-      "dir": "vendor/picard-lefschetz",
-      "configFile": "lakefile.toml"
-    },
-    {
       "url": "https://github.com/leanprover-community/mathlib4.git",
       "type": "git",
       "subDir": null,
@@ -120,7 +111,7 @@
       "configFile": "lakefile.toml"
     }
   ],
-  "name": "\u00abflmf-chapter7\u00bb",
+  "name": "«flmf-chapter7»",
   "lakeDir": ".lake",
   "fixedToolchain": false
 }

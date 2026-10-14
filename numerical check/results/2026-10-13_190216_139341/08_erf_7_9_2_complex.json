@@ -1,0 +1,31 @@
+{
+  "name": "erf_7_9_2_complex",
+  "file": "FLMF/Functions/Error/Ch7ContinuedFractions.lean",
+  "annotation_line": 1672,
+  "source_sha256": "7c59a542e39a3286ac94c801f5bd183db8f464ba6ef649c8e398cfaf13886b4c",
+  "line": 1674,
+  "tags": [
+    "7.9.2"
+  ],
+  "doc": "**DLMF 7.9.2** — Even part of the Laplace continued fraction for `erfc`, for complex `z` with `ℜ z > 0`: `√π e^{z²} erfc",
+  "concl": "Tendsto (cfConvC (fun k => if k = 0 then 0 else if k = 1 then 2 * z else -(2 * (k : ℂ) - 3) * (2 * (k : ℂ) - 2)) (fun k => if k = 0 then 0 else 2 * z ^ 2 + (4 * (k : ℂ) - 3))) atTop (𝓝 ((Real.sqrt Real.pi : ℂ) * Complex.exp (z ^ 2) * cerfc z))",
+  "binders": {
+    "z": "C",
+    "hz": "other"
+  },
+  "constraints": {
+    "z.re": "pos"
+  },
+  "ns": "FLMF.Error",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "asymptotic",
+  "detail": "cfConv rel@settle=2.145e-19 over 6",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 1.936,
+  "peak_rss_mb": 69.625,
+  "worker_exit_code": 0
+}

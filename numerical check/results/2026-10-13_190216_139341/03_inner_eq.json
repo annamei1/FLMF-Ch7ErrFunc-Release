@@ -1,0 +1,29 @@
+{
+  "name": "inner_eq",
+  "file": "FLMF/Functions/Chebyshev/Normalization.lean",
+  "annotation_line": 83,
+  "source_sha256": "7f68c07cb9ae90621ba09b3b0b31d9028c5fe30cd1206bc7728b18431bc484b6",
+  "line": 85,
+  "tags": [
+    "18.3"
+  ],
+  "doc": "**(DLMF 18.3)** — the full orthonormality relation: the integral of `Tₙ · Tₘ` against the weight equals the Kronecker `δ",
+  "concl": "∫ x, (T ℝ n).eval x * (T ℝ m).eval x ∂chebyshevWeight = if n = m then normalizationConst n else 0",
+  "binders": {
+    "n": "N",
+    "m": "N"
+  },
+  "constraints": {},
+  "ns": "FLMF.Functions.Chebyshev",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "equality",
+  "detail": "worst=4.139e-32 over 24pts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.808,
+  "peak_rss_mb": 69.062,
+  "worker_exit_code": 0
+}

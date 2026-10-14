@@ -1,0 +1,29 @@
+{
+  "name": "cerf_7_10_1",
+  "file": "FLMF/Functions/Error/ComplexErf.lean",
+  "annotation_line": 270,
+  "source_sha256": "b6e5d09e8038240644af3d149db97c0e620c153f86596d472d3364913dd6889c",
+  "line": 272,
+  "tags": [
+    "7.10.1"
+  ],
+  "doc": "**DLMF 7.10.1** — the `(n+1)`-th derivative of the complex error function: `d^{n+1} erf(z) / dz^{n+1} = (-1)ⁿ (2/√π) Hₙ(",
+  "concl": "iteratedDeriv (n + 1) cerf z = (-1) ^ n * (2 / Real.sqrt Real.pi : ℂ) * (Polynomial.aeval z (FLMF.Functions.Hermite.physicistsHermite n)) * Complex.exp (-z ^ 2)",
+  "binders": {
+    "n": "N",
+    "z": "C"
+  },
+  "constraints": {},
+  "ns": "FLMF.Error",
+  "links_asserted": 1,
+  "links_source": "ast",
+  "verdict": "PASS",
+  "kind": "equality",
+  "detail": "worst=5.359e-31 over 20pts",
+  "reused": false,
+  "precision_dps": 30,
+  "sample_budget_seconds": 8.0,
+  "elapsed_seconds": 0.086,
+  "peak_rss_mb": 68.906,
+  "worker_exit_code": 0
+}
