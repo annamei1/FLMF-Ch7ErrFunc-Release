@@ -5,6 +5,8 @@ Fresnel integrals**, containing **137 numbered DLMF equations**.
 All included Lean formalizations are verified by our proof pipeline, and
 **78 equations carry numerical PASS annotations**.
 
+The paper is available on [arXiv](http://arxiv.org/abs/2610.20573).
+
 Each equation carries its corresponding DLMF tag in the Lean source, so you can
 search for its equation number to find the formalization. For example, search
 for `DLMF 7.4.2` to find the complementary error function symmetry theorem
